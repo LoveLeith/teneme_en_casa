@@ -53,6 +53,14 @@
   color: white;
 }
 
+.btn-link {
+  color: white;
+}
+
+.btn-link:hover {
+  color: white;
+}
+
 /*map-get*/
 @media only screen and (max-width: 768px) {
   * {
@@ -349,6 +357,14 @@
 }
 
 .btn {
+  color: white;
+}
+
+.btn-link {
+  color: white;
+}
+
+.btn-link:hover {
   color: white;
 }
 
@@ -1020,6 +1036,14 @@ section {
   color: white;
 }
 
+.btn-link {
+  color: white;
+}
+
+.btn-link:hover {
+  color: white;
+}
+
 /*map-get*/
 .carrito__icono--color {
   color: #fdfdfd;
@@ -1072,6 +1096,14 @@ section {
 }
 
 .btn {
+  color: white;
+}
+
+.btn-link {
+  color: white;
+}
+
+.btn-link:hover {
   color: white;
 }
 
@@ -1571,6 +1603,14 @@ article .nosotros {
   color: white;
 }
 
+.btn-link {
+  color: white;
+}
+
+.btn-link:hover {
+  color: white;
+}
+
 /*------------------------inicio Productos Vista Mobile First---------------------------*/
 .gridProductos {
   display: -ms-grid;
@@ -1917,6 +1957,14 @@ nav.navDer ul li a {
 }
 
 .btn {
+  color: white;
+}
+
+.btn-link {
+  color: white;
+}
+
+.btn-link:hover {
   color: white;
 }
 
