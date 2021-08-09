@@ -1622,7 +1622,7 @@ nav.navDer ul li a {
   }
   header {
     -ms-grid-row: 1;
-    -ms-grid-column: 2;
+    -ms-grid-column: 1;
     grid-area: logo;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1632,12 +1632,12 @@ nav.navDer ul li a {
             justify-content: center;
   }
   .carrito {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
     grid-area: encabezado2;
   }
   nav.navIzq {
-    -ms-grid-row: 1;
+    -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: encabezado;
   }
@@ -1658,8 +1658,8 @@ nav.navDer ul li a {
         align-self: center;
   }
   nav.navDer {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
     grid-area: encabezado2;
   }
   nav.navDer ul {
@@ -1738,8 +1738,7 @@ nav.navDer ul li a {
   }
   header {
     -ms-grid-row: 1;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 2;
+    -ms-grid-column: 1;
     grid-area: logo;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1749,21 +1748,18 @@ nav.navDer ul li a {
             justify-content: center;
   }
   nav.navIzq {
-    -ms-grid-row: 1;
+    -ms-grid-row: 2;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
     grid-area: encabezado;
   }
   nav.navDer {
-    -ms-grid-row: 1;
-    -ms-grid-column: 5;
-    -ms-grid-column-span: 2;
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
     grid-area: encabezado2;
   }
   .carrito {
-    -ms-grid-row: 1;
-    -ms-grid-column: 5;
-    -ms-grid-column-span: 2;
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
     grid-area: encabezado2;
   }
   main.presentacionProducots {
@@ -1782,4 +1778,123 @@ nav.navDer ul li a {
 }
 
 /*------------------------cierre Productos Desktop---------------------------*/
+/*map-get*/
+.carrito__icono--color {
+  color: #fdfdfd;
+}
+
+.tituloTeneme__titulo--color {
+  color: white;
+}
+
+.menu__item--color {
+  color: white;
+}
+
+.menuInferior__item--color, .redes__instagram--color, .redes__facebook--color, .redes__whatsapp--color, .pagos__efectivo--color, .pagos__mastercard--color, .pagos__visa--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
+  color: white;
+}
+
+.copyright {
+  background-color: #b0afa4;
+}
+
+/*-------------------seccion Nosotros----------------*/
+.tituloSeccion h1 {
+  color: white;
+  text-transform: uppercase;
+}
+
+.texto1, .texto2 {
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  footer {
+    background-color: #303030;
+  }
+}
+
+/*-------------------seccion Productos--------------------*/
+.tituloProductos__titulo--color {
+  color: white;
+}
+
+/*------------------------inicio Preguntas Frecuentes Vista Mobile First---------------------------*/
+.gridProductos {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "logo" "encabezado" "encabezado2" "preguntas" "redes" "pagos" "ingresoRegistro" "copyright";
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  background-color: #303030;
+}
+
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: logo;
+}
+
+.carrito {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: logo;
+}
+
+nav.navIzq {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: encabezado;
+}
+
+nav.navDer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: encabezado2;
+}
+
+.containerPreguntasRespuestas {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: preguntas;
+}
+
+.tituloTeneme {
+  display: none;
+}
+
+.menuInferior {
+  display: none;
+}
+
+.redes {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: redes;
+}
+
+.pagos {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: pagos;
+}
+
+.ingresoRegistro {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: ingresoRegistro;
+}
+
+.copyright {
+  -ms-grid-row: 8;
+  -ms-grid-column: 1;
+  grid-area: copyright;
+}
+
+/*------------------------------------cierre Preguntas Frecuentes Vista Mobile First-----------------------------------*/
+/*------------------------------------Inicio Preguntas Frecuentes Vista Tablet-----------------------------------*/
+/*------------------------------------cierre Preguntas Frecuentes Vista Tablet-----------------------------------*/
 /*# sourceMappingURL=style.css.map */
