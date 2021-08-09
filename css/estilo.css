@@ -30,6 +30,7 @@
 .tituloProductos__titulo--color {
   color: white; }
 
+/*----------------seccion Preguntas Frecuentes-------------*/
 /*map-get*/
 @media only screen and (max-width: 768px) {
   * {
@@ -198,6 +199,7 @@
 .tituloProductos__titulo--color {
   color: white; }
 
+/*----------------seccion Preguntas Frecuentes-------------*/
 /*------------------inicio Index Vista Mobile First ---------------------*/
 .gridContainer {
   display: grid;
@@ -595,6 +597,7 @@ section {
 .tituloProductos__titulo--color {
   color: white; }
 
+/*----------------seccion Preguntas Frecuentes-------------*/
 /*map-get*/
 .carrito__icono--color {
   color: #fdfdfd; }
@@ -627,6 +630,7 @@ section {
 .tituloProductos__titulo--color {
   color: white; }
 
+/*----------------seccion Preguntas Frecuentes-------------*/
 .gridContainerNosotros {
   display: grid;
   grid-template-areas: "logo" "encabezado" "encabezado2" "nosotros" "redes" "pagos" "ingresoRegistro" "copyright";
@@ -906,6 +910,7 @@ article .nosotros {
 .tituloProductos__titulo--color {
   color: white; }
 
+/*----------------seccion Preguntas Frecuentes-------------*/
 /*------------------------inicio Productos Vista Mobile First---------------------------*/
 .gridProductos {
   display: grid;
@@ -1096,6 +1101,7 @@ nav.navDer {
 .tituloProductos__titulo--color {
   color: white; }
 
+/*----------------seccion Preguntas Frecuentes-------------*/
 /*------------------------inicio Preguntas Frecuentes Vista Mobile First---------------------------*/
 .gridPreguntasFrecuentes {
   display: grid;
