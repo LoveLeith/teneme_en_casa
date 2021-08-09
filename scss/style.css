@@ -1821,7 +1821,7 @@ nav.navDer ul li a {
 }
 
 /*------------------------inicio Preguntas Frecuentes Vista Mobile First---------------------------*/
-.gridProductos {
+.gridPreguntasFrecuentes {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "logo" "encabezado" "encabezado2" "preguntas" "redes" "pagos" "ingresoRegistro" "copyright";

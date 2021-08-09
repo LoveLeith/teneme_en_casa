@@ -1097,7 +1097,7 @@ nav.navDer {
   color: white; }
 
 /*------------------------inicio Preguntas Frecuentes Vista Mobile First---------------------------*/
-.gridProductos {
+.gridPreguntasFrecuentes {
   display: grid;
   grid-template-areas: "logo" "encabezado" "encabezado2" "preguntas" "redes" "pagos" "ingresoRegistro" "copyright";
   grid-template-columns: 100%;
