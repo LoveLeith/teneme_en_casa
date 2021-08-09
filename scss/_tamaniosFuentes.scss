@@ -1,0 +1,68 @@
+$forum:forum;
+$sizeFontNavMobile:20px;
+
+/*map-get*/
+$estilos: (
+  fuente: forum,
+);
+
+.menu__item--fontFamily {
+    font-family: $forum;
+}
+
+.menu__item--fontSize {
+    font-size: 19px;
+}
+
+.carouselCaption__item--fontSize {
+    @media only screen and (max-width: 768px) {
+    font-size: 25px;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    font-size: 60px;
+    }
+    @media only screen and (min-width: 1024px) {
+    font-size: 90px;
+    }
+}
+
+.tituloTeneme__titulo--fontFamily {
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    font-family: $forum;
+    }
+    @media only screen and (min-width: 1024px) {
+    font-family: $forum;
+    }
+}
+
+.menuInferior__item--fontFamily {
+    font-family: $forum;
+}
+
+.cuenta__titulo--fontFamily, .ingresa__texto--fontFamily, .registrarse__texto--fontFamily, .copyright__texto--fontFamily {
+    font-family: $forum;
+}
+
+/*--------------------seccion Nosotros-------------------------*/
+
+.tituloSeccion h1 {
+    font-family: map-get($estilos, fuente);
+    @media only screen and (min-width: 1024px) {
+    font-size: 40px;
+    }
+}
+
+.texto1, .texto2 {
+	font-Family: map-get($estilos, fuente);
+}
+
+/*------------------seccion Productos------------------------*/
+
+.tituloProductos__titulo--fontFamily {
+    font-family: $forum;
+}
+
+.card-text {
+    font-family: $forum;
+    font-weight:bold;
+}

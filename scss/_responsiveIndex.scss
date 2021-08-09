@@ -1,0 +1,450 @@
+@import "colores";
+
+/*------------------inicio Index Vista Mobile First ---------------------*/
+
+.gridContainer {
+    display: grid;
+    grid-template-areas: 
+    "logo"
+    "encabezado"
+    "encabezado2"
+    "carrousel"
+    "redes"
+    "pagos"
+    "ingresoRegistro"
+    "copyright";
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    background-color: $backgroundColor;
+}
+
+header {
+    grid-area: logo;
+    display: $flex;
+    justify-content: $justify-center;
+    position: relative;
+}
+
+.carrito {
+    grid-area: logo;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+nav.navIzq {
+    grid-area: encabezado;
+    ul {
+        display: inline-flex;
+        justify-content: $spaceAround;
+        width: 100%;
+        margin-bottom: $marginBottomNavMobile;
+        li {
+            list-style-type: none;
+            padding: $paddingNavLiMobile;
+        a {
+            text-decoration: none;
+        }
+        }
+    ul {
+        display: none;
+    }
+    }
+}
+
+nav.navDer {
+    grid-area: encabezado2;
+    ul{
+        display: inline-flex;
+        justify-content: $spaceAround;
+        width: 100%;
+        margin-bottom: $marginBottomNavMobile;
+        li {
+            list-style-type: none;
+            padding: $paddingNavLiMobile;
+        a{
+            text-decoration: none;
+        }
+        }
+    }
+}
+
+section {
+    grid-area: carrousel;
+}
+
+.item {
+    position: relative;
+}
+
+.absoluteDiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.carouselCaption {
+    position: absolute;
+    z-index: 1;
+    display: table;
+    width: 100%;
+    height: 100%;
+    h1 {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        color: white;
+        font-family: forum;
+    }
+}
+
+.tituloTeneme {
+    display: none;
+}
+
+.menuInferior {
+    display: none;
+}
+
+.redes {
+    grid-area: redes;
+    ul {
+        display: $flex;
+        justify-content: $spaceAround;
+        li {
+            list-style-type: none;
+            padding: 5px;
+        a {
+            text-decoration: none;
+            margin-top: 15px;
+            border-radius: 50%;
+            padding: .6em .6em;
+        }
+        }
+    }
+}
+
+.pagos {
+    grid-area: pagos;
+    ul {
+        display: $flex;
+        justify-content: $spaceAround;
+        li {
+            list-style-type: none;
+            padding: 5px;
+        a {
+            text-decoration: none;
+            margin-top: 15px;
+            border-radius: 50%;
+            padding: .6em .6em;
+        }
+        }
+    }
+}
+
+.redes ul li a:hover, .pagos ul li a:hover {
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+    background-color: white;
+    color: #ecce1f;
+}
+
+.ingresoRegistro {
+    grid-area: ingresoRegistro;
+}
+
+.copyright {
+    grid-area: copyright;
+}
+
+/*----------------------------cierre Index Vista Mobile First----------------------------*/
+
+/*---------------------------inicio Index Vista Tablet----------------------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+
+    .gridContainer {
+        display: grid;
+        grid-template-areas: 
+        "encabezado logo encabezado2"
+        "carrousel carrousel carrousel"
+        "footer footer footer";
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        grid-template-rows: auto;
+        background-color: $backgroundColor;
+    }
+
+    header {
+        grid-area: logo;
+    }
+
+    .carrito {
+        grid-area: encabezado2;
+    }
+
+    nav.navIzq {
+        grid-area: encabezado;
+        ul {
+            display: $flex;
+            justify-content: $spaceAround;
+            margin-top: 43px;
+            li {
+                padding: 5px;
+            a {
+                align-self: center;
+            }
+            }
+        }
+    }
+
+    nav.navDer {
+        grid-area: encabezado2;
+        ul {
+            display: $flex;
+            justify-content: $spaceAround;
+            margin-top: 43px;
+            li {
+                padding: 5px;
+            a {
+                align-self: center;
+            }
+            }
+        }
+    }
+
+    nav.navIzq ul li a:hover, nav.navDer ul li a:hover {
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-out;
+        background-color: #edece7;
+        color: #ecce1f;
+        border-radius: 0px 20px;
+        padding: 10px;
+    }
+
+    nav.navIzq ul ul {
+        position: $positionabs;
+        display: none;
+        z-index: 1;
+        margin-top: 15px;
+        li {
+            display: block;
+            width: 150px;
+            background-color: $background-white;
+            border-radius: 3px;
+            margin-bottom: 5px;
+        a {
+            color: $black-font;
+        }
+        }
+    }
+    
+    .navIzq ul li:hover ul {
+        display: block;
+    }
+
+    section {
+        grid-area: carrousel;
+    }
+
+    .item {
+        position: relative;
+    }
+
+    .absoluteDiv {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    
+    .carouselCaption {
+        position: absolute;
+        z-index: 1;
+        display:table;
+        width:100%;
+        height:100%;
+        h1 {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            color: white;
+            font-family: forum;
+        }
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+    footer .tituloTeneme {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 10px;
+    }
+
+    footer .menuInferior {
+        display: $flex;
+	    justify-content: $justify-flex-end;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        ul li {
+            list-style-type: none;
+            padding: 5px;
+        a {
+            text-decoration: none;
+        }
+        }
+    }
+
+}
+/*---------------------------cierre Index Vista Tablet----------------------------------*/
+
+/*---------------------------inicio Index Vista Desktop----------------------------------*/
+
+@media only screen and (min-width: 1024px) {
+
+    .gridContainer {
+        display:  grid;
+        grid-template-areas: 
+        "encabezado encabezado logo logo encabezado2 encabezado2"
+        "carrousel carrousel carrousel carrousel carrousel carrousel"
+        "footer footer footer footer footer footer";
+        grid-template-columns: 16.666% 16.666% 16.666% 16.666% 16.666% 16.666%;
+        grid-template-rows: auto; 
+        background-color: #303030;
+    }
+    
+    header {
+        grid-area: logo;
+    }
+
+    div.carrito {
+        grid-area: encabezado2;
+    }
+
+    nav.navIzq {
+        grid-area: encabezado;
+        ul {
+            display: $flex;
+            justify-content: $spaceAround;
+            font-size: 18px;
+            margin-top: 80px;
+        li {
+            padding: 5px;
+        a {
+            align-self: center;
+        }
+        }
+        }
+    }
+
+    nav.navDer {
+        grid-area: encabezado2;
+        ul {
+            display: $flex;
+            justify-content: $spaceAround;
+            font-size: 18px;
+            margin-top: 80px;
+        li {
+            padding: 5px;
+        a {
+            align-self: center;
+        }
+        }
+        }
+    }
+
+    nav.navIzq ul li a:hover, nav.navDer ul li a:hover {
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-out;
+        background-color: #edece7;
+        color: #ecce1f;
+        border-radius: 0px 20px;
+        padding: 10px;
+    }
+
+    nav.navIzq ul ul {
+        position: $positionabs;
+        display: none;
+        z-index: 1;
+        margin-top: 15px;
+        li {
+            display: block;
+            width: 150px;
+            background-color: $background-white;
+            border-radius: 3px;
+            margin-bottom: 5px;
+        a {
+            color: $black-font;
+        }
+        }
+    }
+    
+    .navIzq ul li:hover ul {
+        display: block;
+    }   
+
+    section {
+        grid-area: carrousel;
+    }
+
+    .item {
+        position: relative;
+    }
+
+    .absoluteDiv {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    
+    .carouselCaption {
+        position: absolute;
+        z-index: 1;
+        display:table;
+        width:100%;
+        height:100%;
+        h1 {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            color: white;
+            font-family: forum;
+        }
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+    footer .tituloTeneme {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 10px;
+    }
+
+    footer .menuInferior {
+        display: $flex;
+	    justify-content: $justify-flex-end;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        ul li {
+            list-style-type: none;
+            padding: 5px;
+        a {
+            text-decoration: none;
+        }
+        }
+    }
+
+}
+
+/*---------------------------cierre Index Vista Desktop----------------------------------*/

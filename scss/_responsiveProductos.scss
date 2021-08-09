@@ -1,0 +1,243 @@
+@import "colores";
+
+/*------------------------inicio Productos Vista Mobile First---------------------------*/
+
+div.gridContainerProductos {
+    display: grid;
+    grid-template-areas:
+    "logo"
+    "encabezado"
+    "encabezado2"
+    "productos"
+    "redes"
+    "pagos"
+    "ingresoRegistro"
+    "copyright";
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    background-color: $backgroundColor;
+}
+
+header {
+    grid-area: logo;
+    display: $flex;
+    justify-content: $justify-center;
+    position: relative;
+}
+
+.carrito {
+    grid-area: logo;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+nav.navIzq {
+    grid-area: encabezado;
+    background-color: $backgroundColor;
+    ul {
+        display: inline-flex;
+        justify-content: $spaceAround;
+        width: 100%;
+        margin-bottom: $marginBottomNavMobile;
+        li {
+            list-style-type: none;
+            padding: $paddingNavLiMobile;
+        a {
+            text-decoration: none;
+        }
+        }
+    ul {
+        display: none;
+    }
+    }
+}
+
+nav.navDer {
+    grid-area: encabezado2;
+    background-color: $backgroundColor;
+    ul{
+        display: inline-flex;
+        justify-content: $spaceAround;
+        width: 100%;
+        margin-bottom: $marginBottomNavMobile;
+        li {
+            list-style-type: none;
+            padding: $paddingNavLiMobile;
+        a{
+            text-decoration: none;
+        }
+        }
+    }
+}
+
+.presentacionProductos {
+    grid-area: productos;
+    background: $backgroundColor;
+}
+
+.tituloTeneme {
+    display: none;
+}
+
+.menuInferior {
+    display: none;
+}
+
+.redes {
+    grid-area: redes;
+}
+
+.pagos {
+    grid-area: pagos;
+}
+
+.ingresoRegistro {
+    grid-area: ingresoRegistro;
+}
+
+/*------------------------cierre Productos Vista Mobile First---------------------------*/
+
+/*------------------------inico Productos Tablet---------------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+
+    .gridProductos {
+        display: grid;
+        grid-template-areas:
+        "encabezado logo encabezado2"
+        "productos productos productos"
+        "footer footer footer";
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        grid-template-rows: auto;
+        background-color: $backgroundColor;
+    }
+
+    header {
+        grid-area: logo;
+        display: $flex;
+        justify-content: $justify-center;
+    }
+
+    .carrito {
+        grid-area: encabezado2;
+    }
+
+    nav.navIzq {
+        grid-area: encabezado;
+        ul {
+            display: $flex;
+            justify-content: $spaceAround;
+            margin-top: 43px;
+            li {
+                padding: 5px;
+            a {
+                align-self: center;
+            }
+            }
+        }
+    }
+
+    nav.navDer {
+        grid-area: encabezado2;
+        ul {
+            display: $flex;
+            justify-content: $spaceAround;
+            margin-top: 43px;
+            li {
+                padding: 5px;
+            a {
+                align-self: center;
+            }
+            }
+        }
+    }
+
+    nav.navIzq ul li a:hover, nav.navDer ul li a:hover {
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-out;
+        background-color: #edece7;
+        color: #ecce1f;
+        border-radius: 0px 20px;
+        padding: 10px;
+    }
+
+    nav.navIzq ul ul {
+        position: $positionabs;
+        display: none;
+        z-index: 1;
+        margin-top: 15px;
+        li {
+            display: block;
+            width: 150px;
+            background-color: $background-white;
+            border-radius: 3px;
+            margin-bottom: 5px;
+        a {
+            color: $black-font;
+        }
+        }
+    }
+    
+    .navIzq ul li:hover ul {
+        display: block;
+    }
+
+    main.presentacionProductos {
+        grid-area: productos;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+}
+
+/*------------------------cierre Productos Tablet---------------------------*/
+
+/*------------------------inicio Productos Desktop---------------------------*/
+
+@media only screen and (min-width: 1024px) {
+
+    .gridProductos {
+        display: grid;
+        grid-template-areas:
+        "encabezado encabezado logo logo encabezado2 encabezado2"
+        "productos productos productos productos productos productos"
+        "footer footer footer footer footer footer";
+        grid-template-columns: 16.666% 16.666% 16.666% 16.666% 16.666% 16.666%;
+        grid-template-rows: auto; 
+        background-color: #303030;
+    }
+
+    header {
+        grid-area: logo;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav.navIzq {
+        grid-area: encabezado;
+    }
+
+    nav.navDer {
+        grid-area: encabezado2;
+    }
+
+    .carrito {
+        grid-area: encabezado2;
+    }
+
+    main.presentacionProducots {
+        grid-area: productos;
+    }
+
+    footer {
+        grid-area: footer;
+        background-color: $backgroundColor;
+    }
+
+}
+
+/*------------------------cierre Productos Desktop---------------------------*/

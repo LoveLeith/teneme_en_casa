@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Contactanos para conocer nuestros horarios de entrega, coordinar envíos o hacer reclamos/devoluciones.">
+	<meta name="keywords" content="teneme en casa, productos congelados, consultas, consulta, dudas, consultas de envíos, consultas por envíos, consulta sobre pedido, consultas sobre pedidos, entrega, entregas, coordinar entrega, coordinar envío, reclamos, reclamo, devolución, devoluciones, zona norte, olivos, vicente lopez, vicente lópez.">
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<!-- Google Fonts and Icons -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Forum&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/ca9de5e95b.js" crossorigin="anonymous"></script>
+
+	<!-- Mi CSS local -->
+	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+	<title>Teneme en Casa - Contactanos</title>
+</head>
+<body>
+    <div class="gridContainerContacto">
+        <!-- inicio header -->
+		<header>
+			<div class="logo">
+				<a href="../index.html"><img src="../assets/images/teneme_en_casa_logo2.png" alt="Logo teneme en casa" width="100%"></a>
+			</div>
+		</header>
+			<!-- inicio NAV -->
+			<nav class="navIzq borde menu">
+				<ul>
+					<li><a href="../index.html" class="menu__item--color menu__item--fontFamily item--fontSize">Home</a></li>
+					<li><a href="../pages/nosotros.html" class="menu__item--color menu__item--fontFamily item--fontSize">Nosotros</a></li>
+					<li><a href="../pages/productos.html" class="menu__item--color menu__item--fontFamily item--fontSize">Productos</a>
+						<ul>
+							<li><a href="#">El Noble</a></li>
+							<li><a href="#">Mc Cain</a></li>
+							<li><a href="#">Union Ganadera</a></li>
+							<li><a href="#">Panificados</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<nav class="navDer borde menu">
+				<ul>
+					<li><a href="../pages/preguntas_frecuentes.html" class="menu__item--color menu__item--fontFamily item--fontSize">Preguntas frecuentes</a></li>
+					<li><a href="../pages/envios.html" class="menu__item--color menu__item--fontFamily item--fontSize">Envíos</a></li>
+					<li><a href="#" class="menu__item--color menu__item--fontFamily item--fontSize">Contacto</a></li>
+				</ul>
+			</nav>
+			<!-- cierre NAV -->
+
+			<!-- inicio ICONO CARRITO COMPRAS -->
+			<div class="carrito">
+				<i class="fas fa-cart-plus carritoCompras carrito__icono--color carrito__icono-size"></i>
+			</div>
+			<!-- cierre ICONO CARRITO COMPRAS -->
+
+		<!-- cierre header -->
+
+        <!-- inicio contenido -->
+        <article class="containerContacto">	
+            <!-- inicio encabezado form -->
+            <div class="tituloContacto" data-aos="fade-up">
+                <h1>CONTACTO</h1>
+            </div>
+            <div class="encabezadoContacto">
+                <h2>Contactanos</h2>
+                <p>Hacenos tu consulta o sugerencia completando el formulario.</p>
+                <!-- cierre encabezado form -->
+
+                <!-- inicio formulario contacto -->
+                <form action="#">
+
+                    <input type="text" placeholder="Nombre y apellido" class="formatoFormulario">
+                    <input type="telefono" placeholder="Teléfono" class="formatoFormulario">
+                    <input type="email" placeholder="Correo electrónico" class="formatoFormulario">
+                    <select name="temas" class="formatoFormulario">
+                        <option value="horarios">Horarios</option>
+                        <option value="envios">Envios</option>
+                        <option value="reclamos">Reclamos</option>	
+                    </select>
+                    <textarea cols="30" rows="10" placeholder="Consulta" required class="formatoFormulario"></textarea>
+                    <p class="textoFormulario">¿En qué horario preferís que te contactemos?</p>
+                    <div class="botonesRadioCheckbox">
+                        <label class="textoFormulario">Mañana <input type="radio" name="llamarSi" class="botonRadio"></label>
+                        <label class="textoFormulario textoBotones">Mediodía <input type="radio" name="llamarSi"></label>
+                        <label class="textoFormulario textoBotones">Tarde <input type="radio" name="llamarSi"></label>
+                    </div>
+                    <p class="textoFormulario">¿Te gustaría que te enviemos novedades de Teneme en Casa?</p>
+                    <div class="botonesRadioCheckbox2">
+                        <label class="textoFormulario textoBotones">Si <input type="checkbox" name="novedades"></label>
+                        <label class="textoFormulario textoBotones">No <input type="checkbox" name="novedades"></label>
+                    </div>
+                    <div class="botonesForm">
+                        <input type="submit" value="Enviar Consulta" class="boton">
+                        <input type="reset" value="Borrar Todo" class="boton">
+                    </div>		
+                </form>
+            </div>
+            <!-- cierre formulario contacto -->
+    </article>
+
+        <!-- cierre contenido -->
+
+        <!-- inicio footer -->
+		<footer>
+			<div class="footerGrid2 piePagina">
+				<div class="tituloTeneme">
+					<h4 class="tituloTeneme__titulo--color tituloTeneme__titulo--fontFamily tituloTeneme__titulo--fontSize">TENEME EN CASA</h4>
+				</div>
+				<!-- inicio LISTA NAV --> 
+				<div class="menuInferior">
+					<ul class="navFooter">
+						<li><a href="../pages/nosotros.html" class="menuInferior__item--color menuInferior__item--fontFamily menuInferior__item--fontSize">Nosotros</a></li>
+						<li><a href="../pages/productos.html" class="menuInferior__item--color menuInferior__item--fontFamily menuInferior__item--fontSize">Productos</a></li>
+						<li><a href="../pages/preguntas_frecuentes.html" class="menuInferior__item--color menuInferior__item--fontFamily menuInferior__item--fontSize">Preguntas frecuentes</a></li>
+						<li><a href="../pages/envios.html" class="menuInferior__item--color menuInferior__item--fontFamily menuInferior__item--fontSize">Envíos</a></li>
+						<li><a href="#" class="menuInferior__item--color menuInferior__item--fontFamily menuInferior__item--fontSize">Contacto</a></li>
+					</ul>
+				</div>
+				<!-- cierre LISTA NAV -->
+			
+				<!-- inicio ICONOS REDES SOCIALES Y METODOS DE PAGO -->
+				<div class="containerRedesSociales">
+					<div class="redes">
+						<ul>
+							<li><a href="#" class="fa fa-instagram redes__instagram--color redes__instagram--size"></a></li>
+							<li><a href="#" class="fa fa-facebook redes__facebook--color redes__facebook--size"></a></li>
+							<li><a href="#" class="fa fa-whatsapp redes__whatsapp--color redes__whatsapp--size"></a></li>
+						</ul>
+					</div>
+					<div class="pagos">
+						<ul>
+							<li><a href="#" class="far fa-money-bill-alt pagos__efectivo--color pagos__efectivo--size"></a></li>
+							<li><a href="#" class="fab fa-cc-mastercard pagos__mastercard--color pagos__mastercard--size"></a></li>
+							<li><a href="#" class="fab fa-cc-visa pagos__visa--color pagos__visa--size"></a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- cierre ICONOS REDES SOCIALES Y METODOS DE PAGO -->
+
+				<!-- inicio INGRESO A CUENTA USUARIO -->
+				<div class="ingresoRegistro">
+					<div class="cuenta">
+						<h5 class="cuenta_titulo--color cuenta__titulo--fontFamily cuenta__titulo--fontSize">¿Tenés cuenta?</h5>
+					</div>
+					<div class="ingresa">
+						<p class="ingresa__texto--color ingresa__texto--fontFamily ingresa__texto--fontSize">Ingresá</p>
+					</div>
+					<div class="registrarse">
+						<p class="registrarse__texto--color registrarse__texto--fontFamily registrarse__texto--fontSize">Registrarse</p>
+					</div>		
+				</div>			
+					<!-- cierre INGRESO A CUENTA USUARIO -->
+				</div>
+			</div>
+			
+			<!-- inicio Copyright -->
+			<div class="copyright">
+				<p class="copyright__texto--color copyright__texto--fontFamily copyright__fontSize">Designed by MPA Web Design</p>
+			<div>
+			<!-- cierre Copyright -->
+
+
+		</footer>
+		<!-- cierre footer -->
+
+
+
+    </div>
+</body>
+</html>

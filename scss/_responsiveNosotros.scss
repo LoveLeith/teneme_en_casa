@@ -1,0 +1,362 @@
+@import "colores";
+
+.gridContainerNosotros {
+    display: grid;
+    grid-template-areas:
+    "logo"
+    "encabezado"
+    "encabezado2"
+    "nosotros"
+    "redes"
+    "pagos"
+    "ingresoRegistro"
+    "copyright";
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    background-color: $backgroundColor;
+}
+
+header {
+    grid-area: logo;
+}
+
+.carrito {
+    grid-area: logo;
+}
+
+nav.navIzq {
+    grid-area: encabezado;
+}
+
+nav.navDer {
+    grid-area: encabezado2;
+}
+
+article .nosotros {
+    grid-area: nosotros;
+}
+
+.tituloTeneme {
+    display: none;
+}
+
+.menuInferior {
+    display: none;
+}
+
+.redes {
+    grid-area: redes;
+}
+
+.pagos {
+    grid-area: pagos;
+}
+
+.ingresoRegistro {
+    grid-area: ingresoRegistro;
+}
+
+/*----------------------------cierre Nosotros Vista Mobile First ------------------------------*/
+
+/*----------------------------inicio Nosotros Vista Tablet ----------------------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+
+    .gridContainerNosotros {
+        display: grid;
+        grid-template-areas: 
+        "encabezado logo encabezado2"
+        "nosotros nosotros nosotros"
+        "footer footer footer";
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        grid-template-rows: auto;
+        background-color: $backgroundColor;
+    }
+    
+    header {
+        grid-area: logo;
+    }
+    
+    .carrito {
+        grid-area: encabezado2;
+    }
+    
+    nav.navIzq {
+        grid-area: encabezado;
+        ul {
+            display: $flex;
+            justify-content: $spaceAround;
+            margin-top: 43px;
+            li {
+                padding: 5px;
+            a {
+                align-self: center;
+            }
+            }
+        }
+    }
+    
+    nav.navDer {
+        grid-area: encabezado2;
+        ul {
+            display: $flex;
+            justify-content: $spaceAround;
+            margin-top: 43px;
+            li {
+                padding: 5px;
+            a {
+                align-self: center;
+            }
+            }
+        }
+    }
+
+    nav.navIzq ul li a:hover, nav.navDer ul li a:hover {
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-out;
+        background-color: #edece7;
+        color: #ecce1f;
+        border-radius: 0px 20px;
+        padding: 10px;
+    }
+
+    nav.navIzq ul ul {
+        position: $positionabs;
+        display: none;
+        z-index: 1;
+        margin-top: 15px;
+        li {
+            display: block;
+            width: 150px;
+            background-color: $background-white;
+            border-radius: 3px;
+            margin-bottom: 5px;
+        a {
+            color: $black-font;
+        }
+        }
+    }
+    
+    .navIzq ul li:hover ul {
+        display: block;
+    }
+    
+    article {
+        grid-area: nosotros;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        background: radial-gradient(#49494f, #303030);
+    }
+
+    .containerImagenTexto {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        margin-top: 70px;
+        margin-bottom: 30px;
+    }
+
+    .imagen1 {
+        width: 230px;
+        height: 200px;
+        padding: 15px;
+        margin-left: 45px;
+        border: none;
+        border-radius: 3px;
+        box-shadow: 0px 0px 20px #ffffff;
+        margin-bottom: 5px;
+        transform: rotate(-45deg);
+    }
+
+    .imagen2 {
+        width: 230px;
+        height: 200px;
+        padding: 15px;
+        margin-left: 100px;
+        border: none;
+        border-radius: 3px;
+        box-shadow: 0px 0px 30px #ffffff;
+        transform: rotate(45deg);
+    }
+
+    .textoNosotros {
+        display: flex;
+        justify-content: flex-end;
+        align-content: center;
+        padding: 50px;
+        p {
+            font-size: 18px;
+        }
+    }
+    
+    footer {
+        grid-area: footer;
+    }
+
+}
+
+
+/*----------------------------cierre Nosotros Vista Tablet ----------------------------------*/
+
+/*----------------------------cierre Nosotros Vista Desktop ----------------------------------*/
+
+@media only screen and (min-width: 1024px) {
+
+    .gridContainerNosotros {
+        display: grid;
+        grid-template-areas: 
+        "encabezado encabezado logo logo encabezado2 encabezado2"
+        "nosotros nosotros nosotros nosotros nosotros nosotros"
+        "footer footer footer footer footer footer";
+        grid-template-columns: 16.666% 16.666% 16.666% 16.666% 16.666% 16.666%;
+        grid-template-rows: auto;
+        background-color: $backgroundColor;
+    }
+
+    header {
+        grid-area: logo;
+    }
+
+    div.carrito {
+        grid-area: encabezado2;
+    }
+
+    nav.navIzq {
+        grid-area: encabezado;
+        ul {
+            display: $flex;
+            justify-content: $spaceAround;
+            font-size: 18px;
+            margin-top: 80px;
+        li {
+            padding: 5px;
+        a {
+            align-self: center;
+        }
+        }
+        }
+    }
+
+    nav.navDer {
+        grid-area: encabezado2;
+        ul {
+            display: $flex;
+            justify-content: $spaceAround;
+            font-size: 18px;
+            margin-top: 80px;
+        li {
+            padding: 5px;
+        a {
+            align-self: center;
+        }
+        }
+        }
+    }
+
+    nav.navIzq ul li a:hover, nav.navDer ul li a:hover {
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-out;
+        background-color: #edece7;
+        color: #ecce1f;
+        border-radius: 0px 20px;
+        padding: 10px;
+    }
+
+    nav.navIzq ul ul {
+        position: $positionabs;
+        display: none;
+        z-index: 1;
+        margin-top: 15px;
+        li {
+            display: block;
+            width: 150px;
+            background-color: $background-white;
+            border-radius: 3px;
+            margin-bottom: 5px;
+        a {
+            color: $black-font;
+        }
+        }
+    }
+
+    .navIzq ul li:hover ul {
+        display: block;
+    }
+
+    article {
+        grid-area: nosotros;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        background: radial-gradient(#49494f, #303030);
+    }
+
+    .containerImagenTexto {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        margin-bottom: 70px;
+    }
+
+    .imagen1 {
+        width: 230px;
+        height: 200px;
+        padding: 15px;
+        margin-left: 90px;
+        border: none;
+        border-radius: 3px;
+        box-shadow: 0px 0px 20px #ffffff;
+        margin-bottom: 5px;
+        transform: rotate(-45deg);
+    }
+
+    .imagen2 {
+        width: 230px;
+        height: 200px;
+        padding: 15px;
+        margin-left: 200px;
+        border: none;
+        border-radius: 3px;
+        box-shadow: 0px 0px 30px #ffffff;
+        transform: rotate(45deg);
+    }
+
+    .textoNosotros {
+        display: flex;
+        justify-content: flex-end;
+        align-content: center;
+        padding: 100px;
+        p {
+            font-size: 18px;
+        }
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+    footer .tituloTeneme {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 10px;
+    }
+
+    footer .menuInferior {
+        display: $flex;
+	    justify-content: $justify-flex-end;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        ul li {
+            list-style-type: none;
+            padding: 5px;
+        a {
+            text-decoration: none;
+        }
+        }
+    }
+
+}
+/*----------------------------cierre Nosotros Vista Desktop ----------------------------------*/

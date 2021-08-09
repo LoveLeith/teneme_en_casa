@@ -1,0 +1,215 @@
+@import "colores";
+
+$marginBottomNavMobile:0px;
+$paddingNavLiMobile:10px;
+$paddingZero: 0px;
+$marginZero: 0px;
+
+
+$flex:flex;
+$justify-center:center;
+$inlineFlex:inline-flex;
+$spaceAround:space-around;
+$justify-flex-end: flex-end;
+$justify-flex-start: flex-start;
+
+@mixin flex-justify-center {
+	display:$flex;
+	justify-content: $justify-center;
+}
+
+@mixin flex-justify-align-content {
+	display:$flex;
+	justify-content: center;
+	align-content: center;
+}
+
+@mixin flex-row-justify {
+	display: $flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+@mixin justify-flex-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@mixin justify-space-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+@mixin justify-flex-start {
+    display: flex;
+    justify-content: flex-start;
+}
+
+$positionabs:absolute;
+$positionrel:relative;
+$positionTop:20px;
+$positionRight:20px;
+
+@mixin position-absolute {
+	position: $positionabs;
+	top: 20px;
+	top: 20px;
+}
+
+/*map-get*/
+$estilos: (
+  tpadding:10px,
+  tmargin:10px,
+  alineacionTexto: justify,
+  paddingTexto1: 10px 15px
+);
+
+$border-none: none;
+$border-top: 2px solid white;
+
+@media only screen and (max-width: 768px){
+	* { margin: 0; padding: 0; }
+	
+	.imgFluid { width: 99%; }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+	* { margin: 0; padding: 0; }
+	
+	.imgFluid { width: 100%; }
+}
+@media only screen and (min-width: 1024px) {
+	* { margin: 0; padding: 0; }
+	
+	.imgFluid { width: 100%; }
+
+}
+
+.borde {
+    border: 1px solid $colorLines;
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    border: $border-none;
+    }
+    @media only screen and (min-width: 1024px) {
+    border: $border-none;
+    }
+}
+
+div.carrito {
+	@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	position: $positionabs;
+	top: 20px;
+	right: 20px;}
+}
+
+.paddingCarousel {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.container-fluid, footer, article, .presentacionProductos {
+    border-top: $border-top;
+}
+
+footer {
+	@media only screen and (min-width: 768px) and (max-width: 1024px){
+	border-top: $border-top;
+    }
+}
+
+.footerGrid2 {
+    @media only screen and (min-width: 768px) and (max-width: 1024px){
+	@include justify-space-around;
+    padding: 20px;
+    }
+    @media only screen and (min-width: 1024px) {
+    @include justify-space-around;
+    padding: 20px;
+    }
+}
+
+.containerRedesSociales {
+    border: 1px solid $colorLines;
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    border: $border-none;
+    }
+    @media only screen and (min-width: 1024px) {
+    border: $border-none;
+    }
+}
+
+.cuenta, .ingresa, .registrarse {
+    @include flex-justify-center;
+}
+
+.ingresoRegistro h5 {
+    margin-top: 10px;
+}
+
+.ingresa p, .registrarse p {
+    line-height: 1.5;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.copyright {
+    @include justify-flex-end;
+    p {
+        margin-right: 20px;
+    }
+}
+
+/*------------------seccion Nosotros Mobile First-----------------------*/
+
+.tituloSeccion h1 {
+	@include flex-justify-center;
+}
+
+.tituloSeccion h1 {
+	padding: map-get($estilos, tpadding);
+	margin: map-get($estilos, tmargin);
+    @media only screen and (min-width: 1024px) {
+    padding: 30px;
+    }
+}
+
+.imagen1, .imagen2 {
+	@include flex-justify-align-content;
+	border: 1px solid $colorLines;
+}
+
+.textoNosotros {
+	@include flex-row-justify;
+}
+
+.texto1, .texto2 {
+	@include flex-justify-align-content;
+	padding: map-get($estilos, paddingTexto1);
+}
+
+/*-----------------------cierre seccion Nosotros Mobile First-----------------------*/
+/*-----------------------inicio seccion Nosotros Vista Tablet-----------------------*/
+
+.categoriasProductos {
+    @media only screen and (max-width: 768px){
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    }
+}
+
+.tituloProductos {
+    @media only screen and (max-width: 768px){
+    @include flex-justify-center;
+    }
+}
+
+.tituloProductos__titulo--padding {
+    padding: 10px;
+}
+
+.card-text {
+    text-align: center;
+}
+
+
+/*-----------------------cierre seccion Nosotros Vista Tablet-----------------------*/

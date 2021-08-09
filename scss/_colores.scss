@@ -1,0 +1,56 @@
+$backgroundColor:#303030;
+$carritoColor:#fdfdfd;
+$colorFont:white;
+$colorLines: white;
+$background-white: white;
+$black-font: black;
+
+/*map-get*/
+$estilos: (
+  color: white,
+  mayuscula: uppercase,
+);
+
+.carrito__icono--color {
+    color: $carritoColor;
+}
+
+.tituloTeneme__titulo--color {
+    color: $colorFont;
+}
+
+.menu__item--color {
+    color: $colorFont;
+}
+
+.menuInferior__item--color, .redes__instagram--color, .redes__facebook--color, .redes__whatsapp--color, .pagos__efectivo--color, .pagos__mastercard--color, .pagos__visa--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
+    color: $colorFont;
+}
+
+.copyright {
+    background-color: #b0afa4;;
+}
+
+/*-------------------seccion Nosotros----------------*/
+
+.tituloSeccion h1 {
+    color: map-get($estilos, color);
+    text-transform: map-get($estilos, mayuscula);
+}
+
+.texto1, .texto2 {
+	color: map-get($estilos, color);
+}
+
+footer {
+    @media only screen and (max-width: 768px){
+    background-color: $backgroundColor;
+    }
+}
+
+/*-------------------seccion Productos--------------------*/
+
+.tituloProductos__titulo--color {
+    color: $colorFont;
+}
+
