@@ -49,6 +49,22 @@
   color: white;
 }
 
+.btn {
+  color: white;
+}
+
+.btn-link {
+  color: white;
+}
+
+.btn-link:hover {
+  color: white;
+}
+
+.respuesta {
+  color: #c4bfbe;
+}
+
 /*map-get*/
 @media only screen and (max-width: 768px) {
   * {
@@ -293,6 +309,11 @@
   text-align: center;
 }
 
+.respuesta {
+  text-align: left;
+  margin-left: 20px;
+}
+
 /*map-get*/
 .carrito__icono--color {
   color: #fdfdfd;
@@ -342,6 +363,22 @@
 
 .tituloPreguntas__titulo--color {
   color: white;
+}
+
+.btn {
+  color: white;
+}
+
+.btn-link {
+  color: white;
+}
+
+.btn-link:hover {
+  color: white;
+}
+
+.respuesta {
+  color: #c4bfbe;
 }
 
 /*------------------inicio Index Vista Mobile First ---------------------*/
@@ -952,55 +989,14 @@ section {
   font-size: 33px;
 }
 
-/*map-get*/
-.carrito__icono--color {
-  color: #fdfdfd;
+.btn {
+  font-family: forum;
+  font-size: 20px;
 }
 
-.tituloTeneme__titulo--color {
-  color: white;
-}
-
-.menu__item--color {
-  color: white;
-}
-
-.menuInferior__item--color, .redes__instagram--color, .redes__facebook--color, .redes__whatsapp--color, .pagos__efectivo--color, .pagos__mastercard--color, .pagos__visa--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
-  color: white;
-}
-
-.copyright {
-  background-color: #b0afa4;
-}
-
-/*-------------------seccion Nosotros----------------*/
-.tituloSeccion h1 {
-  color: white;
-  text-transform: uppercase;
-}
-
-.texto1, .texto2 {
-  color: white;
-}
-
-@media only screen and (max-width: 768px) {
-  footer {
-    background-color: #303030;
-  }
-}
-
-/*-------------------seccion Productos--------------------*/
-.tituloProductos__titulo--color {
-  color: white;
-}
-
-/*----------------seccion Preguntas Frecuentes-------------*/
-.card {
-  background: radial-gradient(#49494f, #303030);
-}
-
-.tituloPreguntas__titulo--color {
-  color: white;
+.respuesta {
+  font-family: forum;
+  font-size: 18px;
 }
 
 /*map-get*/
@@ -1052,6 +1048,89 @@ section {
 
 .tituloPreguntas__titulo--color {
   color: white;
+}
+
+.btn {
+  color: white;
+}
+
+.btn-link {
+  color: white;
+}
+
+.btn-link:hover {
+  color: white;
+}
+
+.respuesta {
+  color: #c4bfbe;
+}
+
+/*map-get*/
+.carrito__icono--color {
+  color: #fdfdfd;
+}
+
+.tituloTeneme__titulo--color {
+  color: white;
+}
+
+.menu__item--color {
+  color: white;
+}
+
+.menuInferior__item--color, .redes__instagram--color, .redes__facebook--color, .redes__whatsapp--color, .pagos__efectivo--color, .pagos__mastercard--color, .pagos__visa--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
+  color: white;
+}
+
+.copyright {
+  background-color: #b0afa4;
+}
+
+/*-------------------seccion Nosotros----------------*/
+.tituloSeccion h1 {
+  color: white;
+  text-transform: uppercase;
+}
+
+.texto1, .texto2 {
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  footer {
+    background-color: #303030;
+  }
+}
+
+/*-------------------seccion Productos--------------------*/
+.tituloProductos__titulo--color {
+  color: white;
+}
+
+/*----------------seccion Preguntas Frecuentes-------------*/
+.card {
+  background: radial-gradient(#49494f, #303030);
+}
+
+.tituloPreguntas__titulo--color {
+  color: white;
+}
+
+.btn {
+  color: white;
+}
+
+.btn-link {
+  color: white;
+}
+
+.btn-link:hover {
+  color: white;
+}
+
+.respuesta {
+  color: #c4bfbe;
 }
 
 .gridContainerNosotros {
@@ -1546,6 +1625,22 @@ article .nosotros {
   color: white;
 }
 
+.btn {
+  color: white;
+}
+
+.btn-link {
+  color: white;
+}
+
+.btn-link:hover {
+  color: white;
+}
+
+.respuesta {
+  color: #c4bfbe;
+}
+
 /*------------------------inicio Productos Vista Mobile First---------------------------*/
 .gridProductos {
   display: -ms-grid;
@@ -1889,6 +1984,22 @@ nav.navDer ul li a {
 
 .tituloPreguntas__titulo--color {
   color: white;
+}
+
+.btn {
+  color: white;
+}
+
+.btn-link {
+  color: white;
+}
+
+.btn-link:hover {
+  color: white;
+}
+
+.respuesta {
+  color: #c4bfbe;
 }
 
 /*------------------------inicio Preguntas Frecuentes Vista Mobile First---------------------------*/

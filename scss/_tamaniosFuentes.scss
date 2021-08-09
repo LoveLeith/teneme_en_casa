@@ -74,3 +74,13 @@ $estilos: (
 .tituloPreguntas__titulo--fontSize {
     font-size: 33px;
 }
+
+.btn {
+    font-family: $forum;
+    font-size: 20px;
+}
+
+.respuesta {
+    font-family: map-get($estilos, fuente);
+    font-size: 18px;
+}
