@@ -935,6 +935,10 @@ section {
   font-weight: bold;
 }
 
+.tituloPreguntas__titulo--fontFamily {
+  font-family: forum;
+}
+
 /*map-get*/
 .carrito__icono--color {
   color: #fdfdfd;
