@@ -173,6 +173,13 @@
   text-align: center; }
 
 /*-----------------------cierre seccion Nosotros Vista Tablet-----------------------*/
+.tituloPreguntas__titulo--padding {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+.tituloPreguntas__titulo--text-align {
+  text-align: center; }
+
 /*map-get*/
 .carrito__icono--color {
   color: #fdfdfd; }
@@ -576,6 +583,12 @@ section {
 .card-text {
   font-family: forum;
   font-weight: bold; }
+
+.tituloPreguntas__titulo--fontFamily {
+  font-family: forum; }
+
+.tituloPreguntas__titulo--fontSize {
+  font-size: 33px; }
 
 /*map-get*/
 .carrito__icono--color {
