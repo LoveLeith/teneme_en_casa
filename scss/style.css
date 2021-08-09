@@ -41,6 +41,10 @@
 }
 
 /*----------------seccion Preguntas Frecuentes-------------*/
+.card {
+  background: radial-gradient(#49494f, #303030);
+}
+
 /*map-get*/
 @media only screen and (max-width: 768px) {
   * {
@@ -319,6 +323,10 @@
 }
 
 /*----------------seccion Preguntas Frecuentes-------------*/
+.card {
+  background: radial-gradient(#49494f, #303030);
+}
+
 /*------------------inicio Index Vista Mobile First ---------------------*/
 .gridContainer {
   display: -ms-grid;
@@ -962,6 +970,10 @@ section {
 }
 
 /*----------------seccion Preguntas Frecuentes-------------*/
+.card {
+  background: radial-gradient(#49494f, #303030);
+}
+
 /*map-get*/
 .carrito__icono--color {
   color: #fdfdfd;
@@ -1005,6 +1017,10 @@ section {
 }
 
 /*----------------seccion Preguntas Frecuentes-------------*/
+.card {
+  background: radial-gradient(#49494f, #303030);
+}
+
 .gridContainerNosotros {
   display: -ms-grid;
   display: grid;
@@ -1489,6 +1505,10 @@ article .nosotros {
 }
 
 /*----------------seccion Preguntas Frecuentes-------------*/
+.card {
+  background: radial-gradient(#49494f, #303030);
+}
+
 /*------------------------inicio Productos Vista Mobile First---------------------------*/
 .gridProductos {
   display: -ms-grid;
@@ -1826,6 +1846,10 @@ nav.navDer ul li a {
 }
 
 /*----------------seccion Preguntas Frecuentes-------------*/
+.card {
+  background: radial-gradient(#49494f, #303030);
+}
+
 /*------------------------inicio Preguntas Frecuentes Vista Mobile First---------------------------*/
 .gridPreguntasFrecuentes {
   display: -ms-grid;
