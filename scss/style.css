@@ -989,6 +989,11 @@ section {
   font-size: 20px;
 }
 
+.respuesta {
+  font-family: forum;
+  font-size: 18px;
+}
+
 /*map-get*/
 .carrito__icono--color {
   color: #fdfdfd;
