@@ -67,8 +67,20 @@ nav.navDer {
 /*------------------------------------Inicio Preguntas Frecuentes Vista Tablet-----------------------------------*/
 
 @media only screen and (min-width: 768px) and (max-width: 1024px){
-    
+    .gridContainer {
+        display:  grid;
+        grid-template-areas: 
+        "encabezado logo encabezado2"
+        "carrousel carrousel carrousel"
+        "footer footer footer";
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        grid-template-rows: auto;
+        background-color: #303030;
+    }
 
+    header {
+        grid-area: logo;
+    }
 
 
 
