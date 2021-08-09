@@ -907,7 +907,7 @@ article .nosotros {
   color: white; }
 
 /*------------------------inicio Productos Vista Mobile First---------------------------*/
-div.gridContainerProductos {
+.gridProductos {
   display: grid;
   grid-template-areas: "logo" "encabezado" "encabezado2" "productos" "redes" "pagos" "ingresoRegistro" "copyright";
   grid-template-columns: 100%;
