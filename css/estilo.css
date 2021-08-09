@@ -34,6 +34,9 @@
 .card {
   background: radial-gradient(#49494f, #303030); }
 
+.tituloPreguntas__titulo--color {
+  color: white; }
+
 /*map-get*/
 @media only screen and (max-width: 768px) {
   * {
@@ -205,6 +208,9 @@
 /*----------------seccion Preguntas Frecuentes-------------*/
 .card {
   background: radial-gradient(#49494f, #303030); }
+
+.tituloPreguntas__titulo--color {
+  color: white; }
 
 /*------------------inicio Index Vista Mobile First ---------------------*/
 .gridContainer {
@@ -607,6 +613,9 @@ section {
 .card {
   background: radial-gradient(#49494f, #303030); }
 
+.tituloPreguntas__titulo--color {
+  color: white; }
+
 /*map-get*/
 .carrito__icono--color {
   color: #fdfdfd; }
@@ -642,6 +651,9 @@ section {
 /*----------------seccion Preguntas Frecuentes-------------*/
 .card {
   background: radial-gradient(#49494f, #303030); }
+
+.tituloPreguntas__titulo--color {
+  color: white; }
 
 .gridContainerNosotros {
   display: grid;
@@ -926,6 +938,9 @@ article .nosotros {
 .card {
   background: radial-gradient(#49494f, #303030); }
 
+.tituloPreguntas__titulo--color {
+  color: white; }
+
 /*------------------------inicio Productos Vista Mobile First---------------------------*/
 .gridProductos {
   display: grid;
@@ -1119,6 +1134,9 @@ nav.navDer {
 /*----------------seccion Preguntas Frecuentes-------------*/
 .card {
   background: radial-gradient(#49494f, #303030); }
+
+.tituloPreguntas__titulo--color {
+  color: white; }
 
 /*------------------------inicio Preguntas Frecuentes Vista Mobile First---------------------------*/
 .gridPreguntasFrecuentes {
