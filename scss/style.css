@@ -309,6 +309,11 @@
   text-align: center;
 }
 
+.respuesta {
+  text-align: left;
+  margin-left: 20px;
+}
+
 /*map-get*/
 .carrito__icono--color {
   color: #fdfdfd;
