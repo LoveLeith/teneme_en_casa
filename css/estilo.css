@@ -596,6 +596,10 @@ section {
 .tituloPreguntas__titulo--fontSize {
   font-size: 33px; }
 
+.btn {
+  font-family: forum;
+  font-size: 20px; }
+
 /*map-get*/
 .carrito__icono--color {
   color: #fdfdfd; }
