@@ -40,6 +40,10 @@
   color: white;
 }
 
+.card-text {
+  color: white;
+}
+
 /*----------------seccion Preguntas Frecuentes-------------*/
 .card {
   background: radial-gradient(#49494f, #303030);
@@ -353,6 +357,10 @@
 
 /*-------------------seccion Productos--------------------*/
 .tituloProductos__titulo--color {
+  color: white;
+}
+
+.card-text {
   color: white;
 }
 
@@ -1041,6 +1049,10 @@ section {
   color: white;
 }
 
+.card-text {
+  color: white;
+}
+
 /*----------------seccion Preguntas Frecuentes-------------*/
 .card {
   background: radial-gradient(#49494f, #303030);
@@ -1105,6 +1117,10 @@ section {
 
 /*-------------------seccion Productos--------------------*/
 .tituloProductos__titulo--color {
+  color: white;
+}
+
+.card-text {
   color: white;
 }
 
@@ -1616,6 +1632,10 @@ article .nosotros {
   color: white;
 }
 
+.card-text {
+  color: white;
+}
+
 /*----------------seccion Preguntas Frecuentes-------------*/
 .card {
   background: radial-gradient(#49494f, #303030);
@@ -1974,6 +1994,10 @@ nav.navDer ul li a {
 
 /*-------------------seccion Productos--------------------*/
 .tituloProductos__titulo--color {
+  color: white;
+}
+
+.card-text {
   color: white;
 }
 

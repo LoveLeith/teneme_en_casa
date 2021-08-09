@@ -30,6 +30,9 @@
 .tituloProductos__titulo--color {
   color: white; }
 
+.card-text {
+  color: white; }
+
 /*----------------seccion Preguntas Frecuentes-------------*/
 .card {
   background: radial-gradient(#49494f, #303030); }
@@ -226,6 +229,9 @@
 
 /*-------------------seccion Productos--------------------*/
 .tituloProductos__titulo--color {
+  color: white; }
+
+.card-text {
   color: white; }
 
 /*----------------seccion Preguntas Frecuentes-------------*/
@@ -658,6 +664,9 @@ section {
 .tituloProductos__titulo--color {
   color: white; }
 
+.card-text {
+  color: white; }
+
 /*----------------seccion Preguntas Frecuentes-------------*/
 .card {
   background: radial-gradient(#49494f, #303030); }
@@ -707,6 +716,9 @@ section {
 
 /*-------------------seccion Productos--------------------*/
 .tituloProductos__titulo--color {
+  color: white; }
+
+.card-text {
   color: white; }
 
 /*----------------seccion Preguntas Frecuentes-------------*/
@@ -1007,6 +1019,9 @@ article .nosotros {
 .tituloProductos__titulo--color {
   color: white; }
 
+.card-text {
+  color: white; }
+
 /*----------------seccion Preguntas Frecuentes-------------*/
 .card {
   background: radial-gradient(#49494f, #303030); }
@@ -1214,6 +1229,9 @@ nav.navDer {
 
 /*-------------------seccion Productos--------------------*/
 .tituloProductos__titulo--color {
+  color: white; }
+
+.card-text {
   color: white; }
 
 /*----------------seccion Preguntas Frecuentes-------------*/
