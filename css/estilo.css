@@ -203,8 +203,12 @@
   margin-left: 20px; }
 
 /*-----------------------inicio seccion Productos Vista Desktop-----------------------*/
-.presentacionProductos {
-  padding: 20px; }
+@media only screen and (min-width: 1024px) {
+  .presentacionProductos {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    padding: 20px; } }
 
 /*map-get*/
 .carrito__icono--color {
@@ -1212,10 +1216,7 @@ nav.navDer {
   .carrito {
     grid-area: encabezado2; }
   main.presentacionProductos {
-    grid-area: productos;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around; }
+    grid-area: productos; }
   footer {
     grid-area: footer;
     background-color: #303030; } }
