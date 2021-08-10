@@ -304,6 +304,10 @@ footer {
     padding: 20px;
 }
 
-.tituloEnvios__titulo--textAlign {
+.tituloEnvios__titulo--textAlign, .texto--textalign {
     text-align: center;
+}
+
+.texto--padding  {
+    padding: 5px;
 }

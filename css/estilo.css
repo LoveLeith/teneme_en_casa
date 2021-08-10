@@ -40,7 +40,7 @@
 .card {
   background: radial-gradient(#49494f, #303030); }
 
-.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color {
+.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color {
   color: white; }
 
 .btn {
@@ -264,8 +264,11 @@
 .tituloEnvios__titulo--padding {
   padding: 20px; }
 
-.tituloEnvios__titulo--textAlign {
+.tituloEnvios__titulo--textAlign, .texto--textalign {
   text-align: center; }
+
+.texto--padding {
+  padding: 5px; }
 
 /*map-get*/
 .carrito__icono--color {
@@ -309,7 +312,7 @@
 .card {
   background: radial-gradient(#49494f, #303030); }
 
-.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color {
+.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color {
   color: white; }
 
 .btn {
@@ -696,7 +699,7 @@ section {
   font-family: forum;
   font-weight: bold; }
 
-.tituloPreguntas__titulo--fontFamily, .tituloEnvios__titulo--fontFamily {
+.tituloPreguntas__titulo--fontFamily, .tituloEnvios__titulo--fontFamily, .texto--fontFamily {
   font-family: forum; }
 
 .tituloPreguntas__titulo--fontSize, .tituloEnvios__titulo--fontSize {
@@ -712,6 +715,9 @@ section {
 .respuesta {
   font-family: forum;
   font-size: 18px; }
+
+.texto--fontSize {
+  font-size: 17px; }
 
 /*map-get*/
 .carrito__icono--color {
@@ -755,7 +761,7 @@ section {
 .card {
   background: radial-gradient(#49494f, #303030); }
 
-.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color {
+.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color {
   color: white; }
 
 .btn {
@@ -816,7 +822,7 @@ section {
 .card {
   background: radial-gradient(#49494f, #303030); }
 
-.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color {
+.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color {
   color: white; }
 
 .btn {
@@ -1124,7 +1130,7 @@ article .nosotros {
 .card {
   background: radial-gradient(#49494f, #303030); }
 
-.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color {
+.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color {
   color: white; }
 
 .btn {
@@ -1343,7 +1349,7 @@ nav.navDer {
 .card {
   background: radial-gradient(#49494f, #303030); }
 
-.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color {
+.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color {
   color: white; }
 
 .btn {
@@ -1494,7 +1500,7 @@ nav.navDer {
 .card {
   background: radial-gradient(#49494f, #303030); }
 
-.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color {
+.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color {
   color: white; }
 
 .btn {
