@@ -201,8 +201,15 @@
 
 /*--------------------inicio seccion Preguntas Frecuentes---------------------*/
 .containerPreguntasRespuestas {
-  padding: 25px;
-  margin-bottom: 50px; }
+  padding: 25px; }
+
+@media only screen and (max-width: 768px) {
+  .acordeon--paddingBottom {
+    padding-bottom: 30px; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .acordeon--paddingBottom {
+    padding-bottom: 50px; } }
 
 /*map-get*/
 .carrito__icono--color {
@@ -1327,11 +1334,23 @@ nav.navDer {
 /*------------------------------------cierre Preguntas Frecuentes Vista Tablet-----------------------------------*/
 /*------------------------------------inicio Preguntas Frecuentes Vista Desktop-----------------------------------*/
 @media only screen and (min-width: 1024px) {
-  .gridContainerPreguntasFrecuentes {
+  .gridPreguntasFrecuentes {
     display: grid;
     grid-template-areas: "encabezado encabezado logo logo encabezado2 encabezado2" "preguntas preguntas preguntas preguntas preguntas preguntas" "footer footer footer footer footer footer";
     grid-template-columns: 16.666% 16.666% 16.666% 16.666% 16.666% 16.666%;
     grid-template-rows: auto 800px auto auto;
-    background-color: #303030; } }
+    background-color: #303030; }
+  header {
+    grid-area: logo; }
+  .carrito {
+    grid-area: encabezado2; }
+  nav.navIzq {
+    grid-area: encabezado; }
+  nav.navDer {
+    grid-area: encabezado2; }
+  .containerPreguntasRespuestas {
+    grid-area: preguntas; }
+  footer {
+    grid-area: footer; } }
 
 /*------------------------------------cierre Preguntas Frecuentes Vista Desktop-----------------------------------*/
