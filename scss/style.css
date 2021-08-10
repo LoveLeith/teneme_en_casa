@@ -2446,4 +2446,10 @@ nav.navDer {
   -ms-grid-column: 1;
   grid-area: encabezado2;
 }
+
+.enviosDomicilio {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: envios;
+}
 /*# sourceMappingURL=style.css.map */
