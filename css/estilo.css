@@ -40,7 +40,7 @@
 .card {
   background: radial-gradient(#49494f, #303030); }
 
-.tituloPreguntas__titulo--color {
+.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color {
   color: white; }
 
 .btn {
@@ -260,6 +260,13 @@
     justify-content: space-around;
     padding: 20px; } }
 
+/*---------------------inicio seccion Envios Vista Mobile ----------------------------*/
+.tituloEnvios__titulo--padding {
+  padding: 20px; }
+
+.tituloEnvios__titulo--textAlign {
+  text-align: center; }
+
 /*map-get*/
 .carrito__icono--color {
   color: #fdfdfd; }
@@ -302,7 +309,7 @@
 .card {
   background: radial-gradient(#49494f, #303030); }
 
-.tituloPreguntas__titulo--color {
+.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color {
   color: white; }
 
 .btn {
@@ -689,13 +696,13 @@ section {
   font-family: forum;
   font-weight: bold; }
 
-.tituloPreguntas__titulo--fontFamily {
+.tituloPreguntas__titulo--fontFamily, .tituloEnvios__titulo--fontFamily {
   font-family: forum; }
 
-.tituloPreguntas__titulo--fontSize {
+.tituloPreguntas__titulo--fontSize, .tituloEnvios__titulo--fontSize {
   font-size: 33px; }
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .tituloPreguntas__titulo--fontSize {
+    .tituloPreguntas__titulo--fontSize, .tituloEnvios__titulo--fontSize {
       font-size: 40px; } }
 
 .btn {
@@ -748,7 +755,7 @@ section {
 .card {
   background: radial-gradient(#49494f, #303030); }
 
-.tituloPreguntas__titulo--color {
+.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color {
   color: white; }
 
 .btn {
@@ -809,7 +816,7 @@ section {
 .card {
   background: radial-gradient(#49494f, #303030); }
 
-.tituloPreguntas__titulo--color {
+.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color {
   color: white; }
 
 .btn {
@@ -1117,7 +1124,7 @@ article .nosotros {
 .card {
   background: radial-gradient(#49494f, #303030); }
 
-.tituloPreguntas__titulo--color {
+.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color {
   color: white; }
 
 .btn {
@@ -1336,7 +1343,7 @@ nav.navDer {
 .card {
   background: radial-gradient(#49494f, #303030); }
 
-.tituloPreguntas__titulo--color {
+.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color {
   color: white; }
 
 .btn {
@@ -1487,7 +1494,7 @@ nav.navDer {
 .card {
   background: radial-gradient(#49494f, #303030); }
 
-.tituloPreguntas__titulo--color {
+.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color {
   color: white; }
 
 .btn {

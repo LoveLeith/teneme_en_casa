@@ -53,7 +53,7 @@
   background: radial-gradient(#49494f, #303030);
 }
 
-.tituloPreguntas__titulo--color {
+.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color {
   color: white;
 }
 
@@ -423,6 +423,15 @@
   }
 }
 
+/*---------------------inicio seccion Envios Vista Mobile ----------------------------*/
+.tituloEnvios__titulo--padding {
+  padding: 20px;
+}
+
+.tituloEnvios__titulo--textAlign {
+  text-align: center;
+}
+
 /*map-get*/
 .carrito__icono--color {
   color: #fdfdfd;
@@ -478,7 +487,7 @@
   background: radial-gradient(#49494f, #303030);
 }
 
-.tituloPreguntas__titulo--color {
+.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color {
   color: white;
 }
 
@@ -1107,16 +1116,16 @@ section {
   font-weight: bold;
 }
 
-.tituloPreguntas__titulo--fontFamily {
+.tituloPreguntas__titulo--fontFamily, .tituloEnvios__titulo--fontFamily {
   font-family: forum;
 }
 
-.tituloPreguntas__titulo--fontSize {
+.tituloPreguntas__titulo--fontSize, .tituloEnvios__titulo--fontSize {
   font-size: 33px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .tituloPreguntas__titulo--fontSize {
+  .tituloPreguntas__titulo--fontSize, .tituloEnvios__titulo--fontSize {
     font-size: 40px;
   }
 }
@@ -1186,7 +1195,7 @@ section {
   background: radial-gradient(#49494f, #303030);
 }
 
-.tituloPreguntas__titulo--color {
+.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color {
   color: white;
 }
 
@@ -1266,7 +1275,7 @@ section {
   background: radial-gradient(#49494f, #303030);
 }
 
-.tituloPreguntas__titulo--color {
+.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color {
   color: white;
 }
 
@@ -1787,7 +1796,7 @@ article .nosotros {
   background: radial-gradient(#49494f, #303030);
 }
 
-.tituloPreguntas__titulo--color {
+.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color {
   color: white;
 }
 
@@ -2161,7 +2170,7 @@ nav.navDer ul li a {
   background: radial-gradient(#49494f, #303030);
 }
 
-.tituloPreguntas__titulo--color {
+.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color {
   color: white;
 }
 
@@ -2421,7 +2430,7 @@ nav.navDer {
   background: radial-gradient(#49494f, #303030);
 }
 
-.tituloPreguntas__titulo--color {
+.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color {
   color: white;
 }
 

@@ -72,11 +72,11 @@ $estilos: (
     font-weight:bold;
 }
 
-.tituloPreguntas__titulo--fontFamily {
+.tituloPreguntas__titulo--fontFamily, .tituloEnvios__titulo--fontFamily {
     font-family: $forum;
 }
 
-.tituloPreguntas__titulo--fontSize {
+.tituloPreguntas__titulo--fontSize, .tituloEnvios__titulo--fontSize {
     font-size: 33px;
     @media only screen and (min-width: 768px) and (max-width: 1024px) {
     font-size: 40px;
