@@ -1349,7 +1349,10 @@ nav.navDer {
   nav.navDer {
     grid-area: encabezado2; }
   .containerPreguntasRespuestas {
-    grid-area: preguntas; }
+    grid-area: preguntas;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center; }
   footer {
     grid-area: footer; } }
 
