@@ -2980,7 +2980,6 @@ form {
 .formatoFormulario {
   width: 90%;
   padding: 3px;
-  /*display: block;*/
   border: 3px solid #e3c55b;
   border-radius: 5px;
   color: black;
@@ -3092,6 +3091,9 @@ form {
     -ms-grid-column-span: 3;
     grid-area: contacto;
   }
+  .formatoFormulario {
+    width: 600px;
+  }
   footer {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
@@ -3101,4 +3103,55 @@ form {
 }
 
 /*------------------------------------cierre Contacto Vista Tablet-----------------------------------*/
+/*------------------------------------Inicio Contacto Vista Desktop-----------------------------------*/
+@media only screen and (min-width: 1024px) {
+  .gridContacto {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "encabezado encabezado logo logo encabezado2 encabezado2" "contacto contacto contacto contacto contacto contacto" "footer footer footer footer footer footer";
+    -ms-grid-columns: 16.666% 16.666% 16.666% 16.666% 16.666% 16.666%;
+        grid-template-columns: 16.666% 16.666% 16.666% 16.666% 16.666% 16.666%;
+    -ms-grid-rows: auto 800px auto auto;
+        grid-template-rows: auto 800px auto auto;
+    background-color: #303030;
+  }
+  header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-area: logo;
+  }
+  .carrito {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2;
+    grid-area: encabezado2;
+  }
+  nav.navIzq {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: encabezado;
+  }
+  nav.navDer {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2;
+    grid-area: encabezado2;
+  }
+  .containerContacto {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-area: contacto;
+  }
+  footer {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-area: footer;
+  }
+}
+
+/*------------------------------------cierre Contacto Vista Desktop-----------------------------------*/
 /*# sourceMappingURL=style.css.map */
