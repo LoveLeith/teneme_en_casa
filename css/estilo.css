@@ -270,6 +270,10 @@
 .texto--padding {
   padding: 5px; }
 
+@media only screen and (max-width: 768px) {
+  .videoEnvios {
+    width: 100%; } }
+
 /*map-get*/
 .carrito__icono--color {
   color: #fdfdfd; }
