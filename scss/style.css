@@ -53,7 +53,7 @@
   background: radial-gradient(#49494f, #303030);
 }
 
-.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color {
+.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color, .titular__titulo--color {
   color: white;
 }
 
@@ -471,15 +471,15 @@
 }
 
 /*----------------------inicio Contacto Vista Mobile------------------------------*/
-.tituloContacto__titulo--padding {
+.titular__titulo--padding {
   padding: 20px;
 }
 
-.tituloContacto__titulo--margins {
+.titular__titulo--margins {
   margin-bottom: 20px;
 }
 
-.tituloContacto__titulo--textAlign {
+.titular__titulo--textAlign {
   text-align: center;
 }
 
@@ -538,7 +538,7 @@
   background: radial-gradient(#49494f, #303030);
 }
 
-.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color {
+.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color, .titular__titulo--color {
   color: white;
 }
 
@@ -1168,7 +1168,7 @@ section {
   font-weight: bold;
 }
 
-.tituloPreguntas__titulo--fontFamily, .tituloEnvios__titulo--fontFamily, .texto--fontFamily, .tituloContacto__titulo--fontFamily {
+.tituloPreguntas__titulo--fontFamily, .tituloEnvios__titulo--fontFamily, .texto--fontFamily, .titular__titulo--fontFamily {
   font-family: forum;
 }
 
@@ -1210,7 +1210,7 @@ section {
   padding: 40px;
 }
 
-.tituloContacto__titulo--fontSize {
+.titular__titulo--fontSize {
   font-size: 40px;
 }
 
@@ -1269,7 +1269,7 @@ section {
   background: radial-gradient(#49494f, #303030);
 }
 
-.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color {
+.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color, .titular__titulo--color {
   color: white;
 }
 
@@ -1350,7 +1350,7 @@ section {
   background: radial-gradient(#49494f, #303030);
 }
 
-.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color {
+.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color, .titular__titulo--color {
   color: white;
 }
 
@@ -1872,7 +1872,7 @@ article .nosotros {
   background: radial-gradient(#49494f, #303030);
 }
 
-.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color {
+.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color, .titular__titulo--color {
   color: white;
 }
 
@@ -2247,7 +2247,7 @@ nav.navDer ul li a {
   background: radial-gradient(#49494f, #303030);
 }
 
-.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color {
+.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color, .titular__titulo--color {
   color: white;
 }
 
@@ -2508,7 +2508,7 @@ nav.navDer {
   background: radial-gradient(#49494f, #303030);
 }
 
-.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color {
+.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color, .titular__titulo--color {
   color: white;
 }
 
@@ -2855,7 +2855,7 @@ nav.navDer {
   background: radial-gradient(#49494f, #303030);
 }
 
-.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color {
+.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color, .titular__titulo--color {
   color: white;
 }
 
