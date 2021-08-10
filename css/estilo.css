@@ -293,6 +293,7 @@
   .enviosDomicilio {
     border-top: 2px solid white; } }
 
+/*----------------------inicio Contacto Vista Mobile------------------------------*/
 /*map-get*/
 .carrito__icono--color {
   color: #fdfdfd; }
@@ -1773,7 +1774,12 @@ nav.navDer {
   grid-area: encabezado2; }
 
 .containerContacto {
-  grid-area: contacto; }
+  grid-area: contacto;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-content: center;
+  background: radial-gradient(#49494f, #303030); }
 
 .tituloTeneme {
   display: none; }

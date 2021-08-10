@@ -36,6 +36,11 @@ nav.navDer {
 
 .containerContacto {
     grid-area: contacto;
+    display: $flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+    background: radial-gradient(#49494f, #303030);
 }
 
 .tituloTeneme {

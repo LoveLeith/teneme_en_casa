@@ -469,6 +469,7 @@
   }
 }
 
+/*----------------------inicio Contacto Vista Mobile------------------------------*/
 /*map-get*/
 .carrito__icono--color {
   color: #fdfdfd;
@@ -2896,6 +2897,19 @@ nav.navDer {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: contacto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background: radial-gradient(#49494f, #303030);
 }
 
 .tituloTeneme {
