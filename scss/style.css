@@ -1014,6 +1014,10 @@ section {
   font-family: forum;
 }
 
+.tituloProductos__titulo--fontsize {
+  font-size: 40px;
+}
+
 .card-text {
   font-family: forum;
   font-weight: bold;
