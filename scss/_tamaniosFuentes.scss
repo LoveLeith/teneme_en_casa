@@ -72,7 +72,7 @@ $estilos: (
     font-weight:bold;
 }
 
-.tituloPreguntas__titulo--fontFamily, .tituloEnvios__titulo--fontFamily, .texto--fontFamily {
+.tituloPreguntas__titulo--fontFamily, .tituloEnvios__titulo--fontFamily, .texto--fontFamily, .tituloContacto__titulo--fontFamily {
     font-family: $forum;
 }
 
@@ -105,4 +105,8 @@ $estilos: (
 }
 .tituloEnvios__titulo--padding {
     padding: 40px;
+}
+
+.tituloContacto__titulo--fontSize {
+    font-size: 40px;
 }
