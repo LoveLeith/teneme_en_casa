@@ -192,6 +192,12 @@ nav.navDer {
         background: radial-gradient(#49494f, #303030);
     }
 
+    .envios {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
     footer { 
         grid-area: footer;
     }

@@ -270,11 +270,6 @@
 .texto--padding {
   padding: 5px; }
 
-.envios {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around; }
-
 @media only screen and (max-width: 768px) {
   .videoEnvios {
     width: 100%; } }
@@ -1676,6 +1671,10 @@ nav.navDer {
     flex-flow: row wrap;
     justify-content: space-evenly;
     background: radial-gradient(#49494f, #303030); }
+  .envios {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around; }
   footer {
     grid-area: footer; } }
 

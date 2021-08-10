@@ -312,12 +312,6 @@ footer {
     padding: 5px;
 }
 
-.envios {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-}
-
 .videoEnvios {
     @media only screen and (max-width: 768px){
     width: 100%;
