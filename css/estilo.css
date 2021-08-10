@@ -1648,3 +1648,32 @@ nav.navDer {
     grid-area: footer; } }
 
 /*------------------------cierre Envios Vista Tablet---------------------------*/
+/*------------------------cierre Envios Vista Desktop---------------------------*/
+@media only screen and (min-width: 1024px) {
+  .gridEnvios {
+    display: grid;
+    grid-template-areas: "encabezado encabezado logo logo encabezado2 encabezado2" "envios envios envios envios envios envios" "footer footer footer footer footer footer";
+    grid-template-columns: 16.666% 16.666% 16.666% 16.666% 16.666% 16.666%;
+    grid-template-rows: auto auto auto;
+    background-color: #303030; }
+  header {
+    grid-area: logo;
+    display: flex;
+    justify-content: center; }
+  nav .navIzq {
+    grid-area: encabezado; }
+  nav .navDer {
+    grid-area: encabezado2; }
+  div .carritoCompras {
+    grid-area: encabezado2; }
+  .enviosDomicilio {
+    grid-area: envios;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center;
+    background: radial-gradient(#49494f, #303030); }
+  footer {
+    grid-area: footer; } }
+
+/*------------------------cierre Envios Vista Desktop---------------------------*/
