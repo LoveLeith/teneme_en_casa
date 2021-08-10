@@ -451,8 +451,6 @@
 @media only screen and (max-width: 768px) {
   .videoEnvios {
     width: 100%;
-    margin-right: 10px;
-    margin-bottom: 30px;
   }
 }
 
@@ -460,6 +458,8 @@
   .videoEnvios {
     width: 350px;
     height: 300px;
+    margin-right: 10px;
+    margin-bottom: 30px;
   }
 }
 
