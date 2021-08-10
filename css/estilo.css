@@ -55,6 +55,10 @@
 .respuesta {
   color: #c4bfbe; }
 
+/*--------------------inicio seccion Envios Mobile First--------------------*/
+.enviosDomicilio {
+  background: radial-gradient(#49494f, #303030); }
+
 /*map-get*/
 @media only screen and (max-width: 768px) {
   * {
@@ -312,6 +316,10 @@
 
 .respuesta {
   color: #c4bfbe; }
+
+/*--------------------inicio seccion Envios Mobile First--------------------*/
+.enviosDomicilio {
+  background: radial-gradient(#49494f, #303030); }
 
 /*------------------inicio Index Vista Mobile First ---------------------*/
 .gridContainer {
@@ -755,6 +763,10 @@ section {
 .respuesta {
   color: #c4bfbe; }
 
+/*--------------------inicio seccion Envios Mobile First--------------------*/
+.enviosDomicilio {
+  background: radial-gradient(#49494f, #303030); }
+
 /*map-get*/
 .carrito__icono--color {
   color: #fdfdfd; }
@@ -811,6 +823,10 @@ section {
 
 .respuesta {
   color: #c4bfbe; }
+
+/*--------------------inicio seccion Envios Mobile First--------------------*/
+.enviosDomicilio {
+  background: radial-gradient(#49494f, #303030); }
 
 .gridContainerNosotros {
   display: grid;
@@ -1116,6 +1132,10 @@ article .nosotros {
 .respuesta {
   color: #c4bfbe; }
 
+/*--------------------inicio seccion Envios Mobile First--------------------*/
+.enviosDomicilio {
+  background: radial-gradient(#49494f, #303030); }
+
 /*------------------------inicio Productos Vista Mobile First---------------------------*/
 .gridProductos {
   display: grid;
@@ -1331,6 +1351,10 @@ nav.navDer {
 .respuesta {
   color: #c4bfbe; }
 
+/*--------------------inicio seccion Envios Mobile First--------------------*/
+.enviosDomicilio {
+  background: radial-gradient(#49494f, #303030); }
+
 /*------------------------inicio Preguntas Frecuentes Vista Mobile First---------------------------*/
 .gridPreguntasFrecuentes {
   display: grid;
@@ -1477,6 +1501,10 @@ nav.navDer {
 
 .respuesta {
   color: #c4bfbe; }
+
+/*--------------------inicio seccion Envios Mobile First--------------------*/
+.enviosDomicilio {
+  background: radial-gradient(#49494f, #303030); }
 
 /*------------------------inicio Productos Vista Mobile First---------------------------*/
 .gridEnvios {
