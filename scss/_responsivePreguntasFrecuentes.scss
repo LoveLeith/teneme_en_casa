@@ -82,6 +82,25 @@ nav.navDer {
         grid-area: logo;
     }
 
+    .carrito {
+        grid-area: encabezado2;
+    }
+
+    nav.navIzq {
+        grid-area: encabezado;
+    }
+
+    nav.navDer {
+        grid-area: encabezado2;
+    }
+
+    .containerPreguntasRespuestas {
+        grid-area: preguntas;
+    }
+
+    footer {
+        grid-area: footer;
+    }
 
 
 }
