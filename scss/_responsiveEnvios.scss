@@ -187,9 +187,8 @@ nav.navDer {
     .enviosDomicilio {
         grid-area: envios;
         display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-        align-content: center;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
         background: radial-gradient(#49494f, #303030);
     }
 
