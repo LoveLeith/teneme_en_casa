@@ -1151,6 +1151,10 @@ section {
   font-family: forum;
 }
 
+.redes__instagram--size, .redes__facebook--size, .redes__whatsapp--size, .pagos__efectivo--size, .pagos__mastercard--size, .pagos__visa--size {
+  font-size: 25px;
+}
+
 .cuenta__titulo--fontFamily, .ingresa__texto--fontFamily, .registrarse__texto--fontFamily, .copyright__texto--fontFamily {
   font-family: forum;
 }
