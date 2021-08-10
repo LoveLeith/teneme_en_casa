@@ -27,6 +27,9 @@
     background-color: #303030; } }
 
 /*-------------------seccion Productos--------------------*/
+.presentacionProductos {
+  background: radial-gradient(#49494f, #303030); }
+
 .tituloProductos__titulo--color {
   color: white; }
 
@@ -181,8 +184,42 @@
     display: flex;
     justify-content: center; } }
 
+@media only screen and (min-width: 1024px) {
+  .tituloProductos__titulo--text-align {
+    text-align: center; } }
+
 .tituloProductos__titulo--padding {
   padding: 10px; }
+  @media only screen and (min-width: 1024px) {
+    .tituloProductos__titulo--padding {
+      padding: 30px; } }
+
+@media only screen and (min-width: 1024px) {
+  .categoriasProductos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin-top: 120px;
+    margin-bottom: 40px; } }
+
+@media only screen and (min-width: 1024px) {
+  .producto {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 300px;
+    height: 150px;
+    margin-right: 50px;
+    margin-bottom: 150px;
+    margin-left: 50px; } }
+
+@media only screen and (min-width: 1024px) {
+  .card-body {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+    .card-body p {
+      vertical-align: middle; } }
 
 .card-text {
   text-align: center; }
@@ -199,6 +236,7 @@
   text-align: left;
   margin-left: 20px; }
 
+<<<<<<< HEAD
 /*--------------------inicio seccion Preguntas Frecuentes---------------------*/
 .containerPreguntasRespuestas {
   padding: 25px; }
@@ -210,6 +248,15 @@
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .acordeon--paddingBottom {
     padding-bottom: 50px; } }
+=======
+/*-----------------------inicio seccion Productos Vista Desktop-----------------------*/
+@media only screen and (min-width: 1024px) {
+  .presentacionProductos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 20px; } }
+>>>>>>> productos
 
 /*map-get*/
 .carrito__icono--color {
@@ -240,6 +287,9 @@
     background-color: #303030; } }
 
 /*-------------------seccion Productos--------------------*/
+.presentacionProductos {
+  background: radial-gradient(#49494f, #303030); }
+
 .tituloProductos__titulo--color {
   color: white; }
 
@@ -626,6 +676,9 @@ section {
 .tituloProductos__titulo--fontFamily {
   font-family: forum; }
 
+.tituloProductos__titulo--fontsize {
+  font-size: 40px; }
+
 .card-text {
   font-family: forum;
   font-weight: bold; }
@@ -676,6 +729,9 @@ section {
     background-color: #303030; } }
 
 /*-------------------seccion Productos--------------------*/
+.presentacionProductos {
+  background: radial-gradient(#49494f, #303030); }
+
 .tituloProductos__titulo--color {
   color: white; }
 
@@ -730,6 +786,9 @@ section {
     background-color: #303030; } }
 
 /*-------------------seccion Productos--------------------*/
+.presentacionProductos {
+  background: radial-gradient(#49494f, #303030); }
+
 .tituloProductos__titulo--color {
   color: white; }
 
@@ -1031,6 +1090,9 @@ article .nosotros {
     background-color: #303030; } }
 
 /*-------------------seccion Productos--------------------*/
+.presentacionProductos {
+  background: radial-gradient(#49494f, #303030); }
+
 .tituloProductos__titulo--color {
   color: white; }
 
@@ -1207,12 +1269,17 @@ nav.navDer {
     grid-area: encabezado2; }
   .carrito {
     grid-area: encabezado2; }
+<<<<<<< HEAD
   main .presentacionProductos {
     grid-area: productos;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
     padding: 20px; }
+=======
+  main.presentacionProductos {
+    grid-area: productos; }
+>>>>>>> productos
   footer {
     grid-area: footer;
     background-color: #303030; } }
@@ -1247,6 +1314,9 @@ nav.navDer {
     background-color: #303030; } }
 
 /*-------------------seccion Productos--------------------*/
+.presentacionProductos {
+  background: radial-gradient(#49494f, #303030); }
+
 .tituloProductos__titulo--color {
   color: white; }
 

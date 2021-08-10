@@ -229,7 +229,11 @@ nav.navDer {
         grid-area: encabezado2;
     }
 
+<<<<<<< HEAD
     main .presentacionProductos{
+=======
+    main.presentacionProductos {
+>>>>>>> productos
         grid-area: productos;
         display: $flex;
         flex-flow: row nowrap;

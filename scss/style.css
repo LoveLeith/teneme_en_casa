@@ -36,6 +36,10 @@
 }
 
 /*-------------------seccion Productos--------------------*/
+.presentacionProductos {
+  background: radial-gradient(#49494f, #303030);
+}
+
 .tituloProductos__titulo--color {
   color: white;
 }
@@ -295,8 +299,71 @@
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  .tituloProductos__titulo--text-align {
+    text-align: center;
+  }
+}
+
 .tituloProductos__titulo--padding {
   padding: 10px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .tituloProductos__titulo--padding {
+    padding: 30px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .categoriasProductos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin-top: 120px;
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .producto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    width: 300px;
+    height: 150px;
+    margin-right: 50px;
+    margin-bottom: 150px;
+    margin-left: 50px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .card-body {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .card-body p {
+    vertical-align: middle;
+  }
 }
 
 .card-text {
@@ -318,6 +385,7 @@
   margin-left: 20px;
 }
 
+<<<<<<< HEAD
 /*--------------------inicio seccion Preguntas Frecuentes---------------------*/
 .containerPreguntasRespuestas {
   padding: 25px;
@@ -332,6 +400,21 @@
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .acordeon--paddingBottom {
     padding-bottom: 50px;
+=======
+/*-----------------------inicio seccion Productos Vista Desktop-----------------------*/
+@media only screen and (min-width: 1024px) {
+  .presentacionProductos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 20px;
+>>>>>>> productos
   }
 }
 
@@ -373,6 +456,10 @@
 }
 
 /*-------------------seccion Productos--------------------*/
+.presentacionProductos {
+  background: radial-gradient(#49494f, #303030);
+}
+
 .tituloProductos__titulo--color {
   color: white;
 }
@@ -1001,6 +1088,10 @@ section {
   font-family: forum;
 }
 
+.tituloProductos__titulo--fontsize {
+  font-size: 40px;
+}
+
 .card-text {
   font-family: forum;
   font-weight: bold;
@@ -1068,6 +1159,10 @@ section {
 }
 
 /*-------------------seccion Productos--------------------*/
+.presentacionProductos {
+  background: radial-gradient(#49494f, #303030);
+}
+
 .tituloProductos__titulo--color {
   color: white;
 }
@@ -1139,6 +1234,10 @@ section {
 }
 
 /*-------------------seccion Productos--------------------*/
+.presentacionProductos {
+  background: radial-gradient(#49494f, #303030);
+}
+
 .tituloProductos__titulo--color {
   color: white;
 }
@@ -1651,6 +1750,10 @@ article .nosotros {
 }
 
 /*-------------------seccion Productos--------------------*/
+.presentacionProductos {
+  background: radial-gradient(#49494f, #303030);
+}
+
 .tituloProductos__titulo--color {
   color: white;
 }
@@ -1962,7 +2065,11 @@ nav.navDer ul li a {
     -ms-grid-column: 1;
     grid-area: encabezado2;
   }
+<<<<<<< HEAD
   main .presentacionProductos {
+=======
+  main.presentacionProductos {
+>>>>>>> productos
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     -ms-grid-column-span: 6;
@@ -2026,6 +2133,10 @@ nav.navDer ul li a {
 }
 
 /*-------------------seccion Productos--------------------*/
+.presentacionProductos {
+  background: radial-gradient(#49494f, #303030);
+}
+
 .tituloProductos__titulo--color {
   color: white;
 }
