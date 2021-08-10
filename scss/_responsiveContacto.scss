@@ -131,8 +131,8 @@ form {
         "encabezado logo encabezado2"
         "contacto contacto contacto"
         "footer footer footer";
-        grid-template-columns: 33.3% 33.3% 33.3%;
-        grid-template-rows: auto;
+        grid-template-columns: 16.666% 16.666% 16.666% 16.666% 16.666% 16.666%;
+        grid-template-rows: auto 800px auto auto; 
         background-color: #303030;
     }
 
