@@ -72,7 +72,7 @@ $estilos: (
     font-weight:bold;
 }
 
-.tituloPreguntas__titulo--fontFamily, .tituloEnvios__titulo--fontFamily, .texto--fontFamily, .titular__titulo--fontFamily, .subtituloContacto__titulo--fontFamily {
+.tituloPreguntas__titulo--fontFamily, .tituloEnvios__titulo--fontFamily, .texto--fontFamily, .titular__titulo--fontFamily, .subtituloContacto__titulo--fontFamily, .parrafo--fontFamily {
     font-family: $forum;
 }
 
@@ -114,4 +114,8 @@ $estilos: (
 
 .subtituloContacto__titulo--fontSize {
     font-size: 30px;
+}
+
+.parrafo--fontSize {
+    font-size: 18px;
 }
