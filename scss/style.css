@@ -332,6 +332,39 @@
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  .producto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    width: 300px;
+    height: 150px;
+    margin-right: 20px;
+    margin-bottom: 150px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .card-body {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .card-body p {
+    vertical-align: middle;
+  }
+}
+
 .card-text {
   text-align: center;
 }
