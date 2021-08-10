@@ -1500,3 +1500,20 @@ nav.navDer {
 
 .enviosDomicilio {
   grid-area: envios; }
+
+.tituloTeneme {
+  display: none; }
+
+.menuInferior {
+  display: none; }
+
+.redes {
+  grid-area: redes; }
+
+.pagos {
+  grid-area: pagos; }
+
+.ingresoRegistro {
+  grid-area: ingresoRegistro; }
+
+/*------------------------cierre Envios Vista Mobile First---------------------------*/

@@ -2452,4 +2452,32 @@ nav.navDer {
   -ms-grid-column: 1;
   grid-area: envios;
 }
+
+.tituloTeneme {
+  display: none;
+}
+
+.menuInferior {
+  display: none;
+}
+
+.redes {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: redes;
+}
+
+.pagos {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: pagos;
+}
+
+.ingresoRegistro {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: ingresoRegistro;
+}
+
+/*------------------------cierre Envios Vista Mobile First---------------------------*/
 /*# sourceMappingURL=style.css.map */
