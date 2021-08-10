@@ -1207,8 +1207,11 @@ nav.navDer {
     grid-area: encabezado2; }
   .carrito {
     grid-area: encabezado2; }
-  main.presentacionProducots {
-    grid-area: productos; }
+  .main .presentacionProductos {
+    grid-area: productos;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around; }
   footer {
     grid-area: footer;
     background-color: #303030; } }
