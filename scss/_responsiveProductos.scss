@@ -229,16 +229,8 @@ nav.navDer {
         grid-area: encabezado2;
     }
 
-<<<<<<< HEAD
-    main .presentacionProductos{
-=======
-    main.presentacionProductos {
->>>>>>> productos
+    main .presentacionProductos {
         grid-area: productos;
-        display: $flex;
-        flex-flow: row nowrap;
-        justify-content: space-around;
-        padding: 20px;
     }
 
     footer {

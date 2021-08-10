@@ -385,7 +385,6 @@
   margin-left: 20px;
 }
 
-<<<<<<< HEAD
 /*--------------------inicio seccion Preguntas Frecuentes---------------------*/
 .containerPreguntasRespuestas {
   padding: 25px;
@@ -400,7 +399,9 @@
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .acordeon--paddingBottom {
     padding-bottom: 50px;
-=======
+  }
+}
+
 /*-----------------------inicio seccion Productos Vista Desktop-----------------------*/
 @media only screen and (min-width: 1024px) {
   .presentacionProductos {
@@ -414,7 +415,6 @@
     -ms-flex-pack: distribute;
         justify-content: space-around;
     padding: 20px;
->>>>>>> productos
   }
 }
 
@@ -2065,25 +2065,11 @@ nav.navDer ul li a {
     -ms-grid-column: 1;
     grid-area: encabezado2;
   }
-<<<<<<< HEAD
   main .presentacionProductos {
-=======
-  main.presentacionProductos {
->>>>>>> productos
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     -ms-grid-column-span: 6;
     grid-area: productos;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    padding: 20px;
   }
   footer {
     -ms-grid-row: 3;

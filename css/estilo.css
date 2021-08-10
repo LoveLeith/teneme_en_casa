@@ -236,7 +236,6 @@
   text-align: left;
   margin-left: 20px; }
 
-<<<<<<< HEAD
 /*--------------------inicio seccion Preguntas Frecuentes---------------------*/
 .containerPreguntasRespuestas {
   padding: 25px; }
@@ -248,7 +247,7 @@
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .acordeon--paddingBottom {
     padding-bottom: 50px; } }
-=======
+
 /*-----------------------inicio seccion Productos Vista Desktop-----------------------*/
 @media only screen and (min-width: 1024px) {
   .presentacionProductos {
@@ -256,7 +255,6 @@
     flex-flow: row wrap;
     justify-content: space-around;
     padding: 20px; } }
->>>>>>> productos
 
 /*map-get*/
 .carrito__icono--color {
@@ -1269,17 +1267,8 @@ nav.navDer {
     grid-area: encabezado2; }
   .carrito {
     grid-area: encabezado2; }
-<<<<<<< HEAD
   main .presentacionProductos {
-    grid-area: productos;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    padding: 20px; }
-=======
-  main.presentacionProductos {
     grid-area: productos; }
->>>>>>> productos
   footer {
     grid-area: footer;
     background-color: #303030; } }
