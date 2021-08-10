@@ -322,6 +322,11 @@
   margin-left: 20px;
 }
 
+/*-----------------------inicio seccion Productos Vista Desktop-----------------------*/
+.presentacionProductos {
+  padding: 20px;
+}
+
 /*map-get*/
 .carrito__icono--color {
   color: #fdfdfd;
