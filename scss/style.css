@@ -53,7 +53,7 @@
   background: radial-gradient(#49494f, #303030);
 }
 
-.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color {
+.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color, .tituloContacto__titulo--color {
   color: white;
 }
 
@@ -79,10 +79,6 @@
 }
 
 /*------------------inicio seccion Contacto Mobile First-------------------*/
-.tituloContacto__titulo--color {
-  color: white;
-}
-
 /*map-get*/
 @media only screen and (max-width: 768px) {
   * {
@@ -542,7 +538,7 @@
   background: radial-gradient(#49494f, #303030);
 }
 
-.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color {
+.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color, .tituloContacto__titulo--color {
   color: white;
 }
 
@@ -568,10 +564,6 @@
 }
 
 /*------------------inicio seccion Contacto Mobile First-------------------*/
-.tituloContacto__titulo--color {
-  color: white;
-}
-
 /*------------------inicio Index Vista Mobile First ---------------------*/
 .gridContainer {
   display: -ms-grid;
@@ -1277,7 +1269,7 @@ section {
   background: radial-gradient(#49494f, #303030);
 }
 
-.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color {
+.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color, .tituloContacto__titulo--color {
   color: white;
 }
 
@@ -1303,10 +1295,6 @@ section {
 }
 
 /*------------------inicio seccion Contacto Mobile First-------------------*/
-.tituloContacto__titulo--color {
-  color: white;
-}
-
 /*map-get*/
 .carrito__icono--color {
   color: #fdfdfd;
@@ -1362,7 +1350,7 @@ section {
   background: radial-gradient(#49494f, #303030);
 }
 
-.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color {
+.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color, .tituloContacto__titulo--color {
   color: white;
 }
 
@@ -1388,10 +1376,6 @@ section {
 }
 
 /*------------------inicio seccion Contacto Mobile First-------------------*/
-.tituloContacto__titulo--color {
-  color: white;
-}
-
 .gridContainerNosotros {
   display: -ms-grid;
   display: grid;
@@ -1888,7 +1872,7 @@ article .nosotros {
   background: radial-gradient(#49494f, #303030);
 }
 
-.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color {
+.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color, .tituloContacto__titulo--color {
   color: white;
 }
 
@@ -1914,10 +1898,6 @@ article .nosotros {
 }
 
 /*------------------inicio seccion Contacto Mobile First-------------------*/
-.tituloContacto__titulo--color {
-  color: white;
-}
-
 /*------------------------inicio Productos Vista Mobile First---------------------------*/
 .gridProductos {
   display: -ms-grid;
@@ -2267,7 +2247,7 @@ nav.navDer ul li a {
   background: radial-gradient(#49494f, #303030);
 }
 
-.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color {
+.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color, .tituloContacto__titulo--color {
   color: white;
 }
 
@@ -2293,10 +2273,6 @@ nav.navDer ul li a {
 }
 
 /*------------------inicio seccion Contacto Mobile First-------------------*/
-.tituloContacto__titulo--color {
-  color: white;
-}
-
 /*------------------------inicio Preguntas Frecuentes Vista Mobile First---------------------------*/
 .gridPreguntasFrecuentes {
   display: -ms-grid;
@@ -2532,7 +2508,7 @@ nav.navDer {
   background: radial-gradient(#49494f, #303030);
 }
 
-.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color {
+.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color, .tituloContacto__titulo--color {
   color: white;
 }
 
@@ -2558,10 +2534,6 @@ nav.navDer {
 }
 
 /*------------------inicio seccion Contacto Mobile First-------------------*/
-.tituloContacto__titulo--color {
-  color: white;
-}
-
 /*------------------------inicio Productos Vista Mobile First---------------------------*/
 .gridEnvios {
   display: -ms-grid;
@@ -2883,7 +2855,7 @@ nav.navDer {
   background: radial-gradient(#49494f, #303030);
 }
 
-.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color {
+.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color, .tituloContacto__titulo--color {
   color: white;
 }
 
@@ -2909,10 +2881,6 @@ nav.navDer {
 }
 
 /*------------------inicio seccion Contacto Mobile First-------------------*/
-.tituloContacto__titulo--color {
-  color: white;
-}
-
 /*------------------------inicio Contacto Vista Mobile First---------------------------*/
 .gridContacto {
   display: -ms-grid;
