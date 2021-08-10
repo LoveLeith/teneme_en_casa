@@ -1,0 +1,19 @@
+@import "colores";
+
+/*------------------------inicio Productos Vista Mobile First---------------------------*/
+
+.gridEnvios {
+    display: grid;
+    grid-template-areas:
+    "logo"
+    "encabezado"
+    "encabezado2"
+    "envios"
+    "redes"
+    "pagos"
+    "ingresoRegistro"
+    "copyright";
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    background-color: $backgroundColor;
+}
