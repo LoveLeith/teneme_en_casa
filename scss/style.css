@@ -2593,7 +2593,7 @@ nav.navDer {
   }
   header {
     -ms-grid-row: 1;
-    -ms-grid-column: 2;
+    -ms-grid-column: 1;
     grid-area: logo;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2604,15 +2604,15 @@ nav.navDer {
     position: relative;
   }
   div.carrito {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
     grid-area: encabezado2;
     position: absolute;
     top: 20px;
     right: 20px;
   }
   nav.navIzq {
-    -ms-grid-row: 1;
+    -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: encabezado;
   }
@@ -2633,8 +2633,8 @@ nav.navDer {
         align-self: center;
   }
   nav.navDer {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
     grid-area: encabezado2;
   }
   nav.navDer ul {
@@ -2713,8 +2713,7 @@ nav.navDer {
   }
   header {
     -ms-grid-row: 1;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 2;
+    -ms-grid-column: 1;
     grid-area: logo;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2724,21 +2723,18 @@ nav.navDer {
             justify-content: center;
   }
   nav .navIzq {
-    -ms-grid-row: 1;
+    -ms-grid-row: 2;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
     grid-area: encabezado;
   }
   nav .navDer {
-    -ms-grid-row: 1;
-    -ms-grid-column: 5;
-    -ms-grid-column-span: 2;
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
     grid-area: encabezado2;
   }
   div .carritoCompras {
-    -ms-grid-row: 1;
-    -ms-grid-column: 5;
-    -ms-grid-column-span: 2;
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
     grid-area: encabezado2;
   }
   .enviosDomicilio {
@@ -2780,4 +2776,159 @@ nav.navDer {
 }
 
 /*------------------------cierre Envios Vista Desktop---------------------------*/
+/*map-get*/
+.carrito__icono--color {
+  color: #fdfdfd;
+}
+
+.tituloTeneme__titulo--color {
+  color: white;
+}
+
+.menu__item--color {
+  color: white;
+}
+
+.menuInferior__item--color, .redes__instagram--color, .redes__facebook--color, .redes__whatsapp--color, .pagos__efectivo--color, .pagos__mastercard--color, .pagos__visa--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
+  color: white;
+}
+
+.copyright {
+  background-color: #b0afa4;
+}
+
+/*-------------------seccion Nosotros----------------*/
+.tituloSeccion h1 {
+  color: white;
+  text-transform: uppercase;
+}
+
+.texto1, .texto2 {
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  footer {
+    background-color: #303030;
+  }
+}
+
+/*-------------------seccion Productos--------------------*/
+.presentacionProductos {
+  background: radial-gradient(#49494f, #303030);
+}
+
+.tituloProductos__titulo--color {
+  color: white;
+}
+
+.card-text {
+  color: white;
+}
+
+/*----------------seccion Preguntas Frecuentes-------------*/
+.card {
+  background: radial-gradient(#49494f, #303030);
+}
+
+.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color {
+  color: white;
+}
+
+.btn {
+  color: white;
+}
+
+.btn-link {
+  color: white;
+}
+
+.btn-link:hover {
+  color: white;
+}
+
+.respuesta {
+  color: #c4bfbe;
+}
+
+/*--------------------inicio seccion Envios Mobile First--------------------*/
+.enviosDomicilio {
+  background: radial-gradient(#49494f, #303030);
+}
+
+/*------------------------inicio Contacto Vista Mobile First---------------------------*/
+.gridContacto {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "logo" "encabezado" "encabezado2" "contacto" "redes" "pagos" "ingresoRegistro" "copyright";
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  background-color: #303030;
+}
+
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: logo;
+}
+
+.carrito {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: logo;
+}
+
+nav.navIzq {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: encabezado;
+}
+
+nav.navDer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: encabezado2;
+}
+
+.containerContacto {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: contacto;
+}
+
+.tituloTeneme {
+  display: none;
+}
+
+.menuInferior {
+  display: none;
+}
+
+.redes {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: redes;
+}
+
+.pagos {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: pagos;
+}
+
+.ingresoRegistro {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: ingresoRegistro;
+}
+
+.copyright {
+  -ms-grid-row: 8;
+  -ms-grid-column: 1;
+  grid-area: copyright;
+}
+
+/*------------------------------------cierre Contacto Vista Mobile First-----------------------------------*/
 /*# sourceMappingURL=style.css.map */

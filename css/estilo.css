@@ -1691,3 +1691,106 @@ nav.navDer {
     grid-area: footer; } }
 
 /*------------------------cierre Envios Vista Desktop---------------------------*/
+/*map-get*/
+.carrito__icono--color {
+  color: #fdfdfd; }
+
+.tituloTeneme__titulo--color {
+  color: white; }
+
+.menu__item--color {
+  color: white; }
+
+.menuInferior__item--color, .redes__instagram--color, .redes__facebook--color, .redes__whatsapp--color, .pagos__efectivo--color, .pagos__mastercard--color, .pagos__visa--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
+  color: white; }
+
+.copyright {
+  background-color: #b0afa4; }
+
+/*-------------------seccion Nosotros----------------*/
+.tituloSeccion h1 {
+  color: white;
+  text-transform: uppercase; }
+
+.texto1, .texto2 {
+  color: white; }
+
+@media only screen and (max-width: 768px) {
+  footer {
+    background-color: #303030; } }
+
+/*-------------------seccion Productos--------------------*/
+.presentacionProductos {
+  background: radial-gradient(#49494f, #303030); }
+
+.tituloProductos__titulo--color {
+  color: white; }
+
+.card-text {
+  color: white; }
+
+/*----------------seccion Preguntas Frecuentes-------------*/
+.card {
+  background: radial-gradient(#49494f, #303030); }
+
+.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color {
+  color: white; }
+
+.btn {
+  color: white; }
+
+.btn-link {
+  color: white; }
+
+.btn-link:hover {
+  color: white; }
+
+.respuesta {
+  color: #c4bfbe; }
+
+/*--------------------inicio seccion Envios Mobile First--------------------*/
+.enviosDomicilio {
+  background: radial-gradient(#49494f, #303030); }
+
+/*------------------------inicio Contacto Vista Mobile First---------------------------*/
+.gridContacto {
+  display: grid;
+  grid-template-areas: "logo" "encabezado" "encabezado2" "contacto" "redes" "pagos" "ingresoRegistro" "copyright";
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  background-color: #303030; }
+
+header {
+  grid-area: logo; }
+
+.carrito {
+  grid-area: logo; }
+
+nav.navIzq {
+  grid-area: encabezado; }
+
+nav.navDer {
+  grid-area: encabezado2; }
+
+.containerContacto {
+  grid-area: contacto; }
+
+.tituloTeneme {
+  display: none; }
+
+.menuInferior {
+  display: none; }
+
+.redes {
+  grid-area: redes; }
+
+.pagos {
+  grid-area: pagos; }
+
+.ingresoRegistro {
+  grid-area: ingresoRegistro; }
+
+.copyright {
+  grid-area: copyright; }
+
+/*------------------------------------cierre Contacto Vista Mobile First-----------------------------------*/
