@@ -139,6 +139,9 @@ nav.navDer {
 
     .containerPreguntasRespuestas {
         grid-area: preguntas;
+        display: $flex;
+        flex-flow: column nowrap;
+        justify-content: center;
     }
 
     footer {
