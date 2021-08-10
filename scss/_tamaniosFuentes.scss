@@ -95,4 +95,7 @@ $estilos: (
 
 .texto--fontSize {
     font-size: 17px;
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    font-size: 20px;
+    }
 }
