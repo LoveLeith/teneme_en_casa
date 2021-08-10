@@ -53,7 +53,7 @@
   background: radial-gradient(#49494f, #303030);
 }
 
-.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color, .titular__titulo--color {
+.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color, .titular__titulo--color, .subtituloContacto__titulo--color {
   color: white;
 }
 
@@ -475,11 +475,19 @@
   padding: 20px;
 }
 
-.titular__titulo--margins {
-  margin-bottom: 20px;
+.titular__titulo--textAlign {
+  text-align: center;
 }
 
-.titular__titulo--textAlign {
+.subtituloContacto__titulo--padding {
+  padding-bottom: 5px;
+}
+
+.subtituloContacto__titulo--margins {
+  margin-bottom: 5px;
+}
+
+.subtituloContacto__titulo--textAlign {
   text-align: center;
 }
 
@@ -538,7 +546,7 @@
   background: radial-gradient(#49494f, #303030);
 }
 
-.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color, .titular__titulo--color {
+.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color, .titular__titulo--color, .subtituloContacto__titulo--color {
   color: white;
 }
 
@@ -1168,7 +1176,7 @@ section {
   font-weight: bold;
 }
 
-.tituloPreguntas__titulo--fontFamily, .tituloEnvios__titulo--fontFamily, .texto--fontFamily, .titular__titulo--fontFamily {
+.tituloPreguntas__titulo--fontFamily, .tituloEnvios__titulo--fontFamily, .texto--fontFamily, .titular__titulo--fontFamily, .subtituloContacto__titulo--fontFamily {
   font-family: forum;
 }
 
@@ -1212,6 +1220,10 @@ section {
 
 .titular__titulo--fontSize {
   font-size: 40px;
+}
+
+.subtituloContacto__titulo--fontSize {
+  font-size: 30px;
 }
 
 /*map-get*/
@@ -1269,7 +1281,7 @@ section {
   background: radial-gradient(#49494f, #303030);
 }
 
-.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color, .titular__titulo--color {
+.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color, .titular__titulo--color, .subtituloContacto__titulo--color {
   color: white;
 }
 
@@ -1350,7 +1362,7 @@ section {
   background: radial-gradient(#49494f, #303030);
 }
 
-.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color, .titular__titulo--color {
+.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color, .titular__titulo--color, .subtituloContacto__titulo--color {
   color: white;
 }
 
@@ -1872,7 +1884,7 @@ article .nosotros {
   background: radial-gradient(#49494f, #303030);
 }
 
-.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color, .titular__titulo--color {
+.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color, .titular__titulo--color, .subtituloContacto__titulo--color {
   color: white;
 }
 
@@ -2247,7 +2259,7 @@ nav.navDer ul li a {
   background: radial-gradient(#49494f, #303030);
 }
 
-.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color, .titular__titulo--color {
+.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color, .titular__titulo--color, .subtituloContacto__titulo--color {
   color: white;
 }
 
@@ -2508,7 +2520,7 @@ nav.navDer {
   background: radial-gradient(#49494f, #303030);
 }
 
-.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color, .titular__titulo--color {
+.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color, .titular__titulo--color, .subtituloContacto__titulo--color {
   color: white;
 }
 
@@ -2855,7 +2867,7 @@ nav.navDer {
   background: radial-gradient(#49494f, #303030);
 }
 
-.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color, .titular__titulo--color {
+.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color, .titular__titulo--color, .subtituloContacto__titulo--color {
   color: white;
 }
 
