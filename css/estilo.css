@@ -1313,6 +1313,16 @@ nav.navDer {
     grid-template-rows: auto 800px auto auto;
     background-color: #303030; }
   header {
-    grid-area: logo; } }
+    grid-area: logo; }
+  .carrito {
+    grid-area: encabezado2; }
+  nav.navIzq {
+    grid-area: encabezado; }
+  nav.navDer {
+    grid-area: encabezado2; }
+  .containerPreguntasRespuestas {
+    grid-area: preguntas; }
+  footer {
+    grid-area: footer; } }
 
 /*------------------------------------cierre Preguntas Frecuentes Vista Desktop-----------------------------------*/
