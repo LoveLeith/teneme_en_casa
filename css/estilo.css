@@ -1884,3 +1884,25 @@ form {
   grid-area: copyright; }
 
 /*------------------------------------cierre Contacto Vista Mobile First-----------------------------------*/
+/*------------------------------------cierre Contacto Vista Tablet-----------------------------------*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .gridContacto {
+    display: grid;
+    grid-template-areas: "encabezado logo encabezado2" "contacto contacto contacto" "footer footer footer";
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: auto;
+    background-color: #303030; }
+  header {
+    grid-area: logo; }
+  .carrito {
+    grid-area: encabezado2; }
+  nav.navIzq {
+    grid-area: encabezado; }
+  nav.navDer {
+    grid-area: encabezado2; }
+  .containerContacto {
+    grid-area: contacto; }
+  footer {
+    grid-area: footer; } }
+
+/*------------------------------------cierre Contacto Vista Tablet-----------------------------------*/
