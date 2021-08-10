@@ -128,7 +128,7 @@ footer {
 }
 
 .containerRedesSociales {
-    border: 1px solid $colorLines;
+    border-bottom: 1px solid $colorLines;
     @media only screen and (min-width: 768px) and (max-width: 1024px) {
     border: $border-none;
     }
@@ -152,7 +152,6 @@ footer {
 }
 
 .copyright {
-    border-top: 2px solid white;
     @include justify-flex-end;
     p {
         margin-right: 20px;

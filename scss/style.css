@@ -172,7 +172,7 @@
 }
 
 .containerRedesSociales {
-  border: 1px solid white;
+  border-bottom: 1px solid white;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -207,7 +207,6 @@
 }
 
 .copyright {
-  border-top: 2px solid white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
