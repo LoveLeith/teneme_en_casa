@@ -73,6 +73,9 @@ $estilos: (
 
 .tituloPreguntas__titulo--fontSize {
     font-size: 33px;
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    font-size: 40px;
+    }
 }
 
 .btn {
