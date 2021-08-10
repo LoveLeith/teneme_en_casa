@@ -1962,7 +1962,7 @@ nav.navDer ul li a {
     -ms-grid-column: 1;
     grid-area: encabezado2;
   }
-  .main .presentacionProductos {
+  main .presentacionProductos {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     -ms-grid-column-span: 6;
@@ -1976,6 +1976,7 @@ nav.navDer ul li a {
             flex-flow: row nowrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    padding: 20px;
   }
   footer {
     -ms-grid-row: 3;
