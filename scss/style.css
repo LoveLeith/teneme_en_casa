@@ -2544,8 +2544,8 @@ nav.navDer {
     display: -ms-grid;
     display: grid;
         grid-template-areas: "encabezado logo encabezado2" "envios envios envios" "footer footer footer";
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
+    -ms-grid-columns: 33.3% 33.3% 33.3%;
+        grid-template-columns: 33.3% 33.3% 33.3%;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
     background-color: #303030;
@@ -2554,21 +2554,94 @@ nav.navDer {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: logo;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
   }
-  .carrito {
+  div.carrito {
     -ms-grid-row: 1;
-    -ms-grid-column: 2;
-    grid-area: logo;
+    -ms-grid-column: 3;
+    grid-area: encabezado2;
+    position: absolute;
+    top: 20px;
+    right: 20px;
   }
   nav.navIzq {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: encabezado;
   }
+  nav.navIzq ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: 43px;
+  }
+  nav.navIzq ul li {
+    padding: 5px;
+  }
+  nav.navIzq ul li a {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
   nav.navDer {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
     grid-area: encabezado2;
+  }
+  nav.navDer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: 43px;
+  }
+  nav.navDer ul li {
+    padding: 5px;
+  }
+  nav.navDer ul li a {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  nav.navIzq ul li a:hover, nav.navDer ul li a:hover {
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+    background-color: #edece7;
+    color: #ecce1f;
+    border-radius: 0px 20px;
+    padding: 10px;
+  }
+  nav.navIzq ul ul {
+    position: absolute;
+    display: none;
+    z-index: 1;
+    margin-top: 15px;
+  }
+  nav.navIzq ul ul li {
+    display: block;
+    width: 150px;
+    background-color: white;
+    border-radius: 3px;
+    margin-bottom: 5px;
+  }
+  nav.navIzq ul ul li a {
+    color: black;
+  }
+  .navIzq ul li:hover ul {
+    display: block;
   }
   .enviosDomicilio {
     -ms-grid-row: 2;
