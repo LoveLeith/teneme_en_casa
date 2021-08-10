@@ -184,6 +184,10 @@
     display: flex;
     justify-content: center; } }
 
+@media only screen and (min-width: 1024px) {
+  .tituloProductos__titulo--text-align {
+    text-align: center; } }
+
 .tituloProductos__titulo--padding {
   padding: 10px; }
   @media only screen and (min-width: 1024px) {
