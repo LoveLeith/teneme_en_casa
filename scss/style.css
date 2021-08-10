@@ -668,6 +668,10 @@ nav.navDer ul li a {
   text-decoration: none;
 }
 
+nav.navIzq ul li a:hover, nav.navDer ul li a:hover {
+  color: #e3c55b;
+}
+
 section {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
