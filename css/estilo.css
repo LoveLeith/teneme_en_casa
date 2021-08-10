@@ -142,6 +142,7 @@
   margin-bottom: 10px; }
 
 .copyright {
+  border-top: 2px solid white;
   display: flex;
   justify-content: flex-end; }
   .copyright p {

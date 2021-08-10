@@ -152,6 +152,7 @@ footer {
 }
 
 .copyright {
+    border-top: 2px solid white;
     @include justify-flex-end;
     p {
         margin-right: 20px;

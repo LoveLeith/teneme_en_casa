@@ -207,6 +207,7 @@
 }
 
 .copyright {
+  border-top: 2px solid white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
