@@ -436,18 +436,6 @@
   padding: 5px;
 }
 
-.envios {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
 @media only screen and (max-width: 768px) {
   .videoEnvios {
     width: 100%;
@@ -458,14 +446,26 @@
   .videoEnvios {
     width: 350px;
     height: 300px;
-    margin-right: 10px;
+    margin-right: 5px;
     margin-bottom: 30px;
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  .videoEnvios {
+    margin-right: 15px;
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .envioDomicilio {
+  .enviosDomicilio {
     padding: 30px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .enviosDomicilio {
+    border-top: 2px solid white;
   }
 }
 
@@ -1185,6 +1185,14 @@ section {
   .texto--fontSize {
     font-size: 20px;
   }
+}
+
+.tituloEnvios {
+  width: 100%;
+}
+
+.tituloEnvios__titulo--padding {
+  padding: 40px;
 }
 
 /*map-get*/
@@ -2691,4 +2699,85 @@ nav.navDer {
 }
 
 /*------------------------cierre Envios Vista Tablet---------------------------*/
+/*------------------------cierre Envios Vista Desktop---------------------------*/
+@media only screen and (min-width: 1024px) {
+  .gridEnvios {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "encabezado encabezado logo logo encabezado2 encabezado2" "envios envios envios envios envios envios" "footer footer footer footer footer footer";
+    -ms-grid-columns: 16.666% 16.666% 16.666% 16.666% 16.666% 16.666%;
+        grid-template-columns: 16.666% 16.666% 16.666% 16.666% 16.666% 16.666%;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+    background-color: #303030;
+  }
+  header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-area: logo;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  nav .navIzq {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: encabezado;
+  }
+  nav .navDer {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2;
+    grid-area: encabezado2;
+  }
+  div .carritoCompras {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2;
+    grid-area: encabezado2;
+  }
+  .enviosDomicilio {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-area: envios;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: radial-gradient(#49494f, #303030);
+  }
+  .envios {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
+  footer {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-area: footer;
+  }
+}
+
+/*------------------------cierre Envios Vista Desktop---------------------------*/
 /*# sourceMappingURL=style.css.map */
