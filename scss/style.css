@@ -2089,6 +2089,7 @@ nav.navDer {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: preguntas;
+  background: radial-gradient(#49494f, #303030);
 }
 
 .tituloTeneme {

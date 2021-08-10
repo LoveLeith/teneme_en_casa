@@ -1289,7 +1289,8 @@ nav.navDer {
   grid-area: encabezado2; }
 
 .containerPreguntasRespuestas {
-  grid-area: preguntas; }
+  grid-area: preguntas;
+  background: radial-gradient(#49494f, #303030); }
 
 .tituloTeneme {
   display: none; }
