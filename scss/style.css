@@ -2960,6 +2960,67 @@ nav.navDer {
   background: radial-gradient(#49494f, #303030);
 }
 
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 15px 20px 15px;
+}
+
+.formatoFormulario {
+  width: 90%;
+  padding: 3px;
+  /*display: block;*/
+  border: 3px solid #e3c55b;
+  border-radius: 5px;
+  color: black;
+  font-family: forum;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 5px;
+}
+
+.textoFormulario {
+  color: white;
+  font-family: forum;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.textoBotones {
+  margin: 5px;
+}
+
+.botonesForm {
+  margin-top: 20px;
+}
+
+.boton {
+  width: 150px;
+  padding: 3px;
+  display: block;
+  border: 3px solid #e3c55b;
+  border-radius: 5px;
+  color: black;
+  font-family: forum;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
 .tituloTeneme {
   display: none;
 }
