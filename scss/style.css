@@ -36,6 +36,10 @@
 }
 
 /*-------------------seccion Productos--------------------*/
+.presentacionProductos {
+  background: radial-gradient(#49494f, #303030);
+}
+
 .tituloProductos__titulo--color {
   color: white;
 }
@@ -356,6 +360,10 @@
 }
 
 /*-------------------seccion Productos--------------------*/
+.presentacionProductos {
+  background: radial-gradient(#49494f, #303030);
+}
+
 .tituloProductos__titulo--color {
   color: white;
 }
@@ -1045,6 +1053,10 @@ section {
 }
 
 /*-------------------seccion Productos--------------------*/
+.presentacionProductos {
+  background: radial-gradient(#49494f, #303030);
+}
+
 .tituloProductos__titulo--color {
   color: white;
 }
@@ -1116,6 +1128,10 @@ section {
 }
 
 /*-------------------seccion Productos--------------------*/
+.presentacionProductos {
+  background: radial-gradient(#49494f, #303030);
+}
+
 .tituloProductos__titulo--color {
   color: white;
 }
@@ -1628,6 +1644,10 @@ article .nosotros {
 }
 
 /*-------------------seccion Productos--------------------*/
+.presentacionProductos {
+  background: radial-gradient(#49494f, #303030);
+}
+
 .tituloProductos__titulo--color {
   color: white;
 }
@@ -2002,6 +2022,10 @@ nav.navDer ul li a {
 }
 
 /*-------------------seccion Productos--------------------*/
+.presentacionProductos {
+  background: radial-gradient(#49494f, #303030);
+}
+
 .tituloProductos__titulo--color {
   color: white;
 }
