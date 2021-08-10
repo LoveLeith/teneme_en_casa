@@ -179,7 +179,7 @@ form {
         "contacto contacto contacto contacto contacto contacto"
         "footer footer footer footer footer footer";
         grid-template-columns: 16.666% 16.666% 16.666% 16.666% 16.666% 16.666%;
-        grid-template-rows: auto 1100px auto auto; 
+        grid-template-rows: auto 1150px auto auto; 
         background-color: #303030;
     }
 
@@ -201,6 +201,10 @@ form {
 
     .containerContacto {
         grid-area: contacto;
+    }
+
+    .formatoFormulario {
+        width: 600px;
     }
 
     footer {
