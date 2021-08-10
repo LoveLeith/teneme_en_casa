@@ -2422,4 +2422,28 @@ nav.navDer {
       grid-template-rows: auto;
   background-color: #303030;
 }
+
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: logo;
+}
+
+.carrito {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: logo;
+}
+
+nav.navIzq {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: encabezado;
+}
+
+nav.navDer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: encabezado2;
+}
 /*# sourceMappingURL=style.css.map */
