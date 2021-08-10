@@ -270,9 +270,21 @@
 .texto--padding {
   padding: 5px; }
 
+.envios {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around; }
+
 @media only screen and (max-width: 768px) {
   .videoEnvios {
-    width: 100%; } }
+    width: 100%;
+    margin-right: 10px;
+    margin-bottom: 30px; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .videoEnvios {
+    width: 350px;
+    height: 300px; } }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .envioDomicilio {
