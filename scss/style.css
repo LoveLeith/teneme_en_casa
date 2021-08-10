@@ -319,6 +319,18 @@
   padding: 25px;
 }
 
+@media only screen and (max-width: 768px) {
+  .acordeon--paddingBottom {
+    padding-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .acordeon--paddingBottom {
+    padding-bottom: 50px;
+  }
+}
+
 /*map-get*/
 .carrito__icono--color {
   color: #fdfdfd;
