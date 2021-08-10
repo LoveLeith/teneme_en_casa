@@ -109,5 +109,22 @@ nav.navDer {
 
 /*------------------------------------inicio Preguntas Frecuentes Vista Desktop-----------------------------------*/
 
+@media only screen and (min-width: 1024px) {
 
+    .gridContainerPreguntasFrecuentes {
+        display: grid;
+        grid-template-areas:
+        "encabezado encabezado logo logo encabezado2 encabezado2"
+        "preguntas preguntas preguntas preguntas preguntas preguntas"
+        "footer footer footer footer footer footer";
+        grid-template-columns: 16.666% 16.666% 16.666% 16.666% 16.666% 16.666%;
+        grid-template-rows: auto 800px auto auto; 
+        background-color: #303030;
+    }
+
+    
+
+
+
+}
 /*------------------------------------cierre Preguntas Frecuentes Vista Desktop-----------------------------------*/
