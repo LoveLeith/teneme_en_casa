@@ -188,7 +188,7 @@ nav.navDer {
         grid-area: envios;
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-evenly;
+        justify-content: center;
         background: radial-gradient(#49494f, #303030);
     }
 
@@ -196,6 +196,8 @@ nav.navDer {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
+        margin-top: 20px;
+        margin-bottom: 60px;
     }
 
     footer { 

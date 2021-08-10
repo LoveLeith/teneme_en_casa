@@ -451,6 +451,12 @@
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  .videoEnvios {
+    margin-right: 15px;
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .enviosDomicilio {
     padding: 30px;
@@ -1179,6 +1185,14 @@ section {
   .texto--fontSize {
     font-size: 20px;
   }
+}
+
+.tituloEnvios {
+  width: 100%;
+}
+
+.tituloEnvios__titulo--padding {
+  padding: 40px;
 }
 
 /*map-get*/
@@ -2739,9 +2753,9 @@ nav.navDer {
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     background: radial-gradient(#49494f, #303030);
   }
   .envios {
@@ -2754,6 +2768,8 @@ nav.navDer {
             flex-flow: row wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 60px;
   }
   footer {
     -ms-grid-row: 3;

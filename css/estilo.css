@@ -281,6 +281,10 @@
     margin-right: 10px;
     margin-bottom: 30px; } }
 
+@media only screen and (min-width: 1024px) {
+  .videoEnvios {
+    margin-right: 15px; } }
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .enviosDomicilio {
     padding: 30px; } }
@@ -740,6 +744,12 @@ section {
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .texto--fontSize {
       font-size: 20px; } }
+
+.tituloEnvios {
+  width: 100%; }
+
+.tituloEnvios__titulo--padding {
+  padding: 40px; }
 
 /*map-get*/
 .carrito__icono--color {
@@ -1669,12 +1679,14 @@ nav.navDer {
     grid-area: envios;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     background: radial-gradient(#49494f, #303030); }
   .envios {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around; }
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 60px; }
   footer {
     grid-area: footer; } }
 
