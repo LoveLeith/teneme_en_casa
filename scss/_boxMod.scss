@@ -85,7 +85,7 @@ $border-top: 2px solid white;
 }
 
 .borde {
-    border: 1px solid $colorLines;
+    border-top: 2px solid $colorLines;
     @media only screen and (min-width: 768px) and (max-width: 1024px) {
     border: $border-none;
     }
