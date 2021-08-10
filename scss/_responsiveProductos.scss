@@ -229,8 +229,11 @@ nav.navDer {
         grid-area: encabezado2;
     }
 
-    main.presentacionProducots {
+    main.presentacionProductos {
         grid-area: productos;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
     }
 
     footer {
