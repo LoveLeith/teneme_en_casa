@@ -106,3 +106,24 @@ nav.navDer {
 }
 
 /*------------------------------------cierre Preguntas Frecuentes Vista Tablet-----------------------------------*/
+
+/*------------------------------------inicio Preguntas Frecuentes Vista Desktop-----------------------------------*/
+@media only screen and (min-width: 1024px) {
+
+    .gridPreguntasFrecuentes {
+        display: grid;
+        grid-template-areas:
+        "encabezado encabezado logo logo encabezado2 encabezado2"
+        "preguntas preguntas preguntas preguntas preguntas preguntas"
+        "footer footer footer footer footer footer";
+        grid-template-columns: 16.666% 16.666% 16.666% 16.666% 16.666% 16.666%;
+        grid-template-rows: auto 800px auto auto; 
+        background-color: #303030;
+    }
+
+    header {
+        grid-area: logo;
+    }
+}
+
+/*------------------------------------cierre Preguntas Frecuentes Vista Desktop-----------------------------------*/
