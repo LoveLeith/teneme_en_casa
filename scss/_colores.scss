@@ -11,19 +11,7 @@ $estilos: (
   mayuscula: uppercase,
 );
 
-.carrito__icono--color {
-    color: $carritoColor;
-}
-
-.tituloTeneme__titulo--color {
-    color: $colorFont;
-}
-
-.menu__item--color {
-    color: $colorFont;
-}
-
-.menuInferior__item--color, .redes__instagram--color, .redes__facebook--color, .redes__whatsapp--color, .pagos__efectivo--color, .pagos__mastercard--color, .pagos__visa--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
+.carrito__icono--color, .tituloTeneme__titulo--color, .menu__item--color, .menuInferior__item--color, .redes__instagram--color, .redes__facebook--color, .redes__whatsapp--color, .pagos__efectivo--color, .pagos__mastercard--color, .pagos__visa--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
     color: $colorFont;
 }
 
