@@ -177,7 +177,7 @@
   padding: 10px 15px; }
 
 /*-----------------------cierre seccion Nosotros Mobile First-----------------------*/
-/*-----------------------inicio seccion Nosotros Vista Tablet-----------------------*/
+/*-----------------------inicio seccion Productos Vista Mobile-----------------------*/
 @media only screen and (max-width: 768px) {
   .categoriasProductos {
     display: flex;
@@ -229,7 +229,7 @@
 .card-text {
   text-align: center; }
 
-/*-----------------------cierre seccion Nosotros Vista Tablet-----------------------*/
+/*-----------------------cierre seccion Preguntas Frecuentes Vista Mobile-----------------------*/
 .tituloPreguntas__titulo--padding {
   padding-top: 30px;
   padding-bottom: 30px; }
@@ -241,7 +241,6 @@
   text-align: left;
   margin-left: 20px; }
 
-/*--------------------inicio seccion Preguntas Frecuentes---------------------*/
 .containerPreguntasRespuestas {
   padding: 25px; }
 

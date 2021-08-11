@@ -187,7 +187,7 @@ footer {
 }
 
 /*-----------------------cierre seccion Nosotros Mobile First-----------------------*/
-/*-----------------------inicio seccion Nosotros Vista Tablet-----------------------*/
+/*-----------------------inicio seccion Productos Vista Mobile-----------------------*/
 
 .categoriasProductos {
     @media only screen and (max-width: 768px){
@@ -254,8 +254,7 @@ footer {
     text-align: center;
 }
 
-
-/*-----------------------cierre seccion Nosotros Vista Tablet-----------------------*/
+/*-----------------------cierre seccion Preguntas Frecuentes Vista Mobile-----------------------*/
 
 .tituloPreguntas__titulo--padding {
     padding-top: 30px;
@@ -270,8 +269,6 @@ footer {
     text-align: left;
     margin-left: 20px;
 }
-
-/*--------------------inicio seccion Preguntas Frecuentes---------------------*/
 
 .containerPreguntasRespuestas {
     padding: 25px;
