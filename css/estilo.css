@@ -299,14 +299,29 @@
   margin-bottom: 20px; }
 
 /*------------------------------inicio Error 404 Vista Mobile ------------------------------*/
+.contenidoError {
+  padding: 20px 20px; }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .contenidoError {
+      padding: 10px 40px 0px 40px; } }
+
 .tituloError h1 {
   text-align: center; }
 
 .equivocacion__titulo--padding {
-  padding: 40px 20px; }
+  padding: 10px 20px;
+  margin-top: 20px; }
 
 .containerTextoError {
-  padding: 100px 20px; }
+  margin-bottom: 170px; }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .containerTextoError {
+      margin-top: 140px;
+      margin-left: 500px;
+      margin-bottom: 130px; } }
+
+.equivocacion__texto1--textAlign, .equivocacion__texto2--textAlign {
+  text-align: center; }
 
 /*map-get*/
 .carrito__icono--color, .tituloTeneme__titulo--color, .menu__item--color, .menuInferior__item--color, .redes__instagram--color, .redes__facebook--color, .redes__whatsapp--color, .pagos__efectivo--color, .pagos__mastercard--color, .pagos__visa--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
@@ -1946,3 +1961,27 @@ nav.navIzq ul li a:hover, nav.navDer ul li a:hover {
 
 .copyright {
   grid-area: copyright; }
+
+/*------------------------------cierre Error Vista Mobile First --------------------------------*/
+/*------------------------------cierre Error Vista Tablet --------------------------------*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .gridError {
+    display: grid;
+    grid-template-areas: "encabezado logo encabezado2" "error error error" "footer footer footer";
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: auto;
+    background-color: #303030; }
+  header {
+    grid-area: logo; }
+  .carrito {
+    grid-area: encabezado2; }
+  nav.navIzq {
+    grid-area: encabezado; }
+  nav.navDer {
+    grid-area: encabezado2; }
+  .contenidoError {
+    grid-area: error; }
+  footer {
+    grid-area: footer; } }
+
+/*------------------------------cierre Error Vista Tablet --------------------------------*/

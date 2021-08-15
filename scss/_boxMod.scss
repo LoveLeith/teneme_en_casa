@@ -373,15 +373,31 @@ footer {
 
 /*------------------------------inicio Error 404 Vista Mobile ------------------------------*/
 
+.contenidoError {
+    padding: 20px 20px;
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    padding: 10px 40px 0px 40px;
+    }
+}
+
 .tituloError h1 {
     text-align: center;
 }
 
 .equivocacion__titulo--padding {
-    padding: 40px 20px;
+    padding: 10px 20px;
+    margin-top: 20px;
 }
 
 .containerTextoError {
-    padding: 100px 20px;
+    margin-bottom: 170px;
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    margin-top: 140px;
+    margin-left: 500px;
+    margin-bottom: 130px;
+    }
 }
 
+.equivocacion__texto1--textAlign, .equivocacion__texto2--textAlign {
+    text-align: center;
+}

@@ -138,3 +138,46 @@ nav.navIzq ul li a:hover, nav.navDer ul li a:hover {
     grid-area: copyright;
 }
 
+/*------------------------------cierre Error Vista Mobile First --------------------------------*/
+
+/*------------------------------cierre Error Vista Tablet --------------------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+
+    .gridError {
+        display: grid;
+        grid-template-areas: 
+        "encabezado logo encabezado2"
+        "error error error"
+        "footer footer footer";
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        grid-template-rows: auto;
+        background-color: $backgroundColor;
+    }
+
+    header {
+        grid-area: logo;
+    }
+
+    .carrito {
+        grid-area: encabezado2;
+    }
+
+    nav.navIzq {
+        grid-area: encabezado;
+    }
+
+    nav.navDer {
+        grid-area: encabezado2;
+    }
+
+    .contenidoError {
+        grid-area: error;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+}
+/*------------------------------cierre Error Vista Tablet --------------------------------*/

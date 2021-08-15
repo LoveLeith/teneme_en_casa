@@ -477,16 +477,39 @@
 }
 
 /*------------------------------inicio Error 404 Vista Mobile ------------------------------*/
+.contenidoError {
+  padding: 20px 20px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .contenidoError {
+    padding: 10px 40px 0px 40px;
+  }
+}
+
 .tituloError h1 {
   text-align: center;
 }
 
 .equivocacion__titulo--padding {
-  padding: 40px 20px;
+  padding: 10px 20px;
+  margin-top: 20px;
 }
 
 .containerTextoError {
-  padding: 100px 20px;
+  margin-bottom: 170px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .containerTextoError {
+    margin-top: 140px;
+    margin-left: 500px;
+    margin-bottom: 130px;
+  }
+}
+
+.equivocacion__texto1--textAlign, .equivocacion__texto2--textAlign {
+  text-align: center;
 }
 
 /*map-get*/
@@ -3228,4 +3251,53 @@ nav.navIzq ul li a:hover, nav.navDer ul li a:hover {
   -ms-grid-column: 1;
   grid-area: copyright;
 }
+
+/*------------------------------cierre Error Vista Mobile First --------------------------------*/
+/*------------------------------cierre Error Vista Tablet --------------------------------*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .gridError {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "encabezado logo encabezado2" "error error error" "footer footer footer";
+    -ms-grid-columns: 33.3% 33.3% 33.3%;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    background-color: #303030;
+  }
+  header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: logo;
+  }
+  .carrito {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: encabezado2;
+  }
+  nav.navIzq {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: encabezado;
+  }
+  nav.navDer {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: encabezado2;
+  }
+  .contenidoError {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: error;
+  }
+  footer {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: footer;
+  }
+}
+
+/*------------------------------cierre Error Vista Tablet --------------------------------*/
 /*# sourceMappingURL=style.css.map */
