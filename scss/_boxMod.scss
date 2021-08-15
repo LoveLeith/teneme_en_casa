@@ -141,6 +141,13 @@ footer {
     @include flex-justify-center;
 }
 
+.ingresoRegistro {
+    @media only screen and (max-width: 768px) {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
 .ingresoRegistro h3 {
     margin-top: 10px;
 }

@@ -162,6 +162,13 @@
           justify-content: center;
 }
 
+@media only screen and (max-width: 768px) {
+  .ingresoRegistro {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
 .ingresoRegistro h3 {
   margin-top: 10px;
 }
@@ -1082,12 +1089,54 @@ section {
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .tituloTeneme__titulo--fontSize {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .tituloTeneme__titulo--fontSize {
+    font-size: 30px;
+  }
+}
+
 .redes__instagram--size, .redes__facebook--size, .redes__whatsapp--size, .pagos__efectivo--size, .pagos__mastercard--size, .pagos__visa--size {
   font-size: 25px;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .redes__instagram--size, .redes__facebook--size, .redes__whatsapp--size, .pagos__efectivo--size, .pagos__mastercard--size, .pagos__visa--size {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .redes__instagram--size, .redes__facebook--size, .redes__whatsapp--size, .pagos__efectivo--size, .pagos__mastercard--size, .pagos__visa--size {
+    font-size: 20px;
+  }
+}
+
 .menuInferior__item--fontFamily, .cuenta__titulo--fontFamily, .ingresa__texto--fontFamily, .registrarse__texto--fontFamily, .copyright__texto--fontFamily {
   font-family: forum;
+}
+
+@media only screen and (max-width: 768px) {
+  .cuenta__titulo--fontSize {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .cuenta__titulo--fontSize {
+    font-size: 19px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .cuenta__titulo--fontSize {
+    font-size: 22px;
+  }
 }
 
 /*--------------------seccion Nosotros-------------------------*/
