@@ -106,7 +106,7 @@ div.carrito {
     padding-left: 0px;
 }
 
-.container-fluid, footer, article, .presentacionProductos {
+.container-fluid, footer, article, .presentacionProductos, .contenidoError {
     border-top: $border-top;
 }
 
@@ -369,5 +369,19 @@ footer {
 
 .parrafo--margins {
     margin-bottom: 20px;
+}
+
+/*------------------------------inicio Error 404 Vista Mobile ------------------------------*/
+
+.tituloError h1 {
+    text-align: center;
+}
+
+.equivocacion__titulo--padding {
+    padding: 40px 20px;
+}
+
+.containerTextoError {
+    padding: 100px 20px;
 }
 

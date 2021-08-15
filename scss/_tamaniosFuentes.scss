@@ -147,3 +147,13 @@ $estilos: (
 .parrafo--fontSize {
     font-size: 18px;
 }
+
+/*----------------------seccion Error 404 -------------------------------------*/
+
+.equivocacion__titulo--fontFamily, .equivocacion__texto1--fontFamily, .equivocacion__texto2--fontFamily {
+    font-family: $forum;
+}
+
+.equivocacion__titulo--fontSize {
+    font-size: 40px;
+}

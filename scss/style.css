@@ -45,6 +45,11 @@
   color: #c4bfbe;
 }
 
+/*--------------seccion Error 404 ---------------------------*/
+.equivocacion__titulo--color, .equivocacion__texto1--color, .equivocacion__texto2--color {
+  color: white;
+}
+
 /*map-get*/
 @media only screen and (max-width: 768px) {
   * {
@@ -105,7 +110,7 @@
   padding-left: 0px;
 }
 
-.container-fluid, footer, article, .presentacionProductos {
+.container-fluid, footer, article, .presentacionProductos, .contenidoError {
   border-top: 2px solid white;
 }
 
@@ -471,6 +476,19 @@
   margin-bottom: 20px;
 }
 
+/*------------------------------inicio Error 404 Vista Mobile ------------------------------*/
+.tituloError h1 {
+  text-align: center;
+}
+
+.equivocacion__titulo--padding {
+  padding: 40px 20px;
+}
+
+.containerTextoError {
+  padding: 100px 20px;
+}
+
 /*map-get*/
 .carrito__icono--color, .tituloTeneme__titulo--color, .menu__item--color, .menuInferior__item--color, .redes__instagram--color, .redes__facebook--color, .redes__whatsapp--color, .pagos__efectivo--color, .pagos__mastercard--color, .pagos__visa--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
   color: white;
@@ -516,6 +534,11 @@
 
 .respuesta {
   color: #c4bfbe;
+}
+
+/*--------------seccion Error 404 ---------------------------*/
+.equivocacion__titulo--color, .equivocacion__texto1--color, .equivocacion__texto2--color {
+  color: white;
 }
 
 /*------------------inicio Index Vista Mobile First ---------------------*/
@@ -1222,51 +1245,13 @@ section {
   font-size: 18px;
 }
 
-/*map-get*/
-.carrito__icono--color, .tituloTeneme__titulo--color, .menu__item--color, .menuInferior__item--color, .redes__instagram--color, .redes__facebook--color, .redes__whatsapp--color, .pagos__efectivo--color, .pagos__mastercard--color, .pagos__visa--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
-  color: white;
+/*----------------------seccion Error 404 -------------------------------------*/
+.equivocacion__titulo--fontFamily, .equivocacion__texto1--fontFamily, .equivocacion__texto2--fontFamily {
+  font-family: forum;
 }
 
-.copyright {
-  background-color: #b0afa4;
-}
-
-/*-------------------seccion Nosotros----------------*/
-.tituloSeccion h1 {
-  color: white;
-  text-transform: uppercase;
-}
-
-.texto1, .texto2 {
-  color: white;
-}
-
-@media only screen and (max-width: 768px) {
-  footer {
-    background-color: #303030;
-  }
-}
-
-/*-------------------seccion Productos--------------------*/
-.presentacionProductos {
-  background: radial-gradient(#49494f, #303030);
-}
-
-.tituloProductos__titulo--color, .card-text {
-  color: white;
-}
-
-/*----------------seccion Preguntas Frecuentes y Envios -------------*/
-.card, .enviosDomicilio {
-  background: radial-gradient(#49494f, #303030);
-}
-
-.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color, .titular__titulo--color, .subtituloContacto__titulo--color, .parrafo--color, .btn, .btn-link, .btn-link:hover {
-  color: white;
-}
-
-.respuesta {
-  color: #c4bfbe;
+.equivocacion__titulo--fontSize {
+  font-size: 40px;
 }
 
 /*map-get*/
@@ -1314,6 +1299,63 @@ section {
 
 .respuesta {
   color: #c4bfbe;
+}
+
+/*--------------seccion Error 404 ---------------------------*/
+.equivocacion__titulo--color, .equivocacion__texto1--color, .equivocacion__texto2--color {
+  color: white;
+}
+
+/*map-get*/
+.carrito__icono--color, .tituloTeneme__titulo--color, .menu__item--color, .menuInferior__item--color, .redes__instagram--color, .redes__facebook--color, .redes__whatsapp--color, .pagos__efectivo--color, .pagos__mastercard--color, .pagos__visa--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
+  color: white;
+}
+
+.copyright {
+  background-color: #b0afa4;
+}
+
+/*-------------------seccion Nosotros----------------*/
+.tituloSeccion h1 {
+  color: white;
+  text-transform: uppercase;
+}
+
+.texto1, .texto2 {
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  footer {
+    background-color: #303030;
+  }
+}
+
+/*-------------------seccion Productos--------------------*/
+.presentacionProductos {
+  background: radial-gradient(#49494f, #303030);
+}
+
+.tituloProductos__titulo--color, .card-text {
+  color: white;
+}
+
+/*----------------seccion Preguntas Frecuentes y Envios -------------*/
+.card, .enviosDomicilio {
+  background: radial-gradient(#49494f, #303030);
+}
+
+.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color, .titular__titulo--color, .subtituloContacto__titulo--color, .parrafo--color, .btn, .btn-link, .btn-link:hover {
+  color: white;
+}
+
+.respuesta {
+  color: #c4bfbe;
+}
+
+/*--------------seccion Error 404 ---------------------------*/
+.equivocacion__titulo--color, .equivocacion__texto1--color, .equivocacion__texto2--color {
+  color: white;
 }
 
 .gridContainerNosotros {
@@ -1804,6 +1846,11 @@ article .nosotros {
   color: #c4bfbe;
 }
 
+/*--------------seccion Error 404 ---------------------------*/
+.equivocacion__titulo--color, .equivocacion__texto1--color, .equivocacion__texto2--color {
+  color: white;
+}
+
 /*------------------------inicio Productos Vista Mobile First---------------------------*/
 .gridProductos {
   display: -ms-grid;
@@ -2145,6 +2192,11 @@ nav.navDer ul li a {
   color: #c4bfbe;
 }
 
+/*--------------seccion Error 404 ---------------------------*/
+.equivocacion__titulo--color, .equivocacion__texto1--color, .equivocacion__texto2--color {
+  color: white;
+}
+
 /*------------------------inicio Preguntas Frecuentes Vista Mobile First---------------------------*/
 .gridPreguntasFrecuentes {
   display: -ms-grid;
@@ -2370,6 +2422,11 @@ nav.navDer {
 
 .respuesta {
   color: #c4bfbe;
+}
+
+/*--------------seccion Error 404 ---------------------------*/
+.equivocacion__titulo--color, .equivocacion__texto1--color, .equivocacion__texto2--color {
+  color: white;
 }
 
 /*------------------------inicio Productos Vista Mobile First---------------------------*/
@@ -2685,6 +2742,11 @@ nav.navDer {
   color: #c4bfbe;
 }
 
+/*--------------seccion Error 404 ---------------------------*/
+.equivocacion__titulo--color, .equivocacion__texto1--color, .equivocacion__texto2--color {
+  color: white;
+}
+
 /*------------------------inicio Contacto Vista Mobile First---------------------------*/
 .gridContacto {
   display: -ms-grid;
@@ -2847,22 +2909,22 @@ form {
   }
   header {
     -ms-grid-row: 1;
-    -ms-grid-column: 2;
+    -ms-grid-column: 1;
     grid-area: logo;
   }
   .carrito {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
     grid-area: encabezado2;
   }
   nav.navIzq {
-    -ms-grid-row: 1;
+    -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: encabezado;
   }
   nav.navDer {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
     grid-area: encabezado2;
   }
   .containerContacto {
@@ -2897,26 +2959,22 @@ form {
   }
   header {
     -ms-grid-row: 1;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 2;
+    -ms-grid-column: 1;
     grid-area: logo;
   }
   .carrito {
-    -ms-grid-row: 1;
-    -ms-grid-column: 5;
-    -ms-grid-column-span: 2;
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
     grid-area: encabezado2;
   }
   nav.navIzq {
-    -ms-grid-row: 1;
+    -ms-grid-row: 2;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
     grid-area: encabezado;
   }
   nav.navDer {
-    -ms-grid-row: 1;
-    -ms-grid-column: 5;
-    -ms-grid-column-span: 2;
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
     grid-area: encabezado2;
   }
   .containerContacto {
@@ -2937,4 +2995,237 @@ form {
 }
 
 /*------------------------------------cierre Contacto Vista Desktop-----------------------------------*/
+/*map-get*/
+.carrito__icono--color, .tituloTeneme__titulo--color, .menu__item--color, .menuInferior__item--color, .redes__instagram--color, .redes__facebook--color, .redes__whatsapp--color, .pagos__efectivo--color, .pagos__mastercard--color, .pagos__visa--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
+  color: white;
+}
+
+.copyright {
+  background-color: #b0afa4;
+}
+
+/*-------------------seccion Nosotros----------------*/
+.tituloSeccion h1 {
+  color: white;
+  text-transform: uppercase;
+}
+
+.texto1, .texto2 {
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  footer {
+    background-color: #303030;
+  }
+}
+
+/*-------------------seccion Productos--------------------*/
+.presentacionProductos {
+  background: radial-gradient(#49494f, #303030);
+}
+
+.tituloProductos__titulo--color, .card-text {
+  color: white;
+}
+
+/*----------------seccion Preguntas Frecuentes y Envios -------------*/
+.card, .enviosDomicilio {
+  background: radial-gradient(#49494f, #303030);
+}
+
+.tituloPreguntas__titulo--color, .tituloEnvios__titulo--color, .texto--color, .titular__titulo--color, .subtituloContacto__titulo--color, .parrafo--color, .btn, .btn-link, .btn-link:hover {
+  color: white;
+}
+
+.respuesta {
+  color: #c4bfbe;
+}
+
+/*--------------seccion Error 404 ---------------------------*/
+.equivocacion__titulo--color, .equivocacion__texto1--color, .equivocacion__texto2--color {
+  color: white;
+}
+
+/*------------------inicio Index Vista Mobile First ---------------------*/
+.gridError {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "logo" "encabezado" "encabezado2" "error" "redes" "pagos" "ingresoRegistro" "copyright";
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  background-color: #303030;
+}
+
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: logo;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.carrito {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: logo;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+nav.navIzq {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: encabezado;
+}
+
+nav.navIzq ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+nav.navIzq ul li {
+  list-style-type: none;
+  padding: 10px;
+}
+
+nav.navIzq ul li a {
+  text-decoration: none;
+}
+
+nav.navIzq ul ul {
+  display: none;
+}
+
+nav.navDer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: encabezado2;
+}
+
+nav.navDer ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+nav.navDer ul li {
+  list-style-type: none;
+  padding: 10px;
+}
+
+nav.navDer ul li a {
+  text-decoration: none;
+}
+
+nav.navIzq ul li a:hover, nav.navDer ul li a:hover {
+  color: #e3c55b;
+}
+
+.contenidoError {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: error;
+  background-image: url(../assets/images/error_404_plato.jpg);
+}
+
+.tituloTeneme {
+  display: none;
+}
+
+.menuInferior {
+  display: none;
+}
+
+.redes {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: redes;
+}
+
+.redes ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.redes ul li {
+  list-style-type: none;
+  padding: 5px;
+}
+
+.redes ul li a {
+  text-decoration: none;
+  margin-top: 15px;
+  border-radius: 50%;
+  padding: .6em .6em;
+}
+
+.pagos {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: pagos;
+}
+
+.pagos ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.pagos ul li {
+  list-style-type: none;
+  padding: 5px;
+}
+
+.pagos ul li a {
+  text-decoration: none;
+  margin-top: 15px;
+  border-radius: 50%;
+  padding: .6em .6em;
+}
+
+.redes ul li a:hover, .pagos ul li a:hover {
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  background-color: white;
+  color: #ecce1f;
+}
+
+.ingresoRegistro {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: ingresoRegistro;
+}
+
+.copyright {
+  -ms-grid-row: 8;
+  -ms-grid-column: 1;
+  grid-area: copyright;
+}
 /*# sourceMappingURL=style.css.map */
