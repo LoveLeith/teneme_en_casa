@@ -157,3 +157,9 @@ $estilos: (
 .equivocacion__titulo--fontSize {
     font-size: 40px;
 }
+
+.equivocacion__texto1--fontSize, .equivocacion__texto2--fontSize {
+    @media only screen and (min-width: 1024px) {
+    font-size: 20px;
+    }
+}

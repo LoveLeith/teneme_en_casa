@@ -487,12 +487,21 @@
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  .contenidoError {
+    padding: 50px 30px 400px 30px;
+  }
+}
+
 .tituloError h1 {
   text-align: center;
 }
 
 .equivocacion__titulo--padding {
   padding: 10px 20px;
+}
+
+.equivocacion__titulo--margin {
   margin-top: 20px;
 }
 
@@ -505,6 +514,12 @@
     margin-top: 140px;
     margin-left: 500px;
     margin-bottom: 130px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .equivocacion__texto1--margin {
+    margin-top: 35px;
   }
 }
 
@@ -1275,6 +1290,12 @@ section {
 
 .equivocacion__titulo--fontSize {
   font-size: 40px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .equivocacion__texto1--fontSize, .equivocacion__texto2--fontSize {
+    font-size: 20px;
+  }
 }
 
 /*map-get*/
@@ -3167,6 +3188,7 @@ nav.navIzq ul li a:hover, nav.navDer ul li a:hover {
   -ms-grid-column: 1;
   grid-area: error;
   background-image: url(../assets/images/error_404_plato.jpg);
+  background-size: cover;
 }
 
 .tituloTeneme {
@@ -3300,4 +3322,61 @@ nav.navIzq ul li a:hover, nav.navDer ul li a:hover {
 }
 
 /*------------------------------cierre Error Vista Tablet --------------------------------*/
+/*------------------------------inicio Error Vista Desktop --------------------------------*/
+@media only screen and (min-width: 1024px) {
+  .gridError {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "encabezado encabezado logo logo encabezado2 encabezado2" "error error error error error error" "footer footer footer footer footer footer";
+    -ms-grid-columns: 16.666% 16.666% 16.666% 16.666% 16.666% 16.666%;
+        grid-template-columns: 16.666% 16.666% 16.666% 16.666% 16.666% 16.666%;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+    background-color: #303030;
+  }
+  header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-area: logo;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  nav .navIzq {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: encabezado;
+  }
+  nav .navDer {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2;
+    grid-area: encabezado2;
+  }
+  div .carritoCompras {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2;
+    grid-area: encabezado2;
+  }
+  .contenidoError {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-area: error;
+  }
+  footer {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-area: footer;
+  }
+}
+
+/*------------------------------cierre Error Vista Desktop --------------------------------*/
 /*# sourceMappingURL=style.css.map */

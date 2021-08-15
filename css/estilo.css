@@ -304,12 +304,17 @@
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .contenidoError {
       padding: 10px 40px 0px 40px; } }
+  @media only screen and (min-width: 1024px) {
+    .contenidoError {
+      padding: 50px 30px 400px 30px; } }
 
 .tituloError h1 {
   text-align: center; }
 
 .equivocacion__titulo--padding {
-  padding: 10px 20px;
+  padding: 10px 20px; }
+
+.equivocacion__titulo--margin {
   margin-top: 20px; }
 
 .containerTextoError {
@@ -319,6 +324,10 @@
       margin-top: 140px;
       margin-left: 500px;
       margin-bottom: 130px; } }
+
+@media only screen and (min-width: 1024px) {
+  .equivocacion__texto1--margin {
+    margin-top: 35px; } }
 
 .equivocacion__texto1--textAlign, .equivocacion__texto2--textAlign {
   text-align: center; }
@@ -804,6 +813,10 @@ section {
 
 .equivocacion__titulo--fontSize {
   font-size: 40px; }
+
+@media only screen and (min-width: 1024px) {
+  .equivocacion__texto1--fontSize, .equivocacion__texto2--fontSize {
+    font-size: 20px; } }
 
 /*map-get*/
 .carrito__icono--color, .tituloTeneme__titulo--color, .menu__item--color, .menuInferior__item--color, .redes__instagram--color, .redes__facebook--color, .redes__whatsapp--color, .pagos__efectivo--color, .pagos__mastercard--color, .pagos__visa--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
@@ -1913,7 +1926,8 @@ nav.navIzq ul li a:hover, nav.navDer ul li a:hover {
 
 .contenidoError {
   grid-area: error;
-  background-image: url(../assets/images/error_404_plato.jpg); }
+  background-image: url(../assets/images/error_404_plato.jpg);
+  background-size: cover; }
 
 .tituloTeneme {
   display: none; }
@@ -1985,3 +1999,27 @@ nav.navIzq ul li a:hover, nav.navDer ul li a:hover {
     grid-area: footer; } }
 
 /*------------------------------cierre Error Vista Tablet --------------------------------*/
+/*------------------------------inicio Error Vista Desktop --------------------------------*/
+@media only screen and (min-width: 1024px) {
+  .gridError {
+    display: grid;
+    grid-template-areas: "encabezado encabezado logo logo encabezado2 encabezado2" "error error error error error error" "footer footer footer footer footer footer";
+    grid-template-columns: 16.666% 16.666% 16.666% 16.666% 16.666% 16.666%;
+    grid-template-rows: auto auto auto;
+    background-color: #303030; }
+  header {
+    grid-area: logo;
+    display: flex;
+    justify-content: center; }
+  nav .navIzq {
+    grid-area: encabezado; }
+  nav .navDer {
+    grid-area: encabezado2; }
+  div .carritoCompras {
+    grid-area: encabezado2; }
+  .contenidoError {
+    grid-area: error; }
+  footer {
+    grid-area: footer; } }
+
+/*------------------------------cierre Error Vista Desktop --------------------------------*/
