@@ -657,7 +657,9 @@ section {
       list-style-type: none;
       padding: 5px; }
       footer .menuInferior ul li a {
-        text-decoration: none; } }
+        text-decoration: none; }
+  footer .menuInferior ul li a:hover {
+    color: #ecce1f; } }
 
 /*---------------------------cierre Index Vista Tablet----------------------------------*/
 /*---------------------------inicio Index Vista Desktop----------------------------------*/
@@ -754,7 +756,9 @@ section {
       list-style-type: none;
       padding: 5px; }
       footer .menuInferior ul li a {
-        text-decoration: none; } }
+        text-decoration: none; }
+  footer .menuInferior ul li a:hover {
+    color: #ecce1f; } }
 
 /*---------------------------cierre Index Vista Desktop----------------------------------*/
 /*map-get*/

@@ -1036,6 +1036,9 @@ section {
   footer .menuInferior ul li a {
     text-decoration: none;
   }
+  footer .menuInferior ul li a:hover {
+    color: #ecce1f;
+  }
 }
 
 /*---------------------------cierre Index Vista Tablet----------------------------------*/
@@ -1197,6 +1200,9 @@ section {
   }
   footer .menuInferior ul li a {
     text-decoration: none;
+  }
+  footer .menuInferior ul li a:hover {
+    color: #ecce1f;
   }
 }
 
