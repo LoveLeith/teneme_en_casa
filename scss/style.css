@@ -1202,10 +1202,6 @@ section {
 
 /*---------------------------cierre Index Vista Desktop----------------------------------*/
 /*map-get*/
-.menu__item--fontFamily {
-  font-family: forum;
-}
-
 .menu__item--fontSize {
   font-size: 19px;
 }
@@ -1268,13 +1264,13 @@ section {
   }
 }
 
-.menuInferior__item--fontFamily, .cuenta__titulo--fontFamily, .ingresa__texto--fontFamily, .registrarse__texto--fontFamily, .copyright__texto--fontFamily {
+.menu__item--fontFamily, .menuInferior__item--fontFamily, .cuenta__titulo--fontFamily, .ingresa__texto--fontFamily, .registrarse__texto--fontFamily, .copyright__texto--fontFamily {
   font-family: forum;
 }
 
 @media only screen and (min-width: 1024px) {
   .menuInferior__item--fontSize {
-    font-size: 25px;
+    font-size: 22px;
   }
 }
 

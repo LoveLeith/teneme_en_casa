@@ -6,10 +6,6 @@ $estilos: (
   fuente: forum,
 );
 
-.menu__item--fontFamily {
-    font-family: $forum;
-}
-
 .menu__item--fontSize {
     font-size: 19px;
 }
@@ -54,13 +50,14 @@ $estilos: (
     font-size: 23px;
     }
 }
-.menuInferior__item--fontFamily, .cuenta__titulo--fontFamily, .ingresa__texto--fontFamily, .registrarse__texto--fontFamily, .copyright__texto--fontFamily {
+
+.menu__item--fontFamily, .menuInferior__item--fontFamily, .cuenta__titulo--fontFamily, .ingresa__texto--fontFamily, .registrarse__texto--fontFamily, .copyright__texto--fontFamily {
     font-family: $forum;
 }
 
 .menuInferior__item--fontSize {
     @media only screen and (min-width: 1024px) {
-    font-size: 25px;
+    font-size: 22px;
     }
 }
 
