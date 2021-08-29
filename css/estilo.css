@@ -113,7 +113,7 @@
   padding-right: 0px;
   padding-left: 0px; }
 
-.container-fluid, footer, article, .presentacionProductos, .contenidoError {
+.container-fluid, footer, article, .presentacionProductos, .contenidoError, .enviosDomicilio {
   border-top: 2px solid white; }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -305,10 +305,6 @@
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .enviosDomicilio {
     padding: 30px; } }
-
-@media only screen and (min-width: 1024px) {
-  .enviosDomicilio {
-    border-top: 2px solid white; } }
 
 /*----------------------inicio Contacto Vista Mobile------------------------------*/
 .titular__titulo--padding {

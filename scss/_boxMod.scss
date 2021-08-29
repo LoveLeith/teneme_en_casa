@@ -106,7 +106,7 @@ div.carrito {
     padding-left: 0px;
 }
 
-.container-fluid, footer, article, .presentacionProductos, .contenidoError {
+.container-fluid, footer, article, .presentacionProductos, .contenidoError, .enviosDomicilio {
     border-top: $border-top;
 }
 
@@ -335,10 +335,6 @@ footer {
     @media only screen and (min-width: 768px) and (max-width: 1024px) {
     padding: 30px;
     }
-    @media only screen and (min-width: 1024px) {
-    border-top: $border-top;
-    }
-
 }
 
 /*----------------------inicio Contacto Vista Mobile------------------------------*/
