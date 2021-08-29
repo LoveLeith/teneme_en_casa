@@ -1,5 +1,50 @@
 /*map-get*/
-.carrito__icono--color, .tituloTeneme__titulo--color, .menu__item--color, .menuInferior__item--color, .redes__instagram--color, .redes__facebook--color, .redes__whatsapp--color, .pagos__efectivo--color, .pagos__mastercard--color, .pagos__visa--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
+/*mapa y bucle each*/
+.redes__color--instagram {
+  color: white;
+}
+
+.redes__color--facebook {
+  color: white;
+}
+
+.redes__color--whatsapp {
+  color: white;
+}
+
+.pagos__color--efectivo {
+  color: white;
+}
+
+.pagos__color--mastercard {
+  color: white;
+}
+
+.pagos__color--visa {
+  color: white;
+}
+
+.menuInferior__color--nosotros {
+  color: white;
+}
+
+.menuInferior__color--productos {
+  color: white;
+}
+
+.menuInferior__color--preguntasFrecuentes {
+  color: white;
+}
+
+.menuInferior__color--envios {
+  color: white;
+}
+
+.menuInferior__color--contacto {
+  color: white;
+}
+
+.carrito__icono--color, .tituloTeneme__titulo--color, .menu__item--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
   color: white;
 }
 
@@ -13,7 +58,7 @@
   text-transform: uppercase;
 }
 
-.texto1, .texto2 {
+.texto1, .texto2, .texto3 {
   color: white;
 }
 
@@ -243,7 +288,7 @@
           justify-content: center;
 }
 
-.texto1, .texto2 {
+.texto1, .texto2, .texto3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -528,7 +573,52 @@
 }
 
 /*map-get*/
-.carrito__icono--color, .tituloTeneme__titulo--color, .menu__item--color, .menuInferior__item--color, .redes__instagram--color, .redes__facebook--color, .redes__whatsapp--color, .pagos__efectivo--color, .pagos__mastercard--color, .pagos__visa--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
+/*mapa y bucle each*/
+.redes__color--instagram {
+  color: white;
+}
+
+.redes__color--facebook {
+  color: white;
+}
+
+.redes__color--whatsapp {
+  color: white;
+}
+
+.pagos__color--efectivo {
+  color: white;
+}
+
+.pagos__color--mastercard {
+  color: white;
+}
+
+.pagos__color--visa {
+  color: white;
+}
+
+.menuInferior__color--nosotros {
+  color: white;
+}
+
+.menuInferior__color--productos {
+  color: white;
+}
+
+.menuInferior__color--preguntasFrecuentes {
+  color: white;
+}
+
+.menuInferior__color--envios {
+  color: white;
+}
+
+.menuInferior__color--contacto {
+  color: white;
+}
+
+.carrito__icono--color, .tituloTeneme__titulo--color, .menu__item--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
   color: white;
 }
 
@@ -542,7 +632,7 @@
   text-transform: uppercase;
 }
 
-.texto1, .texto2 {
+.texto1, .texto2, .texto3 {
   color: white;
 }
 
@@ -1174,12 +1264,18 @@ section {
 
 @media only screen and (min-width: 1024px) {
   .redes__instagram--size, .redes__facebook--size, .redes__whatsapp--size, .pagos__efectivo--size, .pagos__mastercard--size, .pagos__visa--size {
-    font-size: 20px;
+    font-size: 23px;
   }
 }
 
 .menuInferior__item--fontFamily, .cuenta__titulo--fontFamily, .ingresa__texto--fontFamily, .registrarse__texto--fontFamily, .copyright__texto--fontFamily {
   font-family: forum;
+}
+
+@media only screen and (min-width: 1024px) {
+  .menuInferior__item--fontSize {
+    font-size: 25px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1196,7 +1292,13 @@ section {
 
 @media only screen and (min-width: 1024px) {
   .cuenta__titulo--fontSize {
-    font-size: 22px;
+    font-size: 25px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .ingresa__texto--fontSize, .registrarse__texto--fontSize {
+    font-size: 20px;
   }
 }
 
@@ -1211,8 +1313,21 @@ section {
   }
 }
 
-.texto1, .texto2 {
+.texto1, .texto2, .texto3 {
   font-Family: forum;
+}
+
+/* bucle con @for*/
+.parrafo-1 {
+  font-size: 16px;
+}
+
+.parrafo-2 {
+  font-size: 32px;
+}
+
+.parrafo-3 {
+  font-size: 48px;
 }
 
 /*------------------seccion Productos------------------------*/
@@ -1299,7 +1414,52 @@ section {
 }
 
 /*map-get*/
-.carrito__icono--color, .tituloTeneme__titulo--color, .menu__item--color, .menuInferior__item--color, .redes__instagram--color, .redes__facebook--color, .redes__whatsapp--color, .pagos__efectivo--color, .pagos__mastercard--color, .pagos__visa--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
+/*mapa y bucle each*/
+.redes__color--instagram {
+  color: white;
+}
+
+.redes__color--facebook {
+  color: white;
+}
+
+.redes__color--whatsapp {
+  color: white;
+}
+
+.pagos__color--efectivo {
+  color: white;
+}
+
+.pagos__color--mastercard {
+  color: white;
+}
+
+.pagos__color--visa {
+  color: white;
+}
+
+.menuInferior__color--nosotros {
+  color: white;
+}
+
+.menuInferior__color--productos {
+  color: white;
+}
+
+.menuInferior__color--preguntasFrecuentes {
+  color: white;
+}
+
+.menuInferior__color--envios {
+  color: white;
+}
+
+.menuInferior__color--contacto {
+  color: white;
+}
+
+.carrito__icono--color, .tituloTeneme__titulo--color, .menu__item--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
   color: white;
 }
 
@@ -1313,7 +1473,7 @@ section {
   text-transform: uppercase;
 }
 
-.texto1, .texto2 {
+.texto1, .texto2, .texto3 {
   color: white;
 }
 
@@ -1351,7 +1511,52 @@ section {
 }
 
 /*map-get*/
-.carrito__icono--color, .tituloTeneme__titulo--color, .menu__item--color, .menuInferior__item--color, .redes__instagram--color, .redes__facebook--color, .redes__whatsapp--color, .pagos__efectivo--color, .pagos__mastercard--color, .pagos__visa--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
+/*mapa y bucle each*/
+.redes__color--instagram {
+  color: white;
+}
+
+.redes__color--facebook {
+  color: white;
+}
+
+.redes__color--whatsapp {
+  color: white;
+}
+
+.pagos__color--efectivo {
+  color: white;
+}
+
+.pagos__color--mastercard {
+  color: white;
+}
+
+.pagos__color--visa {
+  color: white;
+}
+
+.menuInferior__color--nosotros {
+  color: white;
+}
+
+.menuInferior__color--productos {
+  color: white;
+}
+
+.menuInferior__color--preguntasFrecuentes {
+  color: white;
+}
+
+.menuInferior__color--envios {
+  color: white;
+}
+
+.menuInferior__color--contacto {
+  color: white;
+}
+
+.carrito__icono--color, .tituloTeneme__titulo--color, .menu__item--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
   color: white;
 }
 
@@ -1365,7 +1570,7 @@ section {
   text-transform: uppercase;
 }
 
-.texto1, .texto2 {
+.texto1, .texto2, .texto3 {
   color: white;
 }
 
@@ -1844,7 +2049,52 @@ article .nosotros {
 
 /*----------------------------cierre Nosotros Vista Desktop ----------------------------------*/
 /*map-get*/
-.carrito__icono--color, .tituloTeneme__titulo--color, .menu__item--color, .menuInferior__item--color, .redes__instagram--color, .redes__facebook--color, .redes__whatsapp--color, .pagos__efectivo--color, .pagos__mastercard--color, .pagos__visa--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
+/*mapa y bucle each*/
+.redes__color--instagram {
+  color: white;
+}
+
+.redes__color--facebook {
+  color: white;
+}
+
+.redes__color--whatsapp {
+  color: white;
+}
+
+.pagos__color--efectivo {
+  color: white;
+}
+
+.pagos__color--mastercard {
+  color: white;
+}
+
+.pagos__color--visa {
+  color: white;
+}
+
+.menuInferior__color--nosotros {
+  color: white;
+}
+
+.menuInferior__color--productos {
+  color: white;
+}
+
+.menuInferior__color--preguntasFrecuentes {
+  color: white;
+}
+
+.menuInferior__color--envios {
+  color: white;
+}
+
+.menuInferior__color--contacto {
+  color: white;
+}
+
+.carrito__icono--color, .tituloTeneme__titulo--color, .menu__item--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
   color: white;
 }
 
@@ -1858,7 +2108,7 @@ article .nosotros {
   text-transform: uppercase;
 }
 
-.texto1, .texto2 {
+.texto1, .texto2, .texto3 {
   color: white;
 }
 
@@ -2190,7 +2440,52 @@ nav.navDer ul li a {
 
 /*------------------------cierre Productos Desktop---------------------------*/
 /*map-get*/
-.carrito__icono--color, .tituloTeneme__titulo--color, .menu__item--color, .menuInferior__item--color, .redes__instagram--color, .redes__facebook--color, .redes__whatsapp--color, .pagos__efectivo--color, .pagos__mastercard--color, .pagos__visa--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
+/*mapa y bucle each*/
+.redes__color--instagram {
+  color: white;
+}
+
+.redes__color--facebook {
+  color: white;
+}
+
+.redes__color--whatsapp {
+  color: white;
+}
+
+.pagos__color--efectivo {
+  color: white;
+}
+
+.pagos__color--mastercard {
+  color: white;
+}
+
+.pagos__color--visa {
+  color: white;
+}
+
+.menuInferior__color--nosotros {
+  color: white;
+}
+
+.menuInferior__color--productos {
+  color: white;
+}
+
+.menuInferior__color--preguntasFrecuentes {
+  color: white;
+}
+
+.menuInferior__color--envios {
+  color: white;
+}
+
+.menuInferior__color--contacto {
+  color: white;
+}
+
+.carrito__icono--color, .tituloTeneme__titulo--color, .menu__item--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
   color: white;
 }
 
@@ -2204,7 +2499,7 @@ nav.navDer ul li a {
   text-transform: uppercase;
 }
 
-.texto1, .texto2 {
+.texto1, .texto2, .texto3 {
   color: white;
 }
 
@@ -2422,7 +2717,52 @@ nav.navDer {
 
 /*------------------------------------cierre Preguntas Frecuentes Vista Desktop-----------------------------------*/
 /*map-get*/
-.carrito__icono--color, .tituloTeneme__titulo--color, .menu__item--color, .menuInferior__item--color, .redes__instagram--color, .redes__facebook--color, .redes__whatsapp--color, .pagos__efectivo--color, .pagos__mastercard--color, .pagos__visa--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
+/*mapa y bucle each*/
+.redes__color--instagram {
+  color: white;
+}
+
+.redes__color--facebook {
+  color: white;
+}
+
+.redes__color--whatsapp {
+  color: white;
+}
+
+.pagos__color--efectivo {
+  color: white;
+}
+
+.pagos__color--mastercard {
+  color: white;
+}
+
+.pagos__color--visa {
+  color: white;
+}
+
+.menuInferior__color--nosotros {
+  color: white;
+}
+
+.menuInferior__color--productos {
+  color: white;
+}
+
+.menuInferior__color--preguntasFrecuentes {
+  color: white;
+}
+
+.menuInferior__color--envios {
+  color: white;
+}
+
+.menuInferior__color--contacto {
+  color: white;
+}
+
+.carrito__icono--color, .tituloTeneme__titulo--color, .menu__item--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
   color: white;
 }
 
@@ -2436,7 +2776,7 @@ nav.navDer {
   text-transform: uppercase;
 }
 
-.texto1, .texto2 {
+.texto1, .texto2, .texto3 {
   color: white;
 }
 
@@ -2740,7 +3080,52 @@ nav.navDer {
 
 /*------------------------cierre Envios Vista Desktop---------------------------*/
 /*map-get*/
-.carrito__icono--color, .tituloTeneme__titulo--color, .menu__item--color, .menuInferior__item--color, .redes__instagram--color, .redes__facebook--color, .redes__whatsapp--color, .pagos__efectivo--color, .pagos__mastercard--color, .pagos__visa--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
+/*mapa y bucle each*/
+.redes__color--instagram {
+  color: white;
+}
+
+.redes__color--facebook {
+  color: white;
+}
+
+.redes__color--whatsapp {
+  color: white;
+}
+
+.pagos__color--efectivo {
+  color: white;
+}
+
+.pagos__color--mastercard {
+  color: white;
+}
+
+.pagos__color--visa {
+  color: white;
+}
+
+.menuInferior__color--nosotros {
+  color: white;
+}
+
+.menuInferior__color--productos {
+  color: white;
+}
+
+.menuInferior__color--preguntasFrecuentes {
+  color: white;
+}
+
+.menuInferior__color--envios {
+  color: white;
+}
+
+.menuInferior__color--contacto {
+  color: white;
+}
+
+.carrito__icono--color, .tituloTeneme__titulo--color, .menu__item--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
   color: white;
 }
 
@@ -2754,7 +3139,7 @@ nav.navDer {
   text-transform: uppercase;
 }
 
-.texto1, .texto2 {
+.texto1, .texto2, .texto3 {
   color: white;
 }
 
@@ -3040,7 +3425,52 @@ form {
 
 /*------------------------------------cierre Contacto Vista Desktop-----------------------------------*/
 /*map-get*/
-.carrito__icono--color, .tituloTeneme__titulo--color, .menu__item--color, .menuInferior__item--color, .redes__instagram--color, .redes__facebook--color, .redes__whatsapp--color, .pagos__efectivo--color, .pagos__mastercard--color, .pagos__visa--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
+/*mapa y bucle each*/
+.redes__color--instagram {
+  color: white;
+}
+
+.redes__color--facebook {
+  color: white;
+}
+
+.redes__color--whatsapp {
+  color: white;
+}
+
+.pagos__color--efectivo {
+  color: white;
+}
+
+.pagos__color--mastercard {
+  color: white;
+}
+
+.pagos__color--visa {
+  color: white;
+}
+
+.menuInferior__color--nosotros {
+  color: white;
+}
+
+.menuInferior__color--productos {
+  color: white;
+}
+
+.menuInferior__color--preguntasFrecuentes {
+  color: white;
+}
+
+.menuInferior__color--envios {
+  color: white;
+}
+
+.menuInferior__color--contacto {
+  color: white;
+}
+
+.carrito__icono--color, .tituloTeneme__titulo--color, .menu__item--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
   color: white;
 }
 
@@ -3054,7 +3484,7 @@ form {
   text-transform: uppercase;
 }
 
-.texto1, .texto2 {
+.texto1, .texto2, .texto3 {
   color: white;
 }
 

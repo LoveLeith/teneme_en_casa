@@ -11,12 +11,51 @@ $estilos: (
   mayuscula: uppercase,
 );
 
-.carrito__icono--color, .tituloTeneme__titulo--color, .menu__item--color, .menuInferior__item--color, .redes__instagram--color, .redes__facebook--color, .redes__whatsapp--color, .pagos__efectivo--color, .pagos__mastercard--color, .pagos__visa--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
+/*mapa y bucle each*/
+$redes: ( 
+    instagram: $colorFont,
+    facebook: $colorFont,
+    whatsapp: $colorFont,
+);
+
+@each $red, $color in $redes {
+    .redes__color--#{$red} {
+        color: $color;
+    }
+}
+
+$pagos: (
+    efectivo: $colorFont,
+    mastercard: $colorFont,
+    visa: $colorFont
+);
+
+@each $pago, $color in $pagos {
+    .pagos__color--#{$pago} {
+        color: $color;
+    }
+}
+
+$menuInferior: (
+    nosotros: $colorFont,
+    productos: $colorFont,
+    preguntasFrecuentes: $colorFont,
+    envios: $colorFont,
+    contacto: $colorFont
+);
+
+@each $menuInf, $color in $menuInferior {
+    .menuInferior__color--#{$menuInf} {
+        color: $color;
+    }
+}
+
+.carrito__icono--color, .tituloTeneme__titulo--color, .menu__item--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
     color: $colorFont;
 }
 
 .copyright {
-    background-color: #b0afa4;;
+    background-color: #b0afa4;
 }
 
 /*-------------------seccion Nosotros----------------*/
@@ -26,7 +65,7 @@ $estilos: (
     text-transform: map-get($estilos, mayuscula);
 }
 
-.texto1, .texto2 {
+.texto1, .texto2, .texto3 {
 	color: map-get($estilos, color);
 }
 

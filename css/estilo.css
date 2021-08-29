@@ -1,5 +1,39 @@
 /*map-get*/
-.carrito__icono--color, .tituloTeneme__titulo--color, .menu__item--color, .menuInferior__item--color, .redes__instagram--color, .redes__facebook--color, .redes__whatsapp--color, .pagos__efectivo--color, .pagos__mastercard--color, .pagos__visa--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
+/*mapa y bucle each*/
+.redes__color--instagram {
+  color: white; }
+
+.redes__color--facebook {
+  color: white; }
+
+.redes__color--whatsapp {
+  color: white; }
+
+.pagos__color--efectivo {
+  color: white; }
+
+.pagos__color--mastercard {
+  color: white; }
+
+.pagos__color--visa {
+  color: white; }
+
+.menuInferior__color--nosotros {
+  color: white; }
+
+.menuInferior__color--productos {
+  color: white; }
+
+.menuInferior__color--preguntasFrecuentes {
+  color: white; }
+
+.menuInferior__color--envios {
+  color: white; }
+
+.menuInferior__color--contacto {
+  color: white; }
+
+.carrito__icono--color, .tituloTeneme__titulo--color, .menu__item--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
   color: white; }
 
 .copyright {
@@ -10,7 +44,7 @@
   color: white;
   text-transform: uppercase; }
 
-.texto1, .texto2 {
+.texto1, .texto2, .texto3 {
   color: white; }
 
 @media only screen and (max-width: 768px) {
@@ -153,7 +187,7 @@
   flex-flow: row wrap;
   justify-content: center; }
 
-.texto1, .texto2 {
+.texto1, .texto2, .texto3 {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -333,7 +367,41 @@
   text-align: center; }
 
 /*map-get*/
-.carrito__icono--color, .tituloTeneme__titulo--color, .menu__item--color, .menuInferior__item--color, .redes__instagram--color, .redes__facebook--color, .redes__whatsapp--color, .pagos__efectivo--color, .pagos__mastercard--color, .pagos__visa--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
+/*mapa y bucle each*/
+.redes__color--instagram {
+  color: white; }
+
+.redes__color--facebook {
+  color: white; }
+
+.redes__color--whatsapp {
+  color: white; }
+
+.pagos__color--efectivo {
+  color: white; }
+
+.pagos__color--mastercard {
+  color: white; }
+
+.pagos__color--visa {
+  color: white; }
+
+.menuInferior__color--nosotros {
+  color: white; }
+
+.menuInferior__color--productos {
+  color: white; }
+
+.menuInferior__color--preguntasFrecuentes {
+  color: white; }
+
+.menuInferior__color--envios {
+  color: white; }
+
+.menuInferior__color--contacto {
+  color: white; }
+
+.carrito__icono--color, .tituloTeneme__titulo--color, .menu__item--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
   color: white; }
 
 .copyright {
@@ -344,7 +412,7 @@
   color: white;
   text-transform: uppercase; }
 
-.texto1, .texto2 {
+.texto1, .texto2, .texto3 {
   color: white; }
 
 @media only screen and (max-width: 768px) {
@@ -731,10 +799,14 @@ section {
       font-size: 20px; } }
   @media only screen and (min-width: 1024px) {
     .redes__instagram--size, .redes__facebook--size, .redes__whatsapp--size, .pagos__efectivo--size, .pagos__mastercard--size, .pagos__visa--size {
-      font-size: 20px; } }
+      font-size: 23px; } }
 
 .menuInferior__item--fontFamily, .cuenta__titulo--fontFamily, .ingresa__texto--fontFamily, .registrarse__texto--fontFamily, .copyright__texto--fontFamily {
   font-family: forum; }
+
+@media only screen and (min-width: 1024px) {
+  .menuInferior__item--fontSize {
+    font-size: 25px; } }
 
 @media only screen and (max-width: 768px) {
   .cuenta__titulo--fontSize {
@@ -746,7 +818,11 @@ section {
 
 @media only screen and (min-width: 1024px) {
   .cuenta__titulo--fontSize {
-    font-size: 22px; } }
+    font-size: 25px; } }
+
+@media only screen and (min-width: 1024px) {
+  .ingresa__texto--fontSize, .registrarse__texto--fontSize {
+    font-size: 20px; } }
 
 /*--------------------seccion Nosotros-------------------------*/
 .tituloSeccion h1 {
@@ -755,8 +831,18 @@ section {
     .tituloSeccion h1 {
       font-size: 40px; } }
 
-.texto1, .texto2 {
+.texto1, .texto2, .texto3 {
   font-Family: forum; }
+
+/* bucle con @for*/
+.parrafo-1 {
+  font-size: 16px; }
+
+.parrafo-2 {
+  font-size: 32px; }
+
+.parrafo-3 {
+  font-size: 48px; }
 
 /*------------------seccion Productos------------------------*/
 .tituloProductos__titulo--fontFamily {
@@ -819,7 +905,41 @@ section {
     font-size: 20px; } }
 
 /*map-get*/
-.carrito__icono--color, .tituloTeneme__titulo--color, .menu__item--color, .menuInferior__item--color, .redes__instagram--color, .redes__facebook--color, .redes__whatsapp--color, .pagos__efectivo--color, .pagos__mastercard--color, .pagos__visa--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
+/*mapa y bucle each*/
+.redes__color--instagram {
+  color: white; }
+
+.redes__color--facebook {
+  color: white; }
+
+.redes__color--whatsapp {
+  color: white; }
+
+.pagos__color--efectivo {
+  color: white; }
+
+.pagos__color--mastercard {
+  color: white; }
+
+.pagos__color--visa {
+  color: white; }
+
+.menuInferior__color--nosotros {
+  color: white; }
+
+.menuInferior__color--productos {
+  color: white; }
+
+.menuInferior__color--preguntasFrecuentes {
+  color: white; }
+
+.menuInferior__color--envios {
+  color: white; }
+
+.menuInferior__color--contacto {
+  color: white; }
+
+.carrito__icono--color, .tituloTeneme__titulo--color, .menu__item--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
   color: white; }
 
 .copyright {
@@ -830,7 +950,7 @@ section {
   color: white;
   text-transform: uppercase; }
 
-.texto1, .texto2 {
+.texto1, .texto2, .texto3 {
   color: white; }
 
 @media only screen and (max-width: 768px) {
@@ -859,7 +979,41 @@ section {
   color: white; }
 
 /*map-get*/
-.carrito__icono--color, .tituloTeneme__titulo--color, .menu__item--color, .menuInferior__item--color, .redes__instagram--color, .redes__facebook--color, .redes__whatsapp--color, .pagos__efectivo--color, .pagos__mastercard--color, .pagos__visa--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
+/*mapa y bucle each*/
+.redes__color--instagram {
+  color: white; }
+
+.redes__color--facebook {
+  color: white; }
+
+.redes__color--whatsapp {
+  color: white; }
+
+.pagos__color--efectivo {
+  color: white; }
+
+.pagos__color--mastercard {
+  color: white; }
+
+.pagos__color--visa {
+  color: white; }
+
+.menuInferior__color--nosotros {
+  color: white; }
+
+.menuInferior__color--productos {
+  color: white; }
+
+.menuInferior__color--preguntasFrecuentes {
+  color: white; }
+
+.menuInferior__color--envios {
+  color: white; }
+
+.menuInferior__color--contacto {
+  color: white; }
+
+.carrito__icono--color, .tituloTeneme__titulo--color, .menu__item--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
   color: white; }
 
 .copyright {
@@ -870,7 +1024,7 @@ section {
   color: white;
   text-transform: uppercase; }
 
-.texto1, .texto2 {
+.texto1, .texto2, .texto3 {
   color: white; }
 
 @media only screen and (max-width: 768px) {
@@ -1146,7 +1300,41 @@ article .nosotros {
 
 /*----------------------------cierre Nosotros Vista Desktop ----------------------------------*/
 /*map-get*/
-.carrito__icono--color, .tituloTeneme__titulo--color, .menu__item--color, .menuInferior__item--color, .redes__instagram--color, .redes__facebook--color, .redes__whatsapp--color, .pagos__efectivo--color, .pagos__mastercard--color, .pagos__visa--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
+/*mapa y bucle each*/
+.redes__color--instagram {
+  color: white; }
+
+.redes__color--facebook {
+  color: white; }
+
+.redes__color--whatsapp {
+  color: white; }
+
+.pagos__color--efectivo {
+  color: white; }
+
+.pagos__color--mastercard {
+  color: white; }
+
+.pagos__color--visa {
+  color: white; }
+
+.menuInferior__color--nosotros {
+  color: white; }
+
+.menuInferior__color--productos {
+  color: white; }
+
+.menuInferior__color--preguntasFrecuentes {
+  color: white; }
+
+.menuInferior__color--envios {
+  color: white; }
+
+.menuInferior__color--contacto {
+  color: white; }
+
+.carrito__icono--color, .tituloTeneme__titulo--color, .menu__item--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
   color: white; }
 
 .copyright {
@@ -1157,7 +1345,7 @@ article .nosotros {
   color: white;
   text-transform: uppercase; }
 
-.texto1, .texto2 {
+.texto1, .texto2, .texto3 {
   color: white; }
 
 @media only screen and (max-width: 768px) {
@@ -1344,7 +1532,41 @@ nav.navDer {
 
 /*------------------------cierre Productos Desktop---------------------------*/
 /*map-get*/
-.carrito__icono--color, .tituloTeneme__titulo--color, .menu__item--color, .menuInferior__item--color, .redes__instagram--color, .redes__facebook--color, .redes__whatsapp--color, .pagos__efectivo--color, .pagos__mastercard--color, .pagos__visa--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
+/*mapa y bucle each*/
+.redes__color--instagram {
+  color: white; }
+
+.redes__color--facebook {
+  color: white; }
+
+.redes__color--whatsapp {
+  color: white; }
+
+.pagos__color--efectivo {
+  color: white; }
+
+.pagos__color--mastercard {
+  color: white; }
+
+.pagos__color--visa {
+  color: white; }
+
+.menuInferior__color--nosotros {
+  color: white; }
+
+.menuInferior__color--productos {
+  color: white; }
+
+.menuInferior__color--preguntasFrecuentes {
+  color: white; }
+
+.menuInferior__color--envios {
+  color: white; }
+
+.menuInferior__color--contacto {
+  color: white; }
+
+.carrito__icono--color, .tituloTeneme__titulo--color, .menu__item--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
   color: white; }
 
 .copyright {
@@ -1355,7 +1577,7 @@ nav.navDer {
   color: white;
   text-transform: uppercase; }
 
-.texto1, .texto2 {
+.texto1, .texto2, .texto3 {
   color: white; }
 
 @media only screen and (max-width: 768px) {
@@ -1474,7 +1696,41 @@ nav.navDer {
 
 /*------------------------------------cierre Preguntas Frecuentes Vista Desktop-----------------------------------*/
 /*map-get*/
-.carrito__icono--color, .tituloTeneme__titulo--color, .menu__item--color, .menuInferior__item--color, .redes__instagram--color, .redes__facebook--color, .redes__whatsapp--color, .pagos__efectivo--color, .pagos__mastercard--color, .pagos__visa--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
+/*mapa y bucle each*/
+.redes__color--instagram {
+  color: white; }
+
+.redes__color--facebook {
+  color: white; }
+
+.redes__color--whatsapp {
+  color: white; }
+
+.pagos__color--efectivo {
+  color: white; }
+
+.pagos__color--mastercard {
+  color: white; }
+
+.pagos__color--visa {
+  color: white; }
+
+.menuInferior__color--nosotros {
+  color: white; }
+
+.menuInferior__color--productos {
+  color: white; }
+
+.menuInferior__color--preguntasFrecuentes {
+  color: white; }
+
+.menuInferior__color--envios {
+  color: white; }
+
+.menuInferior__color--contacto {
+  color: white; }
+
+.carrito__icono--color, .tituloTeneme__titulo--color, .menu__item--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
   color: white; }
 
 .copyright {
@@ -1485,7 +1741,7 @@ nav.navDer {
   color: white;
   text-transform: uppercase; }
 
-.texto1, .texto2 {
+.texto1, .texto2, .texto3 {
   color: white; }
 
 @media only screen and (max-width: 768px) {
@@ -1654,7 +1910,41 @@ nav.navDer {
 
 /*------------------------cierre Envios Vista Desktop---------------------------*/
 /*map-get*/
-.carrito__icono--color, .tituloTeneme__titulo--color, .menu__item--color, .menuInferior__item--color, .redes__instagram--color, .redes__facebook--color, .redes__whatsapp--color, .pagos__efectivo--color, .pagos__mastercard--color, .pagos__visa--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
+/*mapa y bucle each*/
+.redes__color--instagram {
+  color: white; }
+
+.redes__color--facebook {
+  color: white; }
+
+.redes__color--whatsapp {
+  color: white; }
+
+.pagos__color--efectivo {
+  color: white; }
+
+.pagos__color--mastercard {
+  color: white; }
+
+.pagos__color--visa {
+  color: white; }
+
+.menuInferior__color--nosotros {
+  color: white; }
+
+.menuInferior__color--productos {
+  color: white; }
+
+.menuInferior__color--preguntasFrecuentes {
+  color: white; }
+
+.menuInferior__color--envios {
+  color: white; }
+
+.menuInferior__color--contacto {
+  color: white; }
+
+.carrito__icono--color, .tituloTeneme__titulo--color, .menu__item--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
   color: white; }
 
 .copyright {
@@ -1665,7 +1955,7 @@ nav.navDer {
   color: white;
   text-transform: uppercase; }
 
-.texto1, .texto2 {
+.texto1, .texto2, .texto3 {
   color: white; }
 
 @media only screen and (max-width: 768px) {
@@ -1834,7 +2124,41 @@ form {
 
 /*------------------------------------cierre Contacto Vista Desktop-----------------------------------*/
 /*map-get*/
-.carrito__icono--color, .tituloTeneme__titulo--color, .menu__item--color, .menuInferior__item--color, .redes__instagram--color, .redes__facebook--color, .redes__whatsapp--color, .pagos__efectivo--color, .pagos__mastercard--color, .pagos__visa--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
+/*mapa y bucle each*/
+.redes__color--instagram {
+  color: white; }
+
+.redes__color--facebook {
+  color: white; }
+
+.redes__color--whatsapp {
+  color: white; }
+
+.pagos__color--efectivo {
+  color: white; }
+
+.pagos__color--mastercard {
+  color: white; }
+
+.pagos__color--visa {
+  color: white; }
+
+.menuInferior__color--nosotros {
+  color: white; }
+
+.menuInferior__color--productos {
+  color: white; }
+
+.menuInferior__color--preguntasFrecuentes {
+  color: white; }
+
+.menuInferior__color--envios {
+  color: white; }
+
+.menuInferior__color--contacto {
+  color: white; }
+
+.carrito__icono--color, .tituloTeneme__titulo--color, .menu__item--color, .cuenta_titulo--color, .ingresa__texto--color, .registrarse__texto--color {
   color: white; }
 
 .copyright {
@@ -1845,7 +2169,7 @@ form {
   color: white;
   text-transform: uppercase; }
 
-.texto1, .texto2 {
+.texto1, .texto2, .texto3 {
   color: white; }
 
 @media only screen and (max-width: 768px) {

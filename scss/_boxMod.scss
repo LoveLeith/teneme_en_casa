@@ -188,7 +188,7 @@ footer {
 	@include flex-row-justify;
 }
 
-.texto1, .texto2 {
+.texto1, .texto2, .texto3 {
 	@include flex-justify-align-content;
 	padding: map-get($estilos, paddingTexto1);
 }

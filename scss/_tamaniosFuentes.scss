@@ -51,12 +51,19 @@ $estilos: (
     font-size: 20px;
     }
     @media only screen and (min-width: 1024px) {
-    font-size: 20px;
+    font-size: 23px;
     }
 }
 .menuInferior__item--fontFamily, .cuenta__titulo--fontFamily, .ingresa__texto--fontFamily, .registrarse__texto--fontFamily, .copyright__texto--fontFamily {
     font-family: $forum;
 }
+
+.menuInferior__item--fontSize {
+    @media only screen and (min-width: 1024px) {
+    font-size: 25px;
+    }
+}
+
 
 .cuenta__titulo--fontSize {
     @media only screen and (max-width: 768px) {
@@ -66,7 +73,13 @@ $estilos: (
     font-size: 19px;
     }
     @media only screen and (min-width: 1024px) {
-    font-size: 22px;
+    font-size: 25px;
+    }
+}
+
+.ingresa__texto--fontSize, .registrarse__texto--fontSize {
+    @media only screen and (min-width: 1024px) {
+    font-size: 20px;
     }
 }
 
@@ -80,9 +93,18 @@ $estilos: (
     }
 }
 
-.texto1, .texto2 {
+.texto1, .texto2, .texto3 {
 	font-Family: map-get($estilos, fuente);
 }
+
+/* bucle con @for*/
+@for $i from 1 through 3 {
+    .parrafo-#{$i} {
+        font-size: 16px * $i;
+    }
+}
+
+
 
 /*------------------seccion Productos------------------------*/
 
