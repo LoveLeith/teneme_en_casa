@@ -855,7 +855,7 @@ section {
   padding: .6em .6em;
 }
 
-.redes ul li a:hover, .pagos ul li a:hover {
+.redes ul li a:hover {
   -webkit-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: 0.5s;
@@ -863,6 +863,18 @@ section {
   -webkit-transition-timing-function: ease-out;
           transition-timing-function: ease-out;
   background-color: white;
+  color: #ecce1f;
+}
+
+.pagos ul li:hover {
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  background-color: white;
+  border-radius: 5px;
   color: #ecce1f;
 }
 
@@ -963,7 +975,7 @@ section {
   }
   nav.navIzq ul ul li {
     display: block;
-    width: 150px;
+    width: 200px;
     background-color: white;
     border-radius: 3px;
     margin-bottom: 5px;
@@ -1128,7 +1140,7 @@ section {
   }
   nav.navIzq ul ul li {
     display: block;
-    width: 150px;
+    width: 200px;
     background-color: white;
     border-radius: 3px;
     margin-bottom: 5px;
@@ -2361,7 +2373,7 @@ nav.navDer ul li a {
   }
   nav.navIzq ul ul li {
     display: block;
-    width: 150px;
+    width: 200px;
     background-color: white;
     border-radius: 3px;
     margin-bottom: 5px;
@@ -2414,6 +2426,22 @@ nav.navDer ul li a {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: encabezado;
+  }
+  nav.navIzq ul ul {
+    position: absolute;
+    display: none;
+    z-index: 1;
+    margin-top: 15px;
+  }
+  nav.navIzq ul ul li {
+    display: block;
+    width: 200px;
+    background-color: white;
+    border-radius: 3px;
+    margin-bottom: 5px;
+  }
+  nav.navIzq ul ul li a {
+    color: black;
   }
   nav.navDer {
     -ms-grid-row: 3;

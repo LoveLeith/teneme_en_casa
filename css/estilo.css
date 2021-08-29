@@ -551,11 +551,19 @@ section {
         border-radius: 50%;
         padding: .6em .6em; }
 
-.redes ul li a:hover, .pagos ul li a:hover {
+.redes ul li a:hover {
   transition-property: all;
   transition-duration: 0.5s;
   transition-timing-function: ease-out;
   background-color: white;
+  color: #ecce1f; }
+
+.pagos ul li:hover {
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+  background-color: white;
+  border-radius: 5px;
   color: #ecce1f; }
 
 .ingresoRegistro {
@@ -612,7 +620,7 @@ section {
     margin-top: 15px; }
     nav.navIzq ul ul li {
       display: block;
-      width: 150px;
+      width: 200px;
       background-color: white;
       border-radius: 3px;
       margin-bottom: 5px; }
@@ -711,7 +719,7 @@ section {
     margin-top: 15px; }
     nav.navIzq ul ul li {
       display: block;
-      width: 150px;
+      width: 200px;
       background-color: white;
       border-radius: 3px;
       margin-bottom: 5px; }
@@ -1493,7 +1501,7 @@ nav.navDer {
     margin-top: 15px; }
     nav.navIzq ul ul li {
       display: block;
-      width: 150px;
+      width: 200px;
       background-color: white;
       border-radius: 3px;
       margin-bottom: 5px; }
@@ -1521,6 +1529,19 @@ nav.navDer {
     justify-content: center; }
   nav.navIzq {
     grid-area: encabezado; }
+  nav.navIzq ul ul {
+    position: absolute;
+    display: none;
+    z-index: 1;
+    margin-top: 15px; }
+    nav.navIzq ul ul li {
+      display: block;
+      width: 200px;
+      background-color: white;
+      border-radius: 3px;
+      margin-bottom: 5px; }
+      nav.navIzq ul ul li a {
+        color: black; }
   nav.navDer {
     grid-area: encabezado2; }
   .carrito {

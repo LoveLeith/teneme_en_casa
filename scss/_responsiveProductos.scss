@@ -170,7 +170,7 @@ nav.navDer {
         margin-top: 15px;
         li {
             display: block;
-            width: 150px;
+            width: 200px;
             background-color: $background-white;
             border-radius: 3px;
             margin-bottom: 5px;
@@ -219,6 +219,23 @@ nav.navDer {
 
     nav.navIzq {
         grid-area: encabezado;
+    }
+
+    nav.navIzq ul ul {
+        position: $positionabs;
+        display: none;
+        z-index: 1;
+        margin-top: 15px;
+        li {
+            display: block;
+            width: 200px;
+            background-color: $background-white;
+            border-radius: 3px;
+            margin-bottom: 5px;
+        a {
+            color: $black-font;
+        }
+        }
     }
 
     nav.navDer {
