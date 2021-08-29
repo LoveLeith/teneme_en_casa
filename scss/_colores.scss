@@ -65,7 +65,7 @@ $menuInferior: (
     text-transform: map-get($estilos, mayuscula);
 }
 
-.texto1, .texto2, .texto3 {
+.texto1, .texto2 {
 	color: map-get($estilos, color);
 }
 

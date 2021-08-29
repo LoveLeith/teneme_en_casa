@@ -90,16 +90,18 @@ $estilos: (
     }
 }
 
-.texto1, .texto2, .texto3 {
+.texto1, .texto2 {
 	font-Family: map-get($estilos, fuente);
-}
-
-/* bucle con @for*/
-@for $i from 1 through 3 {
-    .parrafo-#{$i} {
-        font-size: 16px * $i;
+    font-size: 20px;
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    font-size: 35px;
+    }
+    @media only screen and (min-width: 1024px) {
+    font-size: 40px;
     }
 }
+
+
 
 
 

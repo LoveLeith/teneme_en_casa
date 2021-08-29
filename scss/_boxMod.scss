@@ -188,9 +188,17 @@ footer {
 	@include flex-row-justify;
 }
 
-.texto1, .texto2, .texto3 {
+.texto1, .texto2 {
 	@include flex-justify-align-content;
 	padding: map-get($estilos, paddingTexto1);
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    @include flex-justify-align-content;
+    padding: map-get($estilos, paddingTexto1);
+    }
+    @media only screen and (min-width: 1024px) {
+    @include flex-justify-align-content;
+    }
+
 }
 
 /*-----------------------cierre seccion Nosotros Mobile First-----------------------*/

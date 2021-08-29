@@ -58,7 +58,7 @@
   text-transform: uppercase;
 }
 
-.texto1, .texto2, .texto3 {
+.texto1, .texto2 {
   color: white;
 }
 
@@ -288,7 +288,7 @@
           justify-content: center;
 }
 
-.texto1, .texto2, .texto3 {
+.texto1, .texto2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -298,6 +298,33 @@
   -ms-flex-line-pack: center;
       align-content: center;
   padding: 10px 15px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .texto1, .texto2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    padding: 10px 15px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .texto1, .texto2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
 }
 
 /*-----------------------cierre seccion Nosotros Mobile First-----------------------*/
@@ -626,7 +653,7 @@
   text-transform: uppercase;
 }
 
-.texto1, .texto2, .texto3 {
+.texto1, .texto2 {
   color: white;
 }
 
@@ -1321,21 +1348,21 @@ section {
   }
 }
 
-.texto1, .texto2, .texto3 {
+.texto1, .texto2 {
   font-Family: forum;
+  font-size: 20px;
 }
 
-/* bucle con @for*/
-.parrafo-1 {
-  font-size: 16px;
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .texto1, .texto2 {
+    font-size: 35px;
+  }
 }
 
-.parrafo-2 {
-  font-size: 32px;
-}
-
-.parrafo-3 {
-  font-size: 48px;
+@media only screen and (min-width: 1024px) {
+  .texto1, .texto2 {
+    font-size: 40px;
+  }
 }
 
 /*------------------seccion Productos------------------------*/
@@ -1481,7 +1508,7 @@ section {
   text-transform: uppercase;
 }
 
-.texto1, .texto2, .texto3 {
+.texto1, .texto2 {
   color: white;
 }
 
@@ -1578,7 +1605,7 @@ section {
   text-transform: uppercase;
 }
 
-.texto1, .texto2, .texto3 {
+.texto1, .texto2 {
   color: white;
 }
 
@@ -1806,7 +1833,7 @@ article .nosotros {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     margin-top: 70px;
-    margin-bottom: 30px;
+    margin-bottom: 90px;
   }
   .imagen1 {
     width: 230px;
@@ -2019,7 +2046,7 @@ article .nosotros {
     padding: 100px;
   }
   .textoNosotros p {
-    font-size: 18px;
+    font-size: 20px;
   }
   footer {
     -ms-grid-row: 3;
@@ -2116,7 +2143,7 @@ article .nosotros {
   text-transform: uppercase;
 }
 
-.texto1, .texto2, .texto3 {
+.texto1, .texto2 {
   color: white;
 }
 
@@ -2523,7 +2550,7 @@ nav.navDer ul li a {
   text-transform: uppercase;
 }
 
-.texto1, .texto2, .texto3 {
+.texto1, .texto2 {
   color: white;
 }
 
@@ -2800,7 +2827,7 @@ nav.navDer {
   text-transform: uppercase;
 }
 
-.texto1, .texto2, .texto3 {
+.texto1, .texto2 {
   color: white;
 }
 
@@ -3163,7 +3190,7 @@ nav.navDer {
   text-transform: uppercase;
 }
 
-.texto1, .texto2, .texto3 {
+.texto1, .texto2 {
   color: white;
 }
 
@@ -3508,7 +3535,7 @@ form {
   text-transform: uppercase;
 }
 
-.texto1, .texto2, .texto3 {
+.texto1, .texto2 {
   color: white;
 }
 

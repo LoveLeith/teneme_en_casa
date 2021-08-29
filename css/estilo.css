@@ -44,7 +44,7 @@
   color: white;
   text-transform: uppercase; }
 
-.texto1, .texto2, .texto3 {
+.texto1, .texto2 {
   color: white; }
 
 @media only screen and (max-width: 768px) {
@@ -187,11 +187,22 @@
   flex-flow: row wrap;
   justify-content: center; }
 
-.texto1, .texto2, .texto3 {
+.texto1, .texto2 {
   display: flex;
   justify-content: center;
   align-content: center;
   padding: 10px 15px; }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .texto1, .texto2 {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      padding: 10px 15px; } }
+  @media only screen and (min-width: 1024px) {
+    .texto1, .texto2 {
+      display: flex;
+      justify-content: center;
+      align-content: center; } }
 
 /*-----------------------cierre seccion Nosotros Mobile First-----------------------*/
 /*-----------------------inicio seccion Productos Vista Mobile-----------------------*/
@@ -408,7 +419,7 @@
   color: white;
   text-transform: uppercase; }
 
-.texto1, .texto2, .texto3 {
+.texto1, .texto2 {
   color: white; }
 
 @media only screen and (max-width: 768px) {
@@ -836,18 +847,15 @@ section {
     .tituloSeccion h1 {
       font-size: 40px; } }
 
-.texto1, .texto2, .texto3 {
-  font-Family: forum; }
-
-/* bucle con @for*/
-.parrafo-1 {
-  font-size: 16px; }
-
-.parrafo-2 {
-  font-size: 32px; }
-
-.parrafo-3 {
-  font-size: 48px; }
+.texto1, .texto2 {
+  font-Family: forum;
+  font-size: 20px; }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .texto1, .texto2 {
+      font-size: 35px; } }
+  @media only screen and (min-width: 1024px) {
+    .texto1, .texto2 {
+      font-size: 40px; } }
 
 /*------------------seccion Productos------------------------*/
 .tituloProductos__titulo--fontFamily {
@@ -955,7 +963,7 @@ section {
   color: white;
   text-transform: uppercase; }
 
-.texto1, .texto2, .texto3 {
+.texto1, .texto2 {
   color: white; }
 
 @media only screen and (max-width: 768px) {
@@ -1029,7 +1037,7 @@ section {
   color: white;
   text-transform: uppercase; }
 
-.texto1, .texto2, .texto3 {
+.texto1, .texto2 {
   color: white; }
 
 @media only screen and (max-width: 768px) {
@@ -1161,7 +1169,7 @@ article .nosotros {
     flex-flow: row nowrap;
     justify-content: space-around;
     margin-top: 70px;
-    margin-bottom: 30px; }
+    margin-bottom: 90px; }
   .imagen1 {
     width: 230px;
     height: 200px;
@@ -1285,7 +1293,7 @@ article .nosotros {
     align-content: center;
     padding: 100px; }
     .textoNosotros p {
-      font-size: 18px; }
+      font-size: 20px; }
   footer {
     grid-area: footer; }
   footer .tituloTeneme {
@@ -1350,7 +1358,7 @@ article .nosotros {
   color: white;
   text-transform: uppercase; }
 
-.texto1, .texto2, .texto3 {
+.texto1, .texto2 {
   color: white; }
 
 @media only screen and (max-width: 768px) {
@@ -1595,7 +1603,7 @@ nav.navDer {
   color: white;
   text-transform: uppercase; }
 
-.texto1, .texto2, .texto3 {
+.texto1, .texto2 {
   color: white; }
 
 @media only screen and (max-width: 768px) {
@@ -1759,7 +1767,7 @@ nav.navDer {
   color: white;
   text-transform: uppercase; }
 
-.texto1, .texto2, .texto3 {
+.texto1, .texto2 {
   color: white; }
 
 @media only screen and (max-width: 768px) {
@@ -1973,7 +1981,7 @@ nav.navDer {
   color: white;
   text-transform: uppercase; }
 
-.texto1, .texto2, .texto3 {
+.texto1, .texto2 {
   color: white; }
 
 @media only screen and (max-width: 768px) {
@@ -2187,7 +2195,7 @@ form {
   color: white;
   text-transform: uppercase; }
 
-.texto1, .texto2, .texto3 {
+.texto1, .texto2 {
   color: white; }
 
 @media only screen and (max-width: 768px) {
