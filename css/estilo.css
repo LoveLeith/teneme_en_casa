@@ -308,6 +308,25 @@
 .texto--padding {
   padding: 5px; }
 
+@media only screen and (min-width: 1024px) {
+  .texto p {
+    display: flex;
+    justify-content: center;
+    padding: 10px 100px 10px 100px;
+    margin-bottom: 40px; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .enviosVideos {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around; } }
+
+@media only screen and (min-width: 1024px) {
+  .enviosVideos {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around; } }
+
 @media only screen and (max-width: 768px) {
   .videoEnvios {
     width: 100%; } }
@@ -1906,7 +1925,17 @@ nav.navDer {
   .navIzq ul li:hover ul {
     display: block; }
   .enviosDomicilio {
-    grid-area: envios; }
+    grid-area: envios;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background: radial-gradient(#49494f, #303030); }
+  .envios {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 60px; }
   footer {
     grid-area: footer; } }
 

@@ -323,6 +323,28 @@ footer {
     padding: 5px;
 }
 
+.texto p {
+    @media only screen and (min-width: 1024px) {
+    display: $flex;
+    justify-content: center;
+    padding: 10px 100px 10px 100px;
+    margin-bottom: 40px;
+    }
+}
+
+.enviosVideos {
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    display: $flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    }
+    @media only screen and (min-width: 1024px) {
+    display: $flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    }
+}
+
 .videoEnvios {
     @media only screen and (max-width: 768px){
     width: 100%;

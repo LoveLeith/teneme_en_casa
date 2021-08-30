@@ -152,6 +152,18 @@ nav.navDer {
     
     .enviosDomicilio {
         grid-area: envios;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        background: radial-gradient(#49494f, #303030);
+    }
+
+    .envios {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        margin-top: 20px;
+        margin-bottom: 60px;
     }
     
     footer {
