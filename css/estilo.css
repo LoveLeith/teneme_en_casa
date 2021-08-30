@@ -300,6 +300,15 @@
   .acordeon--paddingBottom {
     padding-bottom: 50px; } }
 
+@media only screen and (min-width: 1024px) {
+  .acordeon--paddingBottom {
+    padding-top: 40px; } }
+
+@media only screen and (min-width: 1024px) {
+  .card-body {
+    display: flex;
+    justify-content: start; } }
+
 /*-----------------------inicio seccion Productos Vista Desktop-----------------------*/
 @media only screen and (min-width: 1024px) {
   .presentacionProductos {
