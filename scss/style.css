@@ -329,6 +329,21 @@
 
 /*-----------------------cierre seccion Nosotros Mobile First-----------------------*/
 /*-----------------------inicio seccion Productos Vista Mobile-----------------------*/
+@media only screen and (min-width: 1024px) {
+  .presentacionProductos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 20px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .categoriasProductos {
     display: -webkit-box;
@@ -433,41 +448,9 @@
 
 @media only screen and (min-width: 1024px) {
   .producto {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    width: 300px;
-    height: 150px;
-    margin-top: 80px;
     margin-right: 50px;
-    margin-bottom: 100px;
-    margin-left: 50px;
+    margin-bottom: 70px;
   }
-}
-
-@media only screen and (min-width: 1024px) {
-  .card-body {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .card-body p {
-    vertical-align: middle;
-  }
-}
-
-.card-text {
-  text-align: center;
 }
 
 /*-----------------------cierre seccion Preguntas Frecuentes Vista Mobile-----------------------*/
@@ -515,22 +498,6 @@
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
-  }
-}
-
-/*-----------------------inicio seccion Productos Vista Desktop-----------------------*/
-@media only screen and (min-width: 1024px) {
-  .presentacionProductos {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    padding: 20px;
   }
 }
 

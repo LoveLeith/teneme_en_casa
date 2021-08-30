@@ -204,6 +204,15 @@ footer {
 /*-----------------------cierre seccion Nosotros Mobile First-----------------------*/
 /*-----------------------inicio seccion Productos Vista Mobile-----------------------*/
 
+.presentacionProductos {
+    @media only screen and (min-width: 1024px) {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 20px;
+    }
+}
+
 .categoriasProductos {
     @media only screen and (max-width: 768px){
     display: flex;
@@ -254,31 +263,9 @@ footer {
 
 .producto {
     @media only screen and (min-width: 1024px) {
-    display: $flex;
-    justify-content: center;
-    align-items: flex-end;
-    width: 300px;
-    height: 150px;
-    margin-top: 80px;
     margin-right: 50px;
-    margin-bottom: 100px;
-    margin-left: 50px;
+    margin-bottom: 70px;
     }
-}
-
-.card-body {
-    @media only screen and (min-width: 1024px) {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    p {
-        vertical-align: middle;
-    }
-}
-}
-
-.card-text {
-    text-align: center;
 }
 
 /*-----------------------cierre seccion Preguntas Frecuentes Vista Mobile-----------------------*/
@@ -320,16 +307,6 @@ footer {
     }
 }
 
-/*-----------------------inicio seccion Productos Vista Desktop-----------------------*/
-
-.presentacionProductos {
-    @media only screen and (min-width: 1024px) {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    padding: 20px;
-    }
-}
 
 
 /*---------------------inicio seccion Envios Vista Mobile ----------------------------*/
