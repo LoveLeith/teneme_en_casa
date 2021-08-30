@@ -792,6 +792,10 @@ header {
   right: 20px;
 }
 
+.cursor {
+  cursor: pointer;
+}
+
 nav.navIzq {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -1140,6 +1144,9 @@ section {
   footer .menuInferior ul li a:hover {
     color: #ecce1f;
   }
+  footer .ingresa p:hover, footer .registrarse p:hover {
+    color: #ecce1f;
+  }
 }
 
 /*---------------------------cierre Index Vista Tablet----------------------------------*/
@@ -1303,6 +1310,9 @@ section {
     text-decoration: none;
   }
   footer .menuInferior ul li a:hover {
+    color: #ecce1f;
+  }
+  footer .ingresa p:hover, footer .registrarse p:hover {
     color: #ecce1f;
   }
 }

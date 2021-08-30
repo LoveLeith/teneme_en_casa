@@ -495,6 +495,9 @@ header {
   top: 20px;
   right: 20px; }
 
+.cursor {
+  cursor: pointer; }
+
 nav.navIzq {
   grid-area: encabezado; }
   nav.navIzq ul {
@@ -702,6 +705,8 @@ section {
       footer .menuInferior ul li a {
         text-decoration: none; }
   footer .menuInferior ul li a:hover {
+    color: #ecce1f; }
+  footer .ingresa p:hover, footer .registrarse p:hover {
     color: #ecce1f; } }
 
 /*---------------------------cierre Index Vista Tablet----------------------------------*/
@@ -801,6 +806,8 @@ section {
       footer .menuInferior ul li a {
         text-decoration: none; }
   footer .menuInferior ul li a:hover {
+    color: #ecce1f; }
+  footer .ingresa p:hover, footer .registrarse p:hover {
     color: #ecce1f; } }
 
 /*---------------------------cierre Index Vista Desktop----------------------------------*/
