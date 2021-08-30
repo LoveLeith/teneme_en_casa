@@ -977,6 +977,10 @@ section {
   grid-area: ingresoRegistro;
 }
 
+footer .ingresa p:hover, footer .registrarse p:hover {
+  color: #ecce1f;
+}
+
 .copyright {
   -ms-grid-row: 8;
   -ms-grid-column: 1;

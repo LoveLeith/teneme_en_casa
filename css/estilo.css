@@ -607,6 +607,9 @@ section {
 .ingresoRegistro {
   grid-area: ingresoRegistro; }
 
+footer .ingresa p:hover, footer .registrarse p:hover {
+  color: #ecce1f; }
+
 .copyright {
   grid-area: copyright; }
 
