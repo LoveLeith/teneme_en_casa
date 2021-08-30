@@ -1313,6 +1313,20 @@ section {
   font-size: 19px;
 }
 
+.menu__submenu--fontSize {
+  font-size: 18px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .menu__submenu--fontSize {
+    font-size: 16px;
+  }
+}
+
+.menu__submenu--fontFamily {
+  font-family: forum;
+}
+
 @media only screen and (max-width: 768px) {
   .carouselCaption__item--fontSize {
     font-size: 25px;

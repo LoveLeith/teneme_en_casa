@@ -10,6 +10,17 @@ $estilos: (
     font-size: 19px;
 }
 
+.menu__submenu--fontSize {
+    font-size: 18px;
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    font-size: 16px;
+    }
+}
+
+.menu__submenu--fontFamily {
+    font-family: map-get($estilos, fuente);
+}
+
 .carouselCaption__item--fontSize {
     @media only screen and (max-width: 768px) {
     font-size: 25px;
@@ -64,7 +75,7 @@ $estilos: (
 
 .cuenta__titulo--fontSize {
     @media only screen and (max-width: 768px) {
-        font-size: 25px;
+    font-size: 25px;
     }
     @media only screen and (min-width: 768px) and (max-width: 1024px) {
     font-size: 19px;
