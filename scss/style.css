@@ -3763,6 +3763,7 @@ nav.navIzq ul li a:hover, nav.navDer ul li a:hover {
   grid-area: error;
   background-image: url(../assets/images/error_404_plato.jpg);
   background-size: cover;
+  height: 800px;
 }
 
 .tituloTeneme {
@@ -3886,6 +3887,7 @@ nav.navIzq ul li a:hover, nav.navDer ul li a:hover {
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-area: error;
+    height: 600px;
   }
   footer {
     -ms-grid-row: 3;

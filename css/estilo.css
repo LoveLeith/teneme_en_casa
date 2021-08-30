@@ -2316,7 +2316,8 @@ nav.navIzq ul li a:hover, nav.navDer ul li a:hover {
 .contenidoError {
   grid-area: error;
   background-image: url(../assets/images/error_404_plato.jpg);
-  background-size: cover; }
+  background-size: cover;
+  height: 800px; }
 
 .tituloTeneme {
   display: none; }
@@ -2383,7 +2384,8 @@ nav.navIzq ul li a:hover, nav.navDer ul li a:hover {
   nav.navDer {
     grid-area: encabezado2; }
   .contenidoError {
-    grid-area: error; }
+    grid-area: error;
+    height: 600px; }
   footer {
     grid-area: footer; } }
 
