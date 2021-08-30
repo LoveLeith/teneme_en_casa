@@ -165,7 +165,7 @@ footer {
     }
 }
 
-/*------------------seccion Nosotros Mobile First-----------------------*/
+/*------------------seccion Nosotros BoxMod-----------------------*/
 
 .tituloSeccion h1 {
 	@include flex-justify-center;
@@ -201,8 +201,7 @@ footer {
 
 }
 
-/*-----------------------cierre seccion Nosotros Mobile First-----------------------*/
-/*-----------------------inicio seccion Productos Vista Mobile-----------------------*/
+/*-----------------------inicio seccion Productos BoxMod-----------------------*/
 
 .presentacionProductos {
     @media only screen and (min-width: 1024px) {
@@ -268,7 +267,7 @@ footer {
     }
 }
 
-/*-----------------------cierre seccion Preguntas Frecuentes Vista Mobile-----------------------*/
+/*-----------------------cierre seccion Preguntas Frecuentes BoxMod-----------------------*/
 
 .tituloPreguntas__titulo--padding {
     padding-top: 30px;
@@ -307,9 +306,7 @@ footer {
     }
 }
 
-
-
-/*---------------------inicio seccion Envios Vista Mobile ----------------------------*/
+/*---------------------inicio seccion Envios BoxMod----------------------------*/
 
 .tituloEnvios__titulo--padding {
     padding: 20px;
@@ -366,7 +363,7 @@ footer {
     }
 }
 
-/*----------------------inicio Contacto Vista Mobile------------------------------*/
+/*----------------------inicio Contacto Vista Mobile BoxMod------------------------------*/
 
 .titular__titulo--padding {
     padding: 20px;
@@ -396,7 +393,7 @@ footer {
     margin-bottom: 20px;
 }
 
-/*------------------------------inicio Error 404 Vista Mobile ------------------------------*/
+/*------------------------------inicio Error 404 BoxMod ------------------------------*/
 
 .contenidoError {
     padding: 20px 20px;

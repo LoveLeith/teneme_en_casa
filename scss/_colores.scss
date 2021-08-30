@@ -58,7 +58,7 @@ $menuInferior: (
     background-color: #b0afa4;
 }
 
-/*-------------------seccion Nosotros----------------*/
+/*-------------------seccion Nosotros Colores----------------*/
 
 .tituloSeccion h1 {
     color: map-get($estilos, color);
@@ -75,7 +75,7 @@ footer {
     }
 }
 
-/*-------------------seccion Productos--------------------*/
+/*-------------------seccion Productos Colores--------------------*/
 
 .presentacionProductos {
     background: radial-gradient(#49494f, #303030);
@@ -85,7 +85,7 @@ footer {
     color: $colorFont;
 }
 
-/*----------------seccion Preguntas Frecuentes y Envios -------------*/
+/*----------------seccion Preguntas Frecuentes y Envios Colores-------------*/
 
 .card, .enviosDomicilio {
     background: radial-gradient(#49494f, #303030);
@@ -99,7 +99,7 @@ footer {
     color: #c4bfbe;
 }
 
-/*--------------seccion Error 404 ---------------------------*/
+/*--------------seccion Error 404 Colores---------------------------*/
 
 .equivocacion__titulo--color, .equivocacion__texto1--color, .equivocacion__texto2--color {
     color: $colorFont;

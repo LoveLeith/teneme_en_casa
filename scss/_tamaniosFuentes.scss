@@ -81,7 +81,7 @@ $estilos: (
 }
 
 
-/*--------------------seccion Nosotros-------------------------*/
+/*--------------------seccion Nosotros TamaniosFuentes-------------------------*/
 
 .tituloSeccion h1 {
     font-family: map-get($estilos, fuente);
@@ -101,11 +101,7 @@ $estilos: (
     }
 }
 
-
-
-
-
-/*------------------seccion Productos------------------------*/
+/*------------------seccion Productos TamaniosFuentes------------------------*/
 
 .tituloProductos__titulo--fontFamily {
     font-family: $forum;
@@ -169,7 +165,7 @@ $estilos: (
     font-size: 18px;
 }
 
-/*----------------------seccion Error 404 -------------------------------------*/
+/*----------------------seccion Error 404 TamaniosFuentes-------------------------------------*/
 
 .equivocacion__titulo--fontFamily, .equivocacion__texto1--fontFamily, .equivocacion__texto2--fontFamily {
     font-family: $forum;
