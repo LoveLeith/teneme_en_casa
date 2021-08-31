@@ -6,7 +6,7 @@ El sitio web está compuesto por 6 secciones, un submenú en la sección "Produc
 
 ## Tecnologías utilizadas:
 
-Para el desarrollo de Teneme en Casa se utilizaron las siguientes tecnologías:
+Para el desarrollo de Teneme en Casa se utilizaron las siguientes tecnologías y librerias:
 
 * HTML
 * Flexbox
@@ -18,3 +18,24 @@ Para el desarrollo de Teneme en Casa se utilizaron las siguientes tecnologías:
 ## Imágenes:
 
 Las imágenes utilizadas fueron trabajadas comprimiendo cada imagen y llevándolas a 72 dpi a fin de optimizar el tiempo de carga de la página en los distintos dispositivos. 
+
+# Teneme en Casa
+
+Teneme en Casa is an e-commerce startup project of premium frozen foods. It's mission is to provide solutions to busy families bringing to their tables the best premium frozen foods.
+
+The website has 6 sections, a submenu in the "Productos" section and an Error 404 section. It's a responsive website developed in Mobile First and adapts to tablet and desktop devices.
+
+## Technologies used:
+
+For the development of Teneme en Casa I used the following technologies and libraries:
+
+* HTML
+* Flexbox
+* Grids
+* Bootstrap (carousel, accordion, cards)
+* SASS
+* AOS JS
+
+## Images:
+
+The images featured in this website are compressed images taken to 72dpi for the optimization of the website loading time in the different devices.
