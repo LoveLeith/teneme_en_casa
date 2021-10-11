@@ -99,6 +99,18 @@ div.carrito {
 	position: $positionabs;
 	top: 20px;
 	right: 20px;}
+
+    @media only screen and (min-width: 1024px) {
+    position: $positionabs;
+	top: 20px;
+	right: 40px;
+    }
+}
+
+.cartIcon {
+    @media only screen and (min-width: 1024px) {
+    margin-right:5px;
+}
 }
 
 .paddingCarousel {
@@ -106,7 +118,7 @@ div.carrito {
     padding-left: 0px;
 }
 
-.container-fluid, footer, article, .presentacionProductos, .contenidoError, .enviosDomicilio {
+.container-fluid, footer, article, .presentacionProductos, .contenidoError, .enviosDomicilio, .mainCarrito {
     border-top: $border-top;
 }
 
@@ -143,8 +155,9 @@ footer {
 
 .ingresoRegistro {
     @media only screen and (max-width: 768px) {
-        margin-top: 15px;
-        margin-bottom: 15px;
+        /*margin-top: 15px;
+        margin-bottom: 15px;*/
+        padding: 20px;
     }
 }
 
@@ -306,62 +319,65 @@ footer {
     }
 }
 
-/*---------------------inicio seccion Envios BoxMod----------------------------*/
-
-.tituloEnvios__titulo--padding {
-    padding: 20px;
-}
-
-.tituloEnvios__titulo--textAlign, .texto--textalign {
-    text-align: center;
-}
-
-.texto--padding  {
-    padding: 5px;
-}
-
-.texto p {
-    @media only screen and (min-width: 1024px) {
-    display: $flex;
-    justify-content: center;
-    padding: 10px 100px 10px 100px;
-    margin-bottom: 40px;
-    }
-}
-
-.enviosVideos {
-    @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    display: $flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    }
-    @media only screen and (min-width: 1024px) {
-    display: $flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    }
-}
-
-.videoEnvios {
-    @media only screen and (max-width: 768px){
-    width: 100%;
-    }
-    @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    width: 350px;
-    height: 300px;
-    margin-right: 5px;
-    margin-bottom: 30px;
-    }
-    @media only screen and (min-width: 1024px) {
-    margin-right: 15px;
-    }
-}
+/*---------------------inicio seccion SHOP (antes Envios) BoxMod----------------------------*/
 
 .enviosDomicilio {
+    display: flex;
     @media only screen and (min-width: 768px) and (max-width: 1024px) {
     padding: 30px;
     }
+    @media only screen and (min-width: 1024px) {
+    padding: 70px;
+    }
+    @media only screen and (min-width: 1024px) {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        padding: 20px;
+        }
 }
+
+.shoppingProducts {
+    @media only screen and (max-width: 768px){
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        }
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        }
+        @media only screen and (min-width: 1024px) {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        margin-top: 30px;
+        margin-right: 20px;
+        margin-bottom: 40px;
+        padding: 40px;
+        }
+}
+
+.productosCarrito {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.dropdown {
+    width: 500px;
+    padding: 40px;
+    margin-bottom: 200px;
+}
+
+.dropdown-menu {
+    width: 500px;
+    font-family: forum;
+    color: white;
+    background: radial-gradient(#49494f, #303030);
+}
+
 
 /*----------------------inicio Contacto Vista Mobile BoxMod------------------------------*/
 
@@ -435,3 +451,16 @@ footer {
 .equivocacion__texto1--textAlign, .equivocacion__texto2--textAlign {
     text-align: center;
 }
+
+/*------------------------------inicio Error 404 BoxMod ------------------------------*/
+
+.cuerpoShop {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*------------------------------fin Error 404 BoxMod ------------------------------*/
+

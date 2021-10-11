@@ -1,14 +1,14 @@
 @import "colores";
 
-/*------------------------inicio Envios Vista Mobile First---------------------------*/
+/*------------------------inicio Carrito Vista Mobile First---------------------------*/
 
-.gridEnvios {
+.gridCarrito {
     display: grid;
     grid-template-areas:
     "logo"
     "encabezado"
     "encabezado2"
-    "envios"
+    "carrito"
     "redes"
     "pagos"
     "ingresoRegistro"
@@ -19,7 +19,8 @@
 }
 
 header {
-    grid-area: logo;  
+    grid-area: logo;
+    
 }
 
 .carrito {
@@ -34,8 +35,8 @@ nav.navDer {
     grid-area: encabezado2;
 }
 
-.enviosDomicilio {
-    grid-area: envios;
+.mainCarrito {
+    grid-area: carrito;
 }
 
 .tituloTeneme {
@@ -58,17 +59,17 @@ nav.navDer {
     grid-area: ingresoRegistro;
 }
 
-/*------------------------cierre Envios Vista Mobile First---------------------------*/
+/*------------------------cierre Carrito Vista Mobile First---------------------------*/
 
-/*------------------------inicio Envios Vista Tablet---------------------------*/
+/*------------------------inicio Carrito Vista Tablet---------------------------*/
 
 @media only screen and (min-width: 768px) and (max-width: 1024px){
 
-    .gridEnvios {
+    .gridCarrito {
         display: grid;
         grid-template-areas:
         "encabezado logo encabezado2"
-        "envios envios envios"
+        "carrito carrito carrito"
         "footer footer footer";
         grid-template-columns: 33.3% 33.3% 33.3%;
         grid-template-rows: auto;
@@ -150,7 +151,7 @@ nav.navDer {
         display: block;
     }
     
-    .enviosDomicilio {
+    .mainCarrito {
         grid-area: envios;
         display: flex;
         flex-flow: row wrap;
@@ -163,17 +164,17 @@ nav.navDer {
     }
 
 }
-/*------------------------cierre Envios Vista Tablet---------------------------*/
+/*------------------------cierre Carrito Vista Tablet---------------------------*/
 
-/*------------------------cierre Envios Vista Desktop---------------------------*/
+/*------------------------inicio Carrito Vista Desktop---------------------------*/
 
 @media only screen and (min-width: 1024px) {
 
-    .gridEnvios {
+    .gridCarrito {
         display: grid;
         grid-template-areas:
         "encabezado encabezado logo logo encabezado2 encabezado2"
-        "envios envios envios envios envios envios"
+        "carrito carrito carrito carrito carrito carrito"
         "footer footer footer footer footer footer";
         grid-template-columns: 16.666% 16.666% 16.666% 16.666% 16.666% 16.666%;
         grid-template-rows: auto auto auto; 
@@ -188,8 +189,8 @@ nav.navDer {
  
     div .carrito { grid-area: encabezado2; }
 
-    .enviosDomicilio {
-        grid-area: envios;
+    .mainCarrito {
+        grid-area: carrito;
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
@@ -202,4 +203,4 @@ nav.navDer {
 
 }
 
-/*------------------------cierre Envios Vista Desktop---------------------------*/
+/*------------------------cierre Carrito Vista Desktop---------------------------*/

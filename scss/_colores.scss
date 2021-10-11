@@ -54,6 +54,14 @@ $menuInferior: (
     color: $colorFont;
 }
 
+.cartIcon {
+    color: $colorFont;
+}
+
+.cartItems {
+    color: $colorFont;
+}
+
 .copyright {
     background-color: #b0afa4;
 }
@@ -102,6 +110,20 @@ footer {
 /*--------------seccion Error 404 Colores---------------------------*/
 
 .equivocacion__titulo--color, .equivocacion__texto1--color, .equivocacion__texto2--color {
+    color: $colorFont;
+}
+
+/*******************************seccion Carrito*************************************/
+.mainCarrito {
+    background: radial-gradient(#49494f, #303030);
+
+}
+
+.tituloCarrito {
+    color: $colorFont;
+}
+
+.encabezadoProducto--fontColor {
     color: $colorFont;
 }
 

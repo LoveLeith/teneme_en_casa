@@ -21,6 +21,12 @@ $estilos: (
     font-family: map-get($estilos, fuente);
 }
 
+.cartIcon {
+    @media only screen and (min-width: 1024px) {
+    font-size: 25px;
+    }
+}
+
 .carouselCaption__item--fontSize {
     @media only screen and (max-width: 768px) {
     font-size: 25px;
@@ -190,4 +196,26 @@ $estilos: (
     @media only screen and (min-width: 1024px) {
     font-size: 20px;
     }
+}
+
+
+/************************seccion Carrito ***********************/
+
+.tituloCarrito--fontSize {
+    @media only screen and (max-width: 768px) {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    
+}
+
+.tituloCarrito--fontFamily {
+    @media only screen and (max-width: 768px) {
+        font-family: $forum;
+    }
+    
+}
+
+.encabezadoProducto--fontFamily {
+    font-family: $forum;
 }

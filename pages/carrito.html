@@ -3,8 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Te contamos quienes somos y un poco de nuestra historia.">
-	<meta name="keywords" content="teneme en casa, nosotros, quienes somos, quiénes somos, emprendimiento, emprendedores, zona norte, vicente lopez, vicente lópez, olivos, martinez.">
+	<meta name="description" content="Hacemos envíos a domicilio y gratis con la compra mínima de $2500.">
+	<meta name="keywords" content="teneme en casa, envío a domicilio, envíos a domicilio, envio, envío, envios a domicilio, entrega, delivery, costo envío, costo envio, envío de productos, envíos a zona norte, envíos por correo, envíos uber, envíos cabify, envíos gratis, envíos gratuitos, envios gratis, envios gratuitos, retiro en local, compra mínima, compra minima.">
 	<!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 	<!-- Google Fonts and Icons -->
@@ -19,11 +19,11 @@
 
 	<!-- Mi CSS local -->
 	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
-	<title>Teneme en Casa - Nosotros</title>
+	<title>Teneme en Casa - Carrito de compras</title>
 </head>
 <body>
-	<div class="gridContainerNosotros">
-		<!-- inicio header -->
+    <div class="gridCarrito">
+        <!-- inicio header -->
 		<header>
 			<div class="logo">
 				<a href="../index.html"><img src="../assets/images/teneme_en_casa_logo2.png" alt="Logo teneme en casa" width="100%"></a>
@@ -33,7 +33,7 @@
 			<nav class="navIzq borde menu">
 				<ul>
 					<li><a href="../index.html" class="menu__item--color menu__item--fontFamily item--fontSize">Home</a></li>
-					<li><a href="#" class="menu__item--color menu__item--fontFamily item--fontSize">Nosotros</a></li>
+					<li><a href="../pages/nosotros.html" class="menu__item--color menu__item--fontFamily item--fontSize">Nosotros</a></li>
 					<li><a href="../pages/productos.html" class="menu__item--color menu__item--fontFamily item--fontSize">Productos</a>
 						<ul>
 							<li><a href="../pages/error404.html" class="menu__submenu--fontFamily menu__submenu--fontSize">El Noble</a></li>
@@ -54,42 +54,42 @@
 			<!-- cierre NAV -->
 
 			<!-- inicio ICONO CARRITO COMPRAS -->
-			<!--<div class="carrito">
-				<a href="../pages/carrito.html">
+			<div class="carrito">
+				<a href="#">
 					<ion-icon name="cart" class="cartIcon"></ion-icon><span class="cartItems" id="carritoCantidad">0</span>
 				</a>
 				<!--<i class="fas fa-cart-plus carritoCompras carrito__icono--color carrito__icono-size cursor"></i>-->
-			<!--</div>
+			</div>
 			<!-- cierre ICONO CARRITO COMPRAS -->
 
 		<!-- cierre header -->
 
-		<!-- inicio contenido -->
-		<article class="nosotros">
-			<div class="tituloSeccion" data-aos="fade-up">
-				<h1>Nosotros</h1>
+        <!-- inicio contenido -->
+        <section class="mainCarrito">
+
+            <div class="tituloCarrito" >
+				<h1 class="tituloCarrito--fontFamily tituloCarrito--fontSize tituloCarrito--fontColor">CARRITO DE COMPRAS</h1>
 			</div>
-			<div class="containerImagenTexto">
-				<div class="imagenesNosotros">
-					<div class="imagen1"data-aos="fade-up">
-						<img src="../assets/images/nosotros1_72dpi.jpg" alt="Frutas y verduras" class="foto_nosotros" width="100%">
-					</div>
-					<div class="imagen2" data-aos="fade-up">
-						<img src="../assets/images/nosotros2_72dpi.jpg" alt="Facturas y dulces" class="foto_nosotros2" width="100%">
-					</div>
+
+			<div class="products-container">
+				<div class="encabezadoProducto">
+					<h5 class="product-title encabezadoProducto--fontFamily encabezadoProducto--fontColor encabezadoProducto--fontSize">PRODUCTO</h5>
+					<h5 class="price-title encabezadoProducto--fontFamily encabezadoProducto--fontColor encabezadoProducto--fontSize">PRECIO</h5>
+					<h5 class="quantity-title encabezadoProducto--fontFamily encabezadoProducto--fontColor encabezadoProducto--fontSize">CANTIDAD</h5>
+					<h5 class="total-title encabezadoProducto--fontFamily encabezadoProducto--fontColor encabezadoProducto--fontSize">TOTAL</h5>
 				</div>
-				<div class="textoNosotros " data-aos="fade-up">
-					<p class="texto1">Teneme en Casa te ofrece lo mejor en productos congelados premium: verduras, hamburguesas, milanesas, panificados, facturas, helados, papas fritas, empanadas, pizzas, entre muchos otros productos.</p>
-					<p class="texto2">Nuestra misión es llevar soluciones prácticas a tu mesa, simplificar tu día a día y que vos solo te ocupes de lo que más importa: tu familia.</p>
-				</div>
+			</div>
+			<!--Productos que van a venir desde JS-->
+			<div class="products">
+
 			</div>
 			
-		</article>
-		<!-- cierre contenido -->
+		</section>
+        <!-- cierre contenido -->
 
-		<!-- inicio footer -->
-		<footer>
-			<div class="footerGrid2 piePagina">
+        <!-- inicio footer -->
+		<footer class="piePagina">
+			<div class="footerGrid2">
 				<div class="tituloTeneme">
 					<h2 class="tituloTeneme__titulo--color tituloTeneme__titulo--fontFamily tituloTeneme__titulo--fontSize">TENEME EN CASA</h2>
 				</div>
@@ -149,17 +149,20 @@
 
 		</footer>
 		<!-- cierre footer -->
-	</div>
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<script>
-	  AOS.init();
-	</script>
+
+    </div>
+
+
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 	<script src="../js/index.js"></script>
-	<!-- Separate Popper and Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+	AOS.init();
+	</script>
 </body>
 </html>
