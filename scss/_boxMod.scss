@@ -337,7 +337,13 @@ footer {
         }
 }
 
-.shoppingProducts {
+.productosCarrito {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.productosContenedor {
     @media only screen and (max-width: 768px){
         display: flex;
         flex-flow: row wrap;
@@ -359,10 +365,28 @@ footer {
         }
 }
 
-.productosCarrito {
+.tarjetas {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+
+.cuerpoTarjetas {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+.tituloTarjetas {
+    color: white;
+    font-family: forum;
+    text-align: center;
+}
+
+.precioTarjetas {
+    font-family: forum;
+    text-align: center;
 }
 
 .dropdown {

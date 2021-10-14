@@ -340,20 +340,25 @@
       justify-content: space-around;
       padding: 20px; } }
 
+.productosCarrito {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around; }
+
 @media only screen and (max-width: 768px) {
-  .shoppingProducts {
+  .productosContenedor {
     display: flex;
     flex-flow: row wrap;
     justify-content: center; } }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .shoppingProducts {
+  .productosContenedor {
     display: flex;
     flex-flow: row wrap;
     justify-content: center; } }
 
 @media only screen and (min-width: 1024px) {
-  .shoppingProducts {
+  .productosContenedor {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -362,10 +367,26 @@
     margin-bottom: 40px;
     padding: 40px; } }
 
-.productosCarrito {
+.tarjetas {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around; }
+  justify-content: space-around;
+  margin-top: 50px;
+  margin-right: 20px; }
+
+.cuerpoTarjetas {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center; }
+
+.tituloTarjetas {
+  color: white;
+  font-family: forum;
+  text-align: center; }
+
+.precioTarjetas {
+  font-family: forum;
+  text-align: center; }
 
 .dropdown {
   width: 500px;
