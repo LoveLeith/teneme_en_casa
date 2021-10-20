@@ -24,7 +24,7 @@ $(document).ready(function() {
 
 $(window).on('load', function () {
     $("#espera").remove();
-    $('#productosContenedor').fadeIn(2000); 
+    $('#productosContenedor').fadeIn(1500); 
 });
 
 //ESTA ES LA LLAMADA PARA EL FILTRO POR CATEGORIAS
@@ -37,7 +37,7 @@ $("#abajo").click(function (e) {
     e.preventDefault();
     $('html, body').animate({
         scrollTop: $('.piePagina').offset().top
-    }, 2000);
+    }, 1500);
     
 })
 
@@ -46,6 +46,6 @@ $("#arriba").click(function (e) {
     e.preventDefault();
     $('html, body').animate({
         scrollTop: $('header').offset().top
-    }, 2000);
+    }, 1500);
     
 })

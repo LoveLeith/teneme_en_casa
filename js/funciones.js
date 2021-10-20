@@ -65,7 +65,7 @@ function selectUI(lista, selector) {
 //Esta es una funcion para filtrar por categorias y para mostrar todos los productos en caso de seleccionar la opcion TODOS
 function buscarCategoria() { 
     let valor = this.value; 
-    $("#productosContenedor").fadeOut(2000, function() {  
+    $("#productosContenedor").fadeOut(1500, function() {  
         if (valor != "TODOS") {
             let filtrados = productos.filter(producto => producto.categoria == valor);
             console.log(filtrados);
@@ -74,7 +74,7 @@ function buscarCategoria() {
         else {
             productosUI(productos, "#productosContenedor");
         }
-    }).fadeIn(2000);
+    }).fadeIn(1500);
 }
 
 //Esta es una función para validar el formulario antes de enviarlo al servidor y para 
