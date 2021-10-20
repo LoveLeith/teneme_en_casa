@@ -402,6 +402,60 @@ footer {
     background: radial-gradient(#49494f, #303030);
 }
 
+.scrollSuperior, .scrollInferior {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.scrollAbajo, .scrollArriba {
+    color: white;
+    font-family: forum;
+    font-size: 18px;
+}
+
+a:hover {
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+}
+
+.selectCategoria {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin: 30px 0px 0px 20px;
+}
+
+.textoSelect {
+    color: white;
+    font-family: forum;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.formatoSelect {
+    width: 200px;
+    border: 3px solid #e3c55b;
+	border-radius: 5px;
+    color: black;
+    font-family: forum;
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+.badge-warning {
+    background-color: transparent;
+    color: white;
+    font-family: forum;
+    font-size: 16px;
+    padding: 10px;
+}
+
+
 
 /*----------------------inicio Contacto Vista Mobile BoxMod------------------------------*/
 

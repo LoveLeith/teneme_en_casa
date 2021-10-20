@@ -8,10 +8,12 @@ function productosUI(productos, id) {
                                             <div class="card-body cuerpoTarjetas">
                                                 <h5 class="card-title tituloTarjetas">${producto.nombre}</h5>
                                                 <p class="card-text precioTarjetas">$${producto.precio}</p>
+                                                <span class = "badge badge-warning">${producto.categoria}</span>
                                                 <a href="#" id="${producto.id} "class="btn btn-primary btn-compra">Comprar</a> 
                                             </div>
                                             </div>`);
     }
+    $(".btn-compra").click(comprarProducto);
 }
 
 //Funcion manejador de compra de productos
@@ -29,7 +31,6 @@ function comprarProducto(event) {
     } else {
         existe.agregarCantidad(1);
     }
-
     carritoUI(carrito);
 }
 
@@ -52,11 +53,33 @@ function carritoUI(productos) {
 
 }
 
+//Esta funcion es para crear la interfaz dinamica para seleccionar las categorias
+function selectUI(lista, selector) {  
+    $(selector).empty();
+    for (const categoria of lista) {
+        $(selector).append(`<option>${categoria}</option>`);
+    }
+    $(selector).prepend(`<option selected>TODOS</option>`); 
+}
+
+//Esta es una funcion para filtrar por categorias y para mostrar todos los productos en caso de seleccionar la opcion TODOS
+function buscarCategoria() { 
+    let valor = this.value; 
+    $("#productosContenedor").fadeOut(2000, function() {  
+        if (valor != "TODOS") {
+            let filtrados = productos.filter(producto => producto.categoria == valor);
+            console.log(filtrados);
+            productosUI(filtrados, "#productosContenedor");
+        }
+        else {
+            productosUI(productos, "#productosContenedor");
+        }
+    }).fadeIn(2000);
+}
 
 //Esta es una función para validar el formulario antes de enviarlo al servidor y para 
 //evitar perder la información y así procesarla con JS
 let formularioContacto = document.getElementById('formulario');
-
 function validarFormulario(e) {
     e.preventDefault();
 }

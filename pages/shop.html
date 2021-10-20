@@ -19,7 +19,7 @@
 
 	<!-- Mi CSS local -->
 	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
-	<title>Teneme en Casa - Envíos</title>
+	<title>Teneme en Casa - Shop</title>
 </head>
 <body>
     <div class="gridEnvios">
@@ -54,12 +54,12 @@
 			<!-- cierre NAV -->
 
 			<!-- inicio ICONO CARRITO COMPRAS -->
-			<!--<div class="carrito">
+		<!--<div class="carrito">
 				<a href="../pages/carrito2.html">
 					<ion-icon name="cart" class="cartIcon"></ion-icon><span class="cartItems" id="carritoCantidad">0</span>
 				</a>-->
 				<!--<i class="fas fa-cart-plus carritoCompras carrito__icono--color carrito__icono-size cursor"></i>-->
-			</div>
+		<!--</div>-->	
 			<!-- cierre ICONO CARRITO COMPRAS -->
 
 			<!-- cierre header -->
@@ -67,24 +67,48 @@
 			<!-- inicio contenido -->
 		<section class="enviosDomicilio">
 
+			<!-- Inicio scroll superior -->
+			<div class ="scrollSuperior">
+				<a id = "abajo" class = "scrollAbajo">Ir abajo</a>
+			</div>
+			<!-- Cierre scroll superior -->
 
+			<!-- Inicio filtro categorias -->
+
+			<div class = "selectCategoria">
+				<label class="textoSelect">Filtrar por categorías<br>
+				<select id = "selectCategoria" class = "formatoSelect" name="select">
+					<!--ACA SE GENERAN LOS VALORES DESDE JS-->
+				</select>
+			</div>
+    		
+			<!-- Cierre filtro categorias -->
+			
 			<div class="productosCarrito">
-				
+				<!-- Inicio productos generales -->
 				<div id="productosContenedor" class="productosContenedor"> 
-					<!--CARDS-->
+					<!-- ACA SE GENERAN TODAS LAS CARDS DE PRODUCTOS-->
 				</div>
+				<!-- Cierre productos generales-->
 
+				<!-- Inicio carrito de compras -->
 				<div class="dropdown checkout" id="carrito" align=center>
 					<button class="btn btn-secondary dropdown-toggle" type="button" id="botonCarrito" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					Carrito de Compras <span id="cantidadCarrito" class="badge badge-light">0</span>
 					</button>
 					<div id="carritoProductos" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-					
+					<!-- ACA SE GENERAN LOS PRODUCTOS SELECCIONADOS POR EL USUARIO-->
 				
 					</div>
 				</div>
+				<!-- Cierre carrito de compras -->
 			</div>
 
+			<div class = "scrollInferior">
+				<a id = "arriba" class = "scrollArriba">Ir a Inicio</a>
+			</div>
+			
+    		
 		</section>
         <!-- cierre contenido -->
 
@@ -155,7 +179,7 @@
 
 
 	<!-- Bootstrap-->
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
     <!-- JS Files-->

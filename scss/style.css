@@ -641,6 +641,31 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin-top: 50px;
+  margin-right: 20px;
+}
+
+.cuerpoTarjetas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tituloTarjetas {
+  color: white;
+  font-family: forum;
+  text-align: center;
+}
+
+.precioTarjetas {
+  font-family: forum;
+  text-align: center;
 }
 
 .dropdown {
@@ -654,6 +679,73 @@
   font-family: forum;
   color: white;
   background: radial-gradient(#49494f, #303030);
+}
+
+.scrollSuperior, .scrollInferior {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.scrollAbajo, .scrollArriba {
+  color: white;
+  font-family: forum;
+  font-size: 18px;
+}
+
+a:hover {
+  list-style-type: none;
+  color: white;
+  text-decoration: none;
+}
+
+.selectCategoria {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 30px 0px 0px 20px;
+}
+
+.textoSelect {
+  color: white;
+  font-family: forum;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.formatoSelect {
+  width: 200px;
+  border: 3px solid #e3c55b;
+  border-radius: 5px;
+  color: black;
+  font-family: forum;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.badge-warning {
+  background-color: transparent;
+  color: white;
+  font-family: forum;
+  font-size: 16px;
+  padding: 10px;
 }
 
 /*----------------------inicio Contacto Vista Mobile BoxMod------------------------------*/
