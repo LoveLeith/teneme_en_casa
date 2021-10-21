@@ -50,7 +50,28 @@ function carritoUI(productos) {
                                         Subtotal: $${producto.subtotal()}</span>
                                         </p>`);
     }
+    //Agrego un boton para confirmar al carrito
+    $('#carritoProductos').append(`<button id="btnConfirmar">Confirmar</button>`);
+    //Agregi el evento click al boton confirmar
+    $('#btnConfirmar').on("click", enviarCompra);
+}
 
+//Funcion para enviar los datos a la API despues de confirmada la compra y para vaciar el carrito y que la cantidad vuelva a 0
+function enviarCompra() {
+    $.post("https://jsonplaceholder.typicode.com/posts", JSON.stringify(carrito), function (respuesta, estado) {
+        console.log(estado);
+        console.log(respuesta);
+        //Pregunto si el estado de la operacion fue exitoso
+        if (estado == "success") {
+            //Vacio el carrito
+            $('#carritoProductos').empty();
+            //Vacio el numero de productos
+            $('#cantidadCarrito').html("0");
+        }
+        else {
+            console.log('Los datos no se enviaron correctamente');
+        }
+    })
 }
 
 //Esta funcion es para crear la interfaz dinamica para seleccionar las categorias
@@ -76,6 +97,7 @@ function buscarCategoria() {
         }
     }).fadeIn(1500);
 }
+
 
 //Esta es una función para validar el formulario antes de enviarlo al servidor y para 
 //evitar perder la información y así procesarla con JS

@@ -1,21 +1,25 @@
-//Instancio objetos y asocio al array global (id, nombre, precio, img, categoria)
-productos.push(new Producto(1, "Hamburguesa clásica", 300, "hamburguesa", categorias[0]));
-productos.push(new Producto(1, "Hamburguesa mediana", 300, "hamburguesa", categorias[0]));
-productos.push(new Producto(1, "Hamburguesa grande", 300, "hamburguesa", categorias[0]));
-productos.push(new Producto(2, "Papas fritas horneables", 450, "papas", categorias[1]));
-productos.push(new Producto(2, "Papas fritas crinkle", 450, "papas", categorias[1]));
-productos.push(new Producto(2, "Papas fritas clásicas", 450, "papas", categorias[1]));
-productos.push(new Producto(3, "Helado de vainilla", 500, "helado", categorias[2]));
-productos.push(new Producto(3, "Helado de chocolate", 500, "helado", categorias[2]));
-productos.push(new Producto(3, "Helado de frutilla", 500, "helado", categorias[2]));
-productos.push(new Producto(4, "Facturas - Medialunas", 300, "facturas", categorias[3]));
-productos.push(new Producto(4, "Facturas - Circulares", 300, "facturas", categorias[3]));
-productos.push(new Producto(4, "Facturas - Criollitos", 300, "facturas", categorias[3]));
-
+//Uso el método Hide para ocultar todo lo que está en el div productosContenedor
 $('#productosContenedor').hide();
 
-//Llamada de la funcion productosUI para generar la interfaz de productos con una funcion
-productosUI(productos, '#productosContenedor');  
+$.get("../data/productos.json", function (respuesta, estado) {
+    //console.dir(respuesta);
+    //console.log(estado);
+    //Pregunto si el estado de la operacion fue exitoso
+    if(estado == "success"){
+        //Recorro el array de respuesta y los transformo a objetos de tipo "producto"
+        for (const objeto of respuesta) {
+            console.dir(objeto);
+            //Agrego un push para usar los metodos de la clase constructora
+            productos.push(new Producto(objeto.id, objeto.nombre, objeto.precio, objeto.img, objeto.categoria, objeto.cantidad));
+            console.dir(productos[0]);
+        }
+        //Llamada de la funcion productosUI para generar la interfaz de productos con una funcion
+        productosUI(productos, '#productosContenedor'); 
+    }
+    else {
+        console.log('Los datos no se cargaron correctamente');
+    }
+});
 
 //Funcion para que el DOM cargue primero todas las cards con los botones y garantizar que los botones funcionen correctamente
 $(document).ready(function() {              
@@ -23,16 +27,21 @@ $(document).ready(function() {
 });
 
 $(window).on('load', function () {
+    //Quitamos los productos de la pagina para que luego vayan apareciendo con el fadeIn posterior
     $("#espera").remove();
-    $('#productosContenedor').fadeIn(1500); 
+    //Agrego fadeIn para que se muestren los productos ocultos
+    $('#productosContenedor').fadeIn(1500, function () {
+        console.log('Funcionalidad callback');
+    }); 
 });
 
 //ESTA ES LA LLAMADA PARA EL FILTRO POR CATEGORIAS
 selectUI(categorias, "#selectCategoria");
+//Asocio el evento change al select
 $("#selectCategoria").on("change", buscarCategoria);
 
 
-//FUNCIONALIDAD PARA LOS ENLACES DE SCROLL HACIA ABAJO -- SI ESTA FUNCION NO FUNCIONA, LLEVARLA ADENTRO DE "READY()"
+//FUNCIONALIDAD PARA LOS ENLACES DE SCROLL HACIA ABAJO
 $("#abajo").click(function (e) {
     e.preventDefault();
     $('html, body').animate({
