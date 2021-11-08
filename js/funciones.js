@@ -99,7 +99,7 @@ function carritoUI(productos) {
         }
     }  
     //Tomo el botón "Confirmar", agrego evento de escucha clic y llamada a la función enviarCompra
-    $('#btnConfirmar').on("click", enviarCompra);  
+    $('#btnConfirmar').on("click", enviarCompra);
 }
 
 //Función para actualizar el precio final de la compra al agregar, restar o eliminar productos del carrito
