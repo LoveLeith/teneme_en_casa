@@ -1,5 +1,4 @@
 //Funcion para generar la interfaz de productos con las cards
-
 function productosUI(productos, id) {
     $(id).empty(); 
     for(const producto of productos) {
@@ -18,55 +17,110 @@ function productosUI(productos, id) {
 
 //Funcion manejador de compra de productos
 function comprarProducto(event) {
-    //Prevengo el refresh al presionar enlaces para impedir que al hacer clic en "Comprar" la pantalla se vaya para arriba
     event.preventDefault();
     //Funcion para obtener el ID del boton presionado
     const idProducto = event.target.id;
     //Funcion para obtener el objeto del producto correspondiente al ID
     const existe = carrito.find(producto => producto.id == idProducto);
+
     if (existe == undefined) {
         const seleccionado = productos.find(producto => producto.id == idProducto);
-        localStorage.setItem('idProducto', JSON.stringify(seleccionado)); 
         carrito.push(seleccionado);
+        actualizarPrecio();
     } else {
         existe.agregarCantidad(1);
+        actualizarPrecio();
     }
+    localStorage.setItem('carrito', JSON.stringify(carrito));
     carritoUI(carrito);
 }
 
-//Funcion para configurar la parte visual del carrito y que ahi se vean los productos seleccionados
+//Funcion para la renderización de los productos en el carrito
 function carritoUI(productos) {
-    //Funcion para cambiar el interior del indicador de cantidad de productos
-    $("#cantidadCarrito").html(productos.length);  
+    //Funcion para cambiar el indicador de cantidad de productos
+    $("#cantidadCarrito").html(productos.length);
     //Funcion para vaciar el interior del cuerpo del carrito para que no se repitan los productos
-    $("#carritoProductos").empty(); 
-    for (const producto of productos) {
-        $('#carritoProductos').append(`<p> ${producto.nombre}
-                                        <span class = "badge badge-warning">
-                                        ${producto.precio}</span>
-                                        <span class = "badge badge-warning">
-                                        Cantidad: ${producto.cantidad}</span>
-                                        <span class = "badge badge-warning">
-                                        Subtotal: $${producto.subtotal()}</span>
-                                        </p>`);
+    $("#containerProductos").empty();       
+        for (const producto of productos) {
+            let tr = document.createElement('tr')
+            tr.innerHTML+=
+                            `<td>${producto.id}</td>
+                            <td>${producto.nombre}</td>
+                            <td><button id="${producto.id}" class="btn-dark btn-add btn-add${producto.id}"> + </button>
+                            <span class="badge badge-warning" id="counter${producto.id}">${producto.cantidad}</span>
+                            <button id="${producto.id}" class="btn-dark btn-sub btn-sub${producto.id}"> - </button>
+                            <button id="${producto.id}" class="btn-dark btn-delete btn-delete${producto.id}"> x </button>
+                            <span class="badge badge-warning">Subtotal: $${producto.subtotal()}</span></td>`          
+            document.getElementById('containerProductos').appendChild(tr);
+            actualizarPrecio();     
+        }
+    
+    //Llamada a la funcion para eliminar productos del carrito
+    $('.btn-delete').on('click', eliminarCarrito);
+
+    //Funcion para eliminar los productos del carrito
+    function eliminarCarrito(event) {
+        event.stopPropagation();
+        //Filtro donde voy a sobreescribir el array carrito con todos los productos menos el producto del id del target.
+        carrito = carrito.filter(producto => producto.id != event.target.id);
+        carritoUI(carrito);
+        actualizarPrecio();
+        localStorage.setItem('carrito', JSON.stringify(carrito)); 
     }
-    //Agrego un boton para confirmar al carrito
-    $('#carritoProductos').append(`<button id="btnConfirmar">Confirmar</button>`);
-    //Agregi el evento click al boton confirmar
-    $('#btnConfirmar').on("click", enviarCompra);
+
+    //Llamada a la funcion para agregar productos del carrito
+    $('.btn-add').on('click', agregarCarrito);
+
+    //Funcion para agregar cantidad de productos al carrito
+    function agregarCarrito(event) {
+        event.stopPropagation();
+        let producto = carrito.find(producto => producto.id == event.target.id);
+        producto.agregarCantidad(1);
+        //Me posiciono sobre el elemento padre para ver elementos hijos del carrito y modificar cantidad productos y subtotal
+        $(this).parent().children()[1].innerHTML = producto.cantidad;
+        $(this).parent().children()[4].innerHTML = `Subtotal: $${producto.subtotal()}`;
+        actualizarPrecio();
+        localStorage.setItem('carrito', JSON.stringify(carrito)); 
+    }
+
+    //Llamada a la funcion para restar cantidad de productos del carrito
+    $('.btn-sub').on('click', restarCarrito);
+
+    //Funcion para restar cantidad de productos al carrito
+    function restarCarrito(event) {
+        event.stopPropagation();
+        let producto = carrito.find(producto => producto.id == event.target.id);
+        if (producto.cantidad > 1) {
+            producto.agregarCantidad(-1);
+            $(this).parent().children()[1].innerHTML = producto.cantidad;
+            $(this).parent().children()[4].innerHTML = `Subtotal: $${producto.subtotal()}`;
+            actualizarPrecio();
+            localStorage.setItem('carrito', JSON.stringify(carrito)); 
+        }
+    }  
+    //Tomo el botón "Confirmar", agrego evento de escucha clic y llamada a la función enviarCompra
+    $('#btnConfirmar').on("click", enviarCompra);  
 }
 
-//Funcion para enviar los datos a la API despues de confirmada la compra y para vaciar el carrito y que la cantidad vuelva a 0
+//Función para actualizar el precio final de la compra al agregar, restar o eliminar productos del carrito
+precioFinal.innerText = "0";
+
+function actualizarPrecio() {
+    let precioFinal = document.getElementById('precioFinal');
+    precioFinal.innerText = carrito.reduce((acc, el) => acc + (el.precio * el.cantidad), 0);
+}
+
+//Funcion para enviar los datos a la API despues de confirmada la compra, vaciar el carrito y que la cantidad vuelva a 0
 function enviarCompra() {
     $.post("https://jsonplaceholder.typicode.com/posts", JSON.stringify(carrito), function (respuesta, estado) {
-        console.log(estado);
-        console.log(respuesta);
         //Pregunto si el estado de la operacion fue exitoso
         if (estado == "success") {
             //Vacio el carrito
             $('#carritoProductos').empty();
-            //Vacio el numero de productos
+            localStorage.clear();
+            //Vacio la cantidad de productos
             $('#cantidadCarrito').html("0");
+            localStorage.clear();
         }
         else {
             console.log('Los datos no se enviaron correctamente');
@@ -74,7 +128,7 @@ function enviarCompra() {
     })
 }
 
-//Esta funcion es para crear la interfaz dinamica para seleccionar las categorias
+//Fnción para crear la interfaz dinámica para seleccionar las categorias
 function selectUI(lista, selector) {  
     $(selector).empty();
     for (const categoria of lista) {
@@ -83,13 +137,12 @@ function selectUI(lista, selector) {
     $(selector).prepend(`<option selected>TODOS</option>`); 
 }
 
-//Esta es una funcion para filtrar por categorias y para mostrar todos los productos en caso de seleccionar la opcion TODOS
+//Función para filtrar por categorias y mostrar todos los productos en caso de seleccionar la opción TODOS
 function buscarCategoria() { 
     let valor = this.value; 
     $("#productosContenedor").fadeOut(1500, function() {  
         if (valor != "TODOS") {
             let filtrados = productos.filter(producto => producto.categoria == valor);
-            console.log(filtrados);
             productosUI(filtrados, "#productosContenedor");
         }
         else {
@@ -98,9 +151,7 @@ function buscarCategoria() {
     }).fadeIn(1500);
 }
 
-
-//Esta es una función para validar el formulario antes de enviarlo al servidor y para 
-//evitar perder la información y así procesarla con JS
+//Función para validar formulario de contacto antes de enviarlo al servidor, evitar perder la información y poder procesarla con JS
 let formularioContacto = document.getElementById('formulario');
 function validarFormulario(e) {
     e.preventDefault();

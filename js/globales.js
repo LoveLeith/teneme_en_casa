@@ -2,6 +2,6 @@
 
 const productos = [];
 
-const carrito = []; 
+let carrito = []; 
 
 const categorias = ['HAMBURGUESAS', "PAPAS FRITAS", "HELADOS", "PANIFICADOS"];

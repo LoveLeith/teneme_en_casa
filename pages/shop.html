@@ -23,7 +23,7 @@
 </head>
 <body>
     <div class="gridEnvios">
-        <!-- inicio header -->
+        <!-- inicio Header -->
 		<header>
 			<div class="logo">
 				<a href="../index.html"><img src="../assets/images/teneme_en_casa_logo2.png" alt="Logo teneme en casa" width="100%"></a>
@@ -53,19 +53,25 @@
 			</nav>
 			<!-- cierre NAV -->
 
-			<!-- inicio ICONO CARRITO COMPRAS -->
-		<!--<div class="carrito">
-				<a href="../pages/carrito2.html">
-					<ion-icon name="cart" class="cartIcon"></ion-icon><span class="cartItems" id="carritoCantidad">0</span>
-				</a>-->
-				<!--<i class="fas fa-cart-plus carritoCompras carrito__icono--color carrito__icono-size cursor"></i>-->
-		<!--</div>-->	
+			<!-- inicio ICONO CARRITO COMPRAS -- ESTO FUE DEJADO PARA FUTURAS MODIFICACIONES -->
+			<!--<div class="carrito">
+					<a href="../pages/carrito2.html">
+						<ion-icon name="cart" class="cartIcon"></ion-icon><span class="cartItems" id="carritoCantidad">0</span>
+					</a>-->
+					<!--<i class="fas fa-cart-plus carritoCompras carrito__icono--color carrito__icono-size cursor"></i>-->
+			<!--</div>-->	
 			<!-- cierre ICONO CARRITO COMPRAS -->
 
-			<!-- cierre header -->
+			<!-- Cierre Header -->
 
-			<!-- inicio contenido -->
+			<!-- Inicio Contenido -->
 		<section class="enviosDomicilio">
+
+			<!-- Inicio Titulo SHOP -->
+			<div class="tituloShop" data-aos="fade-up">
+				<h1 class="tituloShop__titulo--padding tituloShop__titulo--color tituloShop__titulo--fontFamily tituloShop__titulo--fontsize tituloShop__titulo--textalign">SHOP</h1>
+			</div>
+			<!-- Cierre Titulo SHOP -->
 
 			<!-- Inicio scroll superior -->
 			<div class ="scrollSuperior">
@@ -73,36 +79,60 @@
 			</div>
 			<!-- Cierre scroll superior -->
 
-			<!-- Inicio filtro categorias -->
+			<!-- Inicio Filtro categoria y Modal -->
+			<div class = "modalYCategoria">
+				<!-- Inicio filtro categorias -->
+				<div class = "selectCategoria">
+					<label class="textoSelect">Filtrar por categorías<br>
+					<select id = "selectCategoria" class = "formatoSelect" name="select">
+						<!--ACA SE GENERAN LOS VALORES DESDE JS-->
+					</select>
+				</div>
+				<!-- Cierre filtro categorias -->
 
-			<div class = "selectCategoria">
-				<label class="textoSelect">Filtrar por categorías<br>
-				<select id = "selectCategoria" class = "formatoSelect" name="select">
-					<!--ACA SE GENERAN LOS VALORES DESDE JS-->
-				</select>
+				<!-- Inicio boton trigger modal -->
+				<div class = "botonModal">
+					<button type="button" id = "botonCarrito" class="btn btn-secondary " data-toggle="modal" data-target=".bd-example-modal-lg">
+						Carrito de compras <span id="cantidadCarrito" class="badge badge-light">0</span>
+					</button>
+				</div>
+				<!-- Cierre boton trigger modal -->
+				
+				<!-- Inicio Modal -->
+				<div class="modal fade bd-example-modal-lg" id="carrito" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content carritoProductos" id ="carritoProductos">
+
+							<table class="table table-bordered tablaProductos">
+								<thead class = "encabezadoTabla">
+									<tr>
+										<th scope="col">#</th>
+										<th scope="col">Nombre</th>
+										<th scope="col">Cantidad / Subtotal</th>								
+									</tr>
+								</thead>
+								<tbody id="containerProductos" class = "containerTablaProductos">
+									<!-- Acá van los productos seleccionados-->
+								</tbody>
+							</table>
+								
+							<div id='total' class = "precioTotal precioTotal--font-family precioTotal--fontSize">Precio Total: $ <span id="precioFinal"></span></div>
+							<button type="button" class="btn btn-secondary btn-confirmarCompra" id="btnConfirmar"> Confirmar Compra</button>		
+
+						</div>
+					</div>
+				</div>				
+				<!-- Cierre Modal -->				
 			</div>
-    		
-			<!-- Cierre filtro categorias -->
+			<!-- Cierre Modal y Filtro categoria -->
 			
 			<div class="productosCarrito">
+
 				<!-- Inicio productos generales -->
 				<div id="productosContenedor" class="productosContenedor"> 
 					<!-- ACA SE GENERAN TODAS LAS CARDS DE PRODUCTOS-->
 				</div>
 				<!-- Cierre productos generales-->
-
-				<!-- Inicio carrito de compras -->
-				<div class="dropdown checkout" id="carrito" align=center>
-					<button class="btn btn-secondary dropdown-toggle" type="button" id="botonCarrito" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					Carrito de Compras <span id="cantidadCarrito" class="badge badge-light">0</span>
-					</button>
-					<div id="carritoProductos" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-					<!-- ACA SE GENERAN LOS PRODUCTOS SELECCIONADOS POR EL USUARIO-->
-				
-					</div>
-				</div>
-				<!-- Cierre carrito de compras -->
-			</div>
 
 			<div class = "scrollInferior">
 				<a id = "arriba" class = "scrollArriba">Ir a Inicio</a>
@@ -110,15 +140,15 @@
 			
     		
 		</section>
-        <!-- cierre contenido -->
+        <!-- Cierre Contenido -->
 
-        <!-- inicio footer -->
+        <!-- Inicio Footer -->
 		<footer class="piePagina">
 			<div class="footerGrid2">
 				<div class="tituloTeneme">
 					<h2 class="tituloTeneme__titulo--color tituloTeneme__titulo--fontFamily tituloTeneme__titulo--fontSize">TENEME EN CASA</h2>
 				</div>
-				<!-- inicio LISTA NAV --> 
+				<!-- Inicio LISTA NAV --> 
 				<div class="menuInferior">
 					<ul class="navFooter">
 						<li><a href="../pages/nosotros.html" class="menuInferior__color--nosotros menuInferior__item--fontFamily menuInferior__item--fontSize">Nosotros</a></li>
@@ -128,9 +158,9 @@
 						<li><a href="../pages/contacto.html" class="menuInferior__color--contacto menuInferior__item--fontFamily menuInferior__item--fontSize">Contacto</a></li>
 					</ul>
 				</div>
-				<!-- cierre LISTA NAV -->
+				<!-- Cierre LISTA NAV -->
 			
-				<!-- inicio ICONOS REDES SOCIALES Y METODOS DE PAGO -->
+				<!-- Inicio ICONOS REDES SOCIALES Y METODOS DE PAGO -->
 				<div class="containerRedesSociales">
 					<div class="redes">
 						<ul>
@@ -147,9 +177,9 @@
 						</ul>
 					</div>
 				</div>
-				<!-- cierre ICONOS REDES SOCIALES Y METODOS DE PAGO -->
+				<!-- Cierre ICONOS REDES SOCIALES Y METODOS DE PAGO -->
 
-				<!-- inicio INGRESO A CUENTA USUARIO -->
+				<!-- Inicio INGRESO A CUENTA USUARIO -->
 				<div class="ingresoRegistro">
 					<div class="cuenta">
 						<h3 class="cuenta_titulo--color cuenta__titulo--fontFamily cuenta__titulo--fontSize">¿Tenés cuenta?</h3>
@@ -161,19 +191,19 @@
 						<p class="registrarse__texto--color registrarse__texto--fontFamily registrarse__texto--fontSize cursor">Registrarse</p>
 					</div>		
 				</div>			
-					<!-- cierre INGRESO A CUENTA USUARIO -->
+					<!-- Cierre INGRESO A CUENTA USUARIO -->
 				</div>
 			</div>
 			
-			<!-- inicio Copyright -->
+			<!-- Inicio Copyright -->
 			<div class="copyright">
 				<p class="copyright__texto--color copyright__texto--fontFamily copyright__fontSize">Designed by MPA Web Design</p>
 			<div>
-			<!-- cierre Copyright -->
+			<!-- Cierre Copyright -->
 
 
 		</footer>
-		<!-- cierre footer -->
+		<!-- Cierre footer -->
 
     </div>
 

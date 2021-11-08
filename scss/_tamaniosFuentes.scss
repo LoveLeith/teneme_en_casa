@@ -198,6 +198,21 @@ $estilos: (
     }
 }
 
+/*************************seccion Shop ***************************************/
+
+.tituloShop__titulo--fontFamily {
+    font-family: $forum;
+}
+
+.tituloShop__titulo--fontsize {
+    font-size: 40px;
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    font-size: 45px;
+    }
+    @media only screen and (min-width: 1024px) {
+    font-size: 45px;
+    }
+}
 
 /************************seccion Carrito ***********************/
 
@@ -205,8 +220,7 @@ $estilos: (
     @media only screen and (max-width: 768px) {
         font-size: 30px;
         font-weight: bold;
-    }
-    
+    } 
 }
 
 .tituloCarrito--fontFamily {
@@ -215,7 +229,9 @@ $estilos: (
     }
     
 }
-
 .encabezadoProducto--fontFamily {
     font-family: $forum;
 }
+
+/*******************carrito modal*****************************/
+

@@ -4,84 +4,96 @@
     "nombre": "Hamburguesa clásica",
     "precio": 300,
     "img": "hamburguesa",
-    "categoria": "HAMBURGUESAS"
+    "categoria": "HAMBURGUESAS",
+    "cantidad": 1
     },
     {
     "id": 2,
     "nombre": "Hamburguesa mediana",
     "precio": 300,
     "img": "hamburguesa",
-    "categoria": "HAMBURGUESAS"
+    "categoria": "HAMBURGUESAS",
+    "cantidad": 1
     },
     {
     "id": 3,
     "nombre": "Hamburguesa grande",
     "precio": 300,
     "img": "hamburguesa",
-    "categoria": "HAMBURGUESAS"
+    "categoria": "HAMBURGUESAS",
+    "cantidad": 1
     },
     {
     "id": 4,
     "nombre": "Papas fritas clásicas",
     "precio": 450,
     "img": "papas",
-    "categoria": "PAPAS FRITAS"
+    "categoria": "PAPAS FRITAS",
+    "cantidad": 1
     },
     {
     "id": 5,
     "nombre": "Papas fritas crinkle",
     "precio": 450,
     "img": "papas",
-    "categoria": "PAPAS FRITAS"
+    "categoria": "PAPAS FRITAS",
+    "cantidad": 1
     },
     {
     "id": 6,
     "nombre": "Papas fritas horneables",
     "precio": 450,
     "img": "papas",
-    "categoria": "PAPAS FRITAS"
+    "categoria": "PAPAS FRITAS",
+    "cantidad": 1
     },
     {
     "id": 7,
     "nombre": "Helado de vainilla",
     "precio": 500,
     "img": "helado",
-    "categoria": "HELADOS"
+    "categoria": "HELADOS",
+    "cantidad": 1
     },
     {
     "id": 8,
     "nombre": "Helado de chocolate",
     "precio": 500,
     "img": "chocolate",
-    "categoria": "HELADOS"
+    "categoria": "HELADOS",
+    "cantidad": 1
     },
     {
     "id": 9,
     "nombre": "Helado de frutilla",
     "precio": 500,
     "img": "frutilla",
-    "categoria": "HELADOS"
+    "categoria": "HELADOS",
+    "cantidad": 1
     },
     {
     "id": 10,
     "nombre": "Facturas - Medialunas",
     "precio": 300,
     "img": "medialunas",
-    "categoria": "PANIFICADOS"
+    "categoria": "PANIFICADOS",
+    "cantidad": 1
     },
     {
     "id": 11,
     "nombre": "Facturas - Circulares",
     "precio": 300,
     "img": "churros",
-    "categoria": "PANIFICADOS"
+    "categoria": "PANIFICADOS",
+    "cantidad": 1
     },
     {
     "id": 12,
     "nombre": "Facturas - Criollitos",
     "precio": 300,
     "img": "criollitos",
-    "categoria": "PANIFICADOS"
+    "categoria": "PANIFICADOS",
+    "cantidad": 1
     }
 ]
 

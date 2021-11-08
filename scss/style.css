@@ -103,6 +103,12 @@
   color: white;
 }
 
+/************************* Inicio Seccion SHOP ****************************/
+.tituloShop__titulo--color {
+  color: white;
+}
+
+/************************* cierre Seccion SHOP ****************************/
 /*******************************seccion Carrito*************************************/
 .mainCarrito {
   background: radial-gradient(#49494f, #303030);
@@ -541,17 +547,28 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .enviosDomicilio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 30px;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .enviosDomicilio {
-    padding: 70px;
   }
 }
 
@@ -566,20 +583,59 @@
             flex-flow: row wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    padding: 20px;
+    padding: 70px;
   }
+}
+
+.tituloShop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
 }
 
 .productosCarrito {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .productosCarrito {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .productosCarrito {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -587,10 +643,10 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -606,9 +662,8 @@
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -623,7 +678,7 @@
             flex-flow: row wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    margin: 30px 30px 40px 30px;
+    margin: 0px 30px 40px 30px;
     padding: 40px;
   }
 }
@@ -632,13 +687,44 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 50px 40px 0px 40px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .tarjetas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 50px 0px 0px 0px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .tarjetas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 50px 40px 0px 40px;
+  }
 }
 
 .cuerpoTarjetas {
@@ -665,21 +751,40 @@
   text-align: center;
 }
 
-.dropdown {
-  width: 500px;
-  padding: 40px;
-  margin-bottom: 200px;
+.table {
+  margin: 0px;
+  border: none;
 }
 
-.dropdown-menu {
-  width: 500px;
-  font-family: forum;
-  color: white;
+.tablaProductos {
   background: radial-gradient(#49494f, #303030);
+  color: white;
+  font-family: forum;
+  font-size: 20px;
+  text-align: center;
 }
 
-.scrollSuperior, .scrollInferior {
-  width: 100%;
+.table-bordered {
+  border: 1px solid #49494f;
+}
+
+.encabezadoTabla {
+  text-align: center;
+  color: white;
+  font-family: forum;
+  font-size: 20px;
+}
+
+.btn-dark {
+  width: 30px;
+  border-radius: 15px;
+}
+
+.btn-delete {
+  margin-left: 10px;
+}
+
+.precioTotal {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -687,9 +792,53 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 70px;
+  color: white;
+  font-family: forum;
+  font-size: 20px;
+  background: radial-gradient(#49494f, #303030);
+  padding: 22px;
+}
+
+@media only screen and (max-width: 768px) {
+  .scrollSuperior, .scrollInferior {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .scrollSuperior, .scrollInferior {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .scrollSuperior, .scrollInferior {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 
 .scrollAbajo, .scrollArriba {
@@ -704,19 +853,112 @@ a:hover {
   text-decoration: none;
 }
 
-.selectCategoria {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  margin: 30px 0px 0px 20px;
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .modalYCategoria {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .modalYCategoria {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .botonModal {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .botonModal {
+    width: 40%;
+    margin-top: 18px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .botonModal {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .selectCategoria {
+    width: 100%;
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .selectCategoria {
+    width: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0px 0px 0px 0px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .selectCategoria {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin: 0px 0px 0px 0px;
+  }
 }
 
 .textoSelect {
@@ -948,6 +1190,12 @@ a:hover {
   color: white;
 }
 
+/************************* Inicio Seccion SHOP ****************************/
+.tituloShop__titulo--color {
+  color: white;
+}
+
+/************************* cierre Seccion SHOP ****************************/
 /*******************************seccion Carrito*************************************/
 .mainCarrito {
   background: radial-gradient(#49494f, #303030);
@@ -1753,6 +2001,27 @@ footer .ingresa p:hover, footer .registrarse p:hover {
   }
 }
 
+/*************************seccion Shop ***************************************/
+.tituloShop__titulo--fontFamily {
+  font-family: forum;
+}
+
+.tituloShop__titulo--fontsize {
+  font-size: 40px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .tituloShop__titulo--fontsize {
+    font-size: 45px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .tituloShop__titulo--fontsize {
+    font-size: 45px;
+  }
+}
+
 /************************seccion Carrito ***********************/
 @media only screen and (max-width: 768px) {
   .tituloCarrito--fontSize {
@@ -1771,6 +2040,7 @@ footer .ingresa p:hover, footer .registrarse p:hover {
   font-family: forum;
 }
 
+/*******************carrito modal*****************************/
 /*map-get*/
 /*mapa y bucle each*/
 .redes__color--instagram {
@@ -1876,6 +2146,12 @@ footer .ingresa p:hover, footer .registrarse p:hover {
   color: white;
 }
 
+/************************* Inicio Seccion SHOP ****************************/
+.tituloShop__titulo--color {
+  color: white;
+}
+
+/************************* cierre Seccion SHOP ****************************/
 /*******************************seccion Carrito*************************************/
 .mainCarrito {
   background: radial-gradient(#49494f, #303030);
@@ -1994,6 +2270,12 @@ footer .ingresa p:hover, footer .registrarse p:hover {
   color: white;
 }
 
+/************************* Inicio Seccion SHOP ****************************/
+.tituloShop__titulo--color {
+  color: white;
+}
+
+/************************* cierre Seccion SHOP ****************************/
 /*******************************seccion Carrito*************************************/
 .mainCarrito {
   background: radial-gradient(#49494f, #303030);
@@ -2553,6 +2835,12 @@ article .nosotros {
   color: white;
 }
 
+/************************* Inicio Seccion SHOP ****************************/
+.tituloShop__titulo--color {
+  color: white;
+}
+
+/************************* cierre Seccion SHOP ****************************/
 /*******************************seccion Carrito*************************************/
 .mainCarrito {
   background: radial-gradient(#49494f, #303030);
@@ -2981,6 +3269,12 @@ nav.navDer ul li a {
   color: white;
 }
 
+/************************* Inicio Seccion SHOP ****************************/
+.tituloShop__titulo--color {
+  color: white;
+}
+
+/************************* cierre Seccion SHOP ****************************/
 /*******************************seccion Carrito*************************************/
 .mainCarrito {
   background: radial-gradient(#49494f, #303030);
@@ -3279,6 +3573,12 @@ nav.navDer {
   color: white;
 }
 
+/************************* Inicio Seccion SHOP ****************************/
+.tituloShop__titulo--color {
+  color: white;
+}
+
+/************************* cierre Seccion SHOP ****************************/
 /*******************************seccion Carrito*************************************/
 .mainCarrito {
   background: radial-gradient(#49494f, #303030);
@@ -3661,6 +3961,12 @@ nav.navDer {
   color: white;
 }
 
+/************************* Inicio Seccion SHOP ****************************/
+.tituloShop__titulo--color {
+  color: white;
+}
+
+/************************* cierre Seccion SHOP ****************************/
 /*******************************seccion Carrito*************************************/
 .mainCarrito {
   background: radial-gradient(#49494f, #303030);
@@ -4027,6 +4333,12 @@ form {
   color: white;
 }
 
+/************************* Inicio Seccion SHOP ****************************/
+.tituloShop__titulo--color {
+  color: white;
+}
+
+/************************* cierre Seccion SHOP ****************************/
 /*******************************seccion Carrito*************************************/
 .mainCarrito {
   background: radial-gradient(#49494f, #303030);

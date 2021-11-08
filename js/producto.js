@@ -1,12 +1,12 @@
-//Declaracion de la clase de producto mas metodos para agregar la cantidad de productos y calcular el subtotal de la compra
+//Declaracion clase constructora de producto y métodos para agregar cantidad de productos y cálculo del subtotal
 
 class Producto {
-    constructor(id, nombre, precio, img, categoria) {
+    constructor(id, nombre, precio, img, categoria, cantidad) {
         this.id = parseInt(id);
         this.nombre = nombre;
         this.precio = parseFloat(precio);
         this.img = img;
-        this.cantidad = 1;
+        this.cantidad = cantidad || 1;
         this.categoria = categoria;
     }
     agregarCantidad(valor) {
@@ -15,5 +15,5 @@ class Producto {
     subtotal() {
         return this.cantidad * this.precio;
     }
-
+    
 }

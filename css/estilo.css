@@ -78,6 +78,11 @@
 .equivocacion__titulo--color, .equivocacion__texto1--color, .equivocacion__texto2--color {
   color: white; }
 
+/************************* Inicio Seccion SHOP ****************************/
+.tituloShop__titulo--color {
+  color: white; }
+
+/************************* cierre Seccion SHOP ****************************/
 /*******************************seccion Carrito*************************************/
 .mainCarrito {
   background: radial-gradient(#49494f, #303030); }
@@ -326,50 +331,79 @@
 
 /*---------------------inicio seccion SHOP (antes Envios) BoxMod----------------------------*/
 .enviosDomicilio {
-  display: flex; }
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center; }
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .enviosDomicilio {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
       padding: 30px; } }
-  @media only screen and (min-width: 1024px) {
-    .enviosDomicilio {
-      padding: 70px; } }
   @media only screen and (min-width: 1024px) {
     .enviosDomicilio {
       display: flex;
       flex-flow: row wrap;
       justify-content: space-around;
-      padding: 20px; } }
+      padding: 70px; } }
+
+.tituloShop {
+  display: flex;
+  justify-content: center;
+  padding: 20px; }
 
 .productosCarrito {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around; }
+  flex-flow: column wrap;
+  justify-content: center; }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .productosCarrito {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around; } }
+  @media only screen and (min-width: 1024px) {
+    .productosCarrito {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around; } }
 
 @media only screen and (max-width: 768px) {
   .productosContenedor {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: center; } }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .productosContenedor {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center; } }
+    justify-content: space-around; } }
 
 @media only screen and (min-width: 1024px) {
   .productosContenedor {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    margin: 30px 30px 40px 30px;
+    margin: 0px 30px 40px 30px;
     padding: 40px; } }
 
 .tarjetas {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+  flex-flow: column wrap;
+  justify-content: center;
   margin: 50px 40px 0px 40px; }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .tarjetas {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      margin: 50px 0px 0px 0px; } }
+  @media only screen and (min-width: 1024px) {
+    .tarjetas {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      margin: 50px 40px 0px 40px; } }
 
 .cuerpoTarjetas {
   display: flex;
@@ -385,22 +419,61 @@
   font-family: forum;
   text-align: center; }
 
-.dropdown {
-  width: 500px;
-  padding: 40px;
-  margin-bottom: 200px; }
+.table {
+  margin: 0px;
+  border: none; }
 
-.dropdown-menu {
-  width: 500px;
-  font-family: forum;
+.tablaProductos {
+  background: radial-gradient(#49494f, #303030);
   color: white;
-  background: radial-gradient(#49494f, #303030); }
+  font-family: forum;
+  font-size: 20px;
+  text-align: center; }
 
-.scrollSuperior, .scrollInferior {
-  width: 100%;
+.table-bordered {
+  border: 1px solid #49494f; }
+
+.encabezadoTabla {
+  text-align: center;
+  color: white;
+  font-family: forum;
+  font-size: 20px; }
+
+.btn-dark {
+  width: 30px;
+  border-radius: 15px; }
+
+.btn-delete {
+  margin-left: 10px; }
+
+.precioTotal {
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start; }
+  justify-content: center;
+  height: 70px;
+  color: white;
+  font-family: forum;
+  font-size: 20px;
+  background: radial-gradient(#49494f, #303030);
+  padding: 22px; }
+
+@media only screen and (max-width: 768px) {
+  .scrollSuperior, .scrollInferior {
+    display: none; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .scrollSuperior, .scrollInferior {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start; } }
+
+@media only screen and (min-width: 1024px) {
+  .scrollSuperior, .scrollInferior {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start; } }
 
 .scrollAbajo, .scrollArriba {
   color: white;
@@ -412,12 +485,59 @@ a:hover {
   color: white;
   text-decoration: none; }
 
-.selectCategoria {
-  width: 100%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  margin: 30px 0px 0px 20px; }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .modalYCategoria {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center; } }
+
+@media only screen and (min-width: 1024px) {
+  .modalYCategoria {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center; } }
+
+@media only screen and (max-width: 768px) {
+  .botonModal {
+    width: 100%;
+    display: flex;
+    justify-content: center; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .botonModal {
+    width: 40%;
+    margin-top: 18px; } }
+
+@media only screen and (min-width: 1024px) {
+  .botonModal {
+    padding: 20px; } }
+
+@media only screen and (max-width: 768px) {
+  .selectCategoria {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .selectCategoria {
+    width: 40%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin: 0px 0px 0px 0px; } }
+
+@media only screen and (min-width: 1024px) {
+  .selectCategoria {
+    width: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin: 0px 0px 0px 0px; } }
 
 .textoSelect {
   color: white;
@@ -586,6 +706,11 @@ a:hover {
 .equivocacion__titulo--color, .equivocacion__texto1--color, .equivocacion__texto2--color {
   color: white; }
 
+/************************* Inicio Seccion SHOP ****************************/
+.tituloShop__titulo--color {
+  color: white; }
+
+/************************* cierre Seccion SHOP ****************************/
 /*******************************seccion Carrito*************************************/
 .mainCarrito {
   background: radial-gradient(#49494f, #303030); }
@@ -1089,6 +1214,19 @@ footer .ingresa p:hover, footer .registrarse p:hover {
   .equivocacion__texto1--fontSize, .equivocacion__texto2--fontSize {
     font-size: 20px; } }
 
+/*************************seccion Shop ***************************************/
+.tituloShop__titulo--fontFamily {
+  font-family: forum; }
+
+.tituloShop__titulo--fontsize {
+  font-size: 40px; }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .tituloShop__titulo--fontsize {
+      font-size: 45px; } }
+  @media only screen and (min-width: 1024px) {
+    .tituloShop__titulo--fontsize {
+      font-size: 45px; } }
+
 /************************seccion Carrito ***********************/
 @media only screen and (max-width: 768px) {
   .tituloCarrito--fontSize {
@@ -1102,6 +1240,7 @@ footer .ingresa p:hover, footer .registrarse p:hover {
 .encabezadoProducto--fontFamily {
   font-family: forum; }
 
+/*******************carrito modal*****************************/
 /*map-get*/
 /*mapa y bucle each*/
 .redes__color--instagram {
@@ -1182,6 +1321,11 @@ footer .ingresa p:hover, footer .registrarse p:hover {
 .equivocacion__titulo--color, .equivocacion__texto1--color, .equivocacion__texto2--color {
   color: white; }
 
+/************************* Inicio Seccion SHOP ****************************/
+.tituloShop__titulo--color {
+  color: white; }
+
+/************************* cierre Seccion SHOP ****************************/
 /*******************************seccion Carrito*************************************/
 .mainCarrito {
   background: radial-gradient(#49494f, #303030); }
@@ -1272,6 +1416,11 @@ footer .ingresa p:hover, footer .registrarse p:hover {
 .equivocacion__titulo--color, .equivocacion__texto1--color, .equivocacion__texto2--color {
   color: white; }
 
+/************************* Inicio Seccion SHOP ****************************/
+.tituloShop__titulo--color {
+  color: white; }
+
+/************************* cierre Seccion SHOP ****************************/
 /*******************************seccion Carrito*************************************/
 .mainCarrito {
   background: radial-gradient(#49494f, #303030); }
@@ -1609,6 +1758,11 @@ article .nosotros {
 .equivocacion__titulo--color, .equivocacion__texto1--color, .equivocacion__texto2--color {
   color: white; }
 
+/************************* Inicio Seccion SHOP ****************************/
+.tituloShop__titulo--color {
+  color: white; }
+
+/************************* cierre Seccion SHOP ****************************/
 /*******************************seccion Carrito*************************************/
 .mainCarrito {
   background: radial-gradient(#49494f, #303030); }
@@ -1870,6 +2024,11 @@ nav.navDer {
 .equivocacion__titulo--color, .equivocacion__texto1--color, .equivocacion__texto2--color {
   color: white; }
 
+/************************* Inicio Seccion SHOP ****************************/
+.tituloShop__titulo--color {
+  color: white; }
+
+/************************* cierre Seccion SHOP ****************************/
 /*******************************seccion Carrito*************************************/
 .mainCarrito {
   background: radial-gradient(#49494f, #303030); }
@@ -2050,6 +2209,11 @@ nav.navDer {
 .equivocacion__titulo--color, .equivocacion__texto1--color, .equivocacion__texto2--color {
   color: white; }
 
+/************************* Inicio Seccion SHOP ****************************/
+.tituloShop__titulo--color {
+  color: white; }
+
+/************************* cierre Seccion SHOP ****************************/
 /*******************************seccion Carrito*************************************/
 .mainCarrito {
   background: radial-gradient(#49494f, #303030); }
@@ -2278,6 +2442,11 @@ nav.navDer {
 .equivocacion__titulo--color, .equivocacion__texto1--color, .equivocacion__texto2--color {
   color: white; }
 
+/************************* Inicio Seccion SHOP ****************************/
+.tituloShop__titulo--color {
+  color: white; }
+
+/************************* cierre Seccion SHOP ****************************/
 /*******************************seccion Carrito*************************************/
 .mainCarrito {
   background: radial-gradient(#49494f, #303030); }
@@ -2508,6 +2677,11 @@ form {
 .equivocacion__titulo--color, .equivocacion__texto1--color, .equivocacion__texto2--color {
   color: white; }
 
+/************************* Inicio Seccion SHOP ****************************/
+.tituloShop__titulo--color {
+  color: white; }
+
+/************************* cierre Seccion SHOP ****************************/
 /*******************************seccion Carrito*************************************/
 .mainCarrito {
   background: radial-gradient(#49494f, #303030); }
