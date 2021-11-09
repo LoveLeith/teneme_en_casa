@@ -562,6 +562,9 @@ a:hover {
   font-size: 16px;
   padding: 10px; }
 
+.cursorPointer {
+  cursor: pointer; }
+
 /*----------------------inicio Contacto Vista Mobile BoxMod------------------------------*/
 .titular__titulo--padding {
   padding: 20px; }

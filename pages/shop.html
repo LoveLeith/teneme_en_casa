@@ -75,7 +75,7 @@
 
 			<!-- Inicio scroll superior -->
 			<div class ="scrollSuperior">
-				<a id = "abajo" class = "scrollAbajo">Ir abajo</a>
+				<a id = "abajo" class = "scrollAbajo cursorPointer">Ir abajo</a>
 			</div>
 			<!-- Cierre scroll superior -->
 
@@ -101,24 +101,27 @@
 				<!-- Inicio Modal -->
 				<div class="modal fade bd-example-modal-lg" id="carrito" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 					<div class="modal-dialog modal-lg">
-						<div class="modal-content carritoProductos" id ="carritoProductos">
+						<div class="modal-body">
+							<div class="modal-content carritoProductos" id ="carritoProductos">
 
-							<table class="table table-bordered tablaProductos">
-								<thead class = "encabezadoTabla">
-									<tr>
-										<th scope="col">#</th>
-										<th scope="col">Nombre</th>
-										<th scope="col">Cantidad / Subtotal</th>								
-									</tr>
-								</thead>
-								<tbody id="containerProductos" class = "containerTablaProductos">
-									<!-- Acá van los productos seleccionados-->
-								</tbody>
-							</table>
-								
-							<div id='total' class = "precioTotal precioTotal--font-family precioTotal--fontSize">Precio Total: $ <span id="precioFinal"></span></div>
-							<button type="button" class="btn btn-secondary btn-confirmarCompra" id="btnConfirmar"> Confirmar Compra</button>		
-
+								<table class="table table-bordered tablaProductos">
+									<thead class = "encabezadoTabla">
+										<tr>
+											<th scope="col">#</th>
+											<th scope="col">Nombre</th>
+											<th scope="col">Cantidad / Subtotal</th>								
+										</tr>
+									</thead>
+									<tbody id="containerProductos" class = "containerTablaProductos">
+										<!-- Acá van los productos seleccionados-->
+									</tbody>
+								</table>
+									
+								<div id='total' class = "precioTotal precioTotal--font-family precioTotal--fontSize">Precio Total: $ <span id="precioFinal"></span></div>						
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary btn-confirmarCompra" data-dismiss="modal" id="btnConfirmar"> Confirmar Compra</button>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>				
@@ -135,7 +138,7 @@
 				<!-- Cierre productos generales-->
 
 			<div class = "scrollInferior">
-				<a id = "arriba" class = "scrollArriba">Ir a Inicio</a>
+				<a id = "arriba" class = "scrollArriba cursorPointer">Ir a Inicio</a>
 			</div>
 			
     		
