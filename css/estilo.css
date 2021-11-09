@@ -565,6 +565,17 @@ a:hover {
 .cursorPointer {
   cursor: pointer; }
 
+.modal-footer {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  background: radial-gradient(#49494f, #303030); }
+
+.btn-confirmarCompra {
+  display: flex;
+  justify-content: center; }
+
 /*----------------------inicio Contacto Vista Mobile BoxMod------------------------------*/
 .titular__titulo--padding {
   padding: 20px; }

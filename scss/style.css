@@ -991,6 +991,30 @@ a:hover {
   cursor: pointer;
 }
 
+.modal-footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: radial-gradient(#49494f, #303030);
+}
+
+.btn-confirmarCompra {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 /*----------------------inicio Contacto Vista Mobile BoxMod------------------------------*/
 .titular__titulo--padding {
   padding: 20px;
