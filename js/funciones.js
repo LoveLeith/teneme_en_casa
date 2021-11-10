@@ -110,11 +110,12 @@ function carritoUI(productos) {
             actualizarPrecio();
             localStorage.setItem('carrito', JSON.stringify(carrito)); 
         }
-    }  
+    } 
+    //Tomo el botón "Confirmar", agrego evento de escucha clic y llamada a la función enviarCompra
+    $('#btnConfirmar').on("click", enviarCompra);
 }
 
-//Tomo el botón "Confirmar", agrego evento de escucha clic y llamada a la función enviarCompra
-$('#btnConfirmar').on("click", enviarCompra);
+
 
 //Función para actualizar el precio final de la compra al agregar, restar o eliminar productos del carrito
 precioFinal.innerText = "0";
@@ -136,24 +137,12 @@ function enviarCompra() {
             //Vacio la cantidad de productos
             $('#cantidadCarrito').html("0");
             localStorage.clear();
-            Toastify({
-                text: "Gracias por tu compra",
-                duration: 1500,
-                newWindow: true,
-                close: true,
-                gravity: "top",
-                position: "center",
-                stopOnFocus: true,
-                style: {
-                background: "black",
-                },
-                onClick: function(){}
-            }).showToast();
+            carrito = [];
         }
         else {
             console.log('Los datos no se enviaron correctamente');
         }
-    })
+    });
 }
 
 //Fnción para crear la interfaz dinámica para seleccionar las categorias
