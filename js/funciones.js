@@ -139,19 +139,6 @@ function enviarCompra() {
             console.log('Los datos no se enviaron correctamente');
         }
     })
-    Toastify({
-        text: "Gracias por tu compra",
-        duration: 1000,
-        newWindow: true,
-        close: true,
-        gravity: "top",
-        position: "center",
-        stopOnFocus: true,
-        style: {
-        background: "black",
-        },
-        onClick: function(){}
-    }).showToast();
 }
 
 //Fnción para crear la interfaz dinámica para seleccionar las categorias
