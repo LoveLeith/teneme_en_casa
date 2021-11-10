@@ -34,7 +34,7 @@ function comprarProducto(event) {
     localStorage.setItem('carrito', JSON.stringify(carrito));
     carritoUI(carrito);
     Toastify({
-        text: "El producto se añadio al carrito",
+        text: "El producto se añadió al carrito",
         duration: 1500,
         newWindow: true,
         close: true,
@@ -111,9 +111,9 @@ function carritoUI(productos) {
             localStorage.setItem('carrito', JSON.stringify(carrito)); 
         }
     } 
-    //Tomo el botón "Confirmar", agrego evento de escucha clic y llamada a la función enviarCompra
-    $('#btnConfirmar').on("click", enviarCompra);
 }
+//Tomo el botón "Confirmar", agrego evento de escucha clic y llamada a la función enviarCompra
+$('#btnConfirmar').on("click", enviarCompra);
 
 
 
@@ -143,6 +143,19 @@ function enviarCompra() {
             console.log('Los datos no se enviaron correctamente');
         }
     });
+    Toastify({
+        text: "¡Gracias por tu compra!",
+        duration: 1500,
+        newWindow: true,
+        close: true,
+        gravity: "top",
+        position: "center",
+        stopOnFocus: true,
+        style: {
+        background: "black",
+        },
+        onClick: function(){}
+    }).showToast();
 }
 
 //Fnción para crear la interfaz dinámica para seleccionar las categorias
