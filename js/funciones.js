@@ -33,6 +33,19 @@ function comprarProducto(event) {
     }
     localStorage.setItem('carrito', JSON.stringify(carrito));
     carritoUI(carrito);
+    Toastify({
+        text: "El producto se añadio al carrito",
+        duration: 1500,
+        newWindow: true,
+        close: true,
+        gravity: "top",
+        position: "center",
+        stopOnFocus: true,
+        style: {
+        background: "black",
+        },
+        onClick: function(){}
+    }).showToast();
 }
 
 //Funcion para la renderización de los productos en el carrito
@@ -126,6 +139,19 @@ function enviarCompra() {
             console.log('Los datos no se enviaron correctamente');
         }
     })
+    Toastify({
+        text: "Gracias por tu compra",
+        duration: 1000,
+        newWindow: true,
+        close: true,
+        gravity: "top",
+        position: "center",
+        stopOnFocus: true,
+        style: {
+        background: "black",
+        },
+        onClick: function(){}
+    }).showToast();
 }
 
 //Fnción para crear la interfaz dinámica para seleccionar las categorias
